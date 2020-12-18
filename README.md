@@ -1,19 +1,15 @@
-![feature graphic](/artwork/repo-header.png)
+# Heart SMS
 
-# Pulse SMS
+Heart SMS is a fork of Pulse SMS, an app which was bought out by Maple Media.
 
 The goal of this project is to create an SMS/MMS app that has full support for all of the features
 that users love, is based on material design, and supports a strong end-to-end encryption version of a
 tablet/desktop messenger that sends messages through your personal phone number.
 
-Check out Pulse on the [Play Store](https://play.google.com/store/apps/details?id=xyz.klinker.messenger)
-or the app's [website](https://messenger.klinkerapps.com/overview) for a more comprehensive overview
-of the app's features, platforms, and functionality!
+Many other Heart platforms are also open source (including the backend). If you would like to take a
+look at them, you can find them [here](https://github.com/tnyeanderson?q=heart).
 
-Many other Pulse platforms are also open source (all but the backend). If you would like to take a
-look at them, you can find them on Klinker Apps [GitHub](https://github.com/klinker-apps?q=pulse).
-
-## Compiling Pulse
+## Compiling Heart
 
 This repo is **almost** ready to go, right out of the box. There are just two properties files that
 you need to create for the build process to succeed: `api_keys.properties` and `keystore.properties`. 
@@ -26,8 +22,8 @@ file to `api_keys.properties`. This alone will get the build working and might b
 for your usage. 
 
 If you are using a self-built version of the app on a daily basis, then you might want to put in a 
-few of your own API keys, rather than the public ones I have available. Please see the notes at the 
-top of the file to learn more.
+few of your own API keys, rather than the public ones here as they belong to Pulse/Klinker/Maple.
+These will be changed soon. Please see the notes at the top of the file to learn more.
 
 #### Set up release keystore
 
@@ -40,7 +36,7 @@ fields outlined by that file.
 
 ### Building the App
 
-Once you have the above properties in place, Pulse has an entirely typical build. Run:
+Once you have the above properties in place, Heart has an entirely typical build. Run:
 
 ```
 # generate APK files
@@ -54,35 +50,33 @@ $ ./gradlew bundleRelease
 
 ### Running the Tests
 
-Pulse contains unit and database integration tests. To run all of them, run:
+Heart contains unit and database integration tests. To run all of them, run:
 
 ```
 $ ./gradlew testDebugUnitTest
 ```
 
-Pulse uses Robolectric for Android related tests. It does not contain UI-espresso tests.
+Heart uses Robolectric for Android related tests. It does not contain UI-espresso tests.
 
-## Contributing to Pulse
+## Contributing to Heart
 
 Contributions are welcome!
 
-* If you just want to report a bug or file a feature request, I have a 
-[centralized issues repo](https://github.com/klinker-apps/pulse-sms-issues/issues) for tracking
-issues/requests across all of Pulse's platforms. Please file the issue there.
+* If you just want to report a bug or file a feature request, please open an issue.
 * Any other contributions can just go through the 
-[Pull Requests](https://github.com/klinker-apps/pulse-sms-android/pulls) on this repo.
+[Pull Requests](https://github.com/tnyeanderson/heart-sms-android/pulls) on this repo.
 
 If you are looking to make a large change, it is probably best to discuss it with me first. Open up 
-an [issue](https://github.com/klinker-apps/pulse-sms-issues/issues/new?template=contribution_question.md),
+an [issue](https://github.com/tnyeanderson/heart-sms-android/issues),
 letting me know that this is something that you would like to make a PR for, and I can tell you what
 I think. 
 
 ### Open Source Experiments Settings Page
 
-As a consumer app, allowing unlimited customization and endless settings pages is not Pulse's goal.
+Allowing unlimited customization and endless settings pages is not necessarily Heart's goal.
 While some may disagree, ultimately this does not add up to the best user experience. More settings 
 means a much higher overhead for new users, as well as a more difficult time for existing users. 
-I have done my best to enforce this vision by provide logical defaults, throughout the app. While Pulse
+Luke did his best to enforce this vision by provide logical defaults, throughout the app. While Heart
 is not light on customization, there is a balance between what could be considered "too much".
 
 This vision is somewhat different in the eyes of an open source project, however. A major benefit of
@@ -90,11 +84,16 @@ open source software is that you can customize it however you want. With that in
 feature you are suggesting is not something that I want to officially support in the app, that does not mean
 it can't and shouldn't be included! If you find use out of it, chances are someone else will, as well.
 
-Within Pulse, I have made an "Open Source Experiments" settings page. There are disclaimers at the top
+Within Heart, there is an "Open Source Experiments" settings page. There are disclaimers at the top
 that these preferences come as contributions from the community, without official support. This would 
 be a great place to put any "tweak" options that you wish to include.
 
 ## License
+
+The original Pulse app was created by Luke Klinker and was licensed under `Apache 2.0`. The copyright 
+statement below is retained even though Luke has sold Pulse and is not involved with Heart:
+
+---
 
     Copyright (C) 2020 Luke Klinker
 
