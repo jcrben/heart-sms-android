@@ -219,7 +219,7 @@ Du kan bruge Heart til at sende besked fra <b>alle</b>enheder!</string>
     <string name="creating_channels_text">Genererer notifikationskanaler...</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Ændringslog</string>
-    <string name="copyright">© 2016 Jake heart &amp; Luke Klinker</string>
+    <string name="copyright">© 2016 Jake Klinker &amp; Luke Klinker</string>
     <string name="copyright_summary">Vis open source licens</string>
     <string name="app_version">App version</string>
     <string name="account_information">Konto information</string>

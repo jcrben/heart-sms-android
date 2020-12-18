@@ -263,7 +263,7 @@ hvor du ikke har opprettet en individuell varslingskanal for tilpassing per samt
     <string name="receiving_a_message">Motta en melding ...</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Endringslogg</string>
-    <string name="copyright">© 2018 Jake heart &amp; Luke Klinker</string>
+    <string name="copyright">© 2018 Jake Klinker &amp; Luke Klinker</string>
     <string name="copyright_summary">Se informasjon om åpen kildekode lisens</string>
     <string name="app_version">App versjon</string>
     <string name="account_information">Kontoinformasjon</string>

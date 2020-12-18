@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
     <!--
-  ~ Copyright (C) 2016 Jacob heart
+  ~ Copyright (C) 2016 Jacob Klinker
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
     <string name="api_login">Zaloguj się</string>
     <string name="api_signup">Zarejestruj się</string>
     <string name="api_signup_failed">Nie można zarejestrować się na tym urządzeniu. Musisz to zrobić najpierw na urządzeniu, które ma numer telefonu!</string>
-    <string name="api_skip_signup">Jeżeli chcesz używać aplikacji tylko na tym urządzeniu, bez korzystania z możliwości sieciowych takich jak pisanie wiadomości z tabletu lub komputera, możesz pominąć ten krok:</string>
+    <string name="api_skip_signup">Jeżeli chces używać aplikacji tylko na tym urządzeniu, bez korzystania z możliwości sieciowych takich jak pisanie wiadomości z tabletu lub komputera, możesz pominąć ten krok:</string>
     <string name="api_skip">Pomiń</string>
     <string name="api_email">Adres email</string>
     <string name="api_password">Hasło</string>

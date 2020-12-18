@@ -213,7 +213,7 @@ Heart ставить ваші розмови на попередній план.
     <string name="media">Медіа</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Журнал змін</string>
-    <string name="copyright">© 2016 Jake heart &amp; Luke Klinker</string>
+    <string name="copyright">© 2016 Jake Klinker &amp; Luke Klinker</string>
     <string name="copyright_summary">Відомості про ліцензію з відкритим вихідним кодом</string>
     <string name="app_version">Версія додатку</string>
     <string name="device_id">Ідентифікатор пристрою</string>

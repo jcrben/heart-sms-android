@@ -426,7 +426,7 @@ object DataSource {
     /**
      * Get a list of contacts from a list of phone numbers
      *
-     * @param names a comma separated list of phone numbers (Ex: Luke Klinker, Jake heart)
+     * @param names a comma separated list of phone numbers (Ex: Luke Klinker, Jake Klinker)
      * @return list of any contacts in the database for those phone numbers. Ignores numbers that are
      * not in the database.
      */

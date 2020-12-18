@@ -211,7 +211,7 @@ public class ConversationListAdapterTest extends MessengerRobolectricSuite {
         adapter.onBindViewHolder(holder, 1, 0, 2);
 
         assertNotNull(holder.getConversation());
-        verify(name).setText("Kris heart");
+        verify(name).setText("Kris Klinker");
         verify(summary).setText("Will probably be there from 6:30-9, just stop by when you can!");
         verify(name).setTypeface(Typeface.DEFAULT_BOLD, Typeface.NORMAL);
         verify(summary).setTypeface(Typeface.DEFAULT_BOLD, Typeface.NORMAL);
@@ -385,7 +385,7 @@ public class ConversationListAdapterTest extends MessengerRobolectricSuite {
                 0,
                 0,
                 TimeUtils.INSTANCE.getNow() - (1000 * 60),
-                "Kris heart",
+                "Kris Klinker",
                 "(515) 419-6726",
                 "Will probably be there from 6:30-9, just stop by when you can!",
                 null,
@@ -401,7 +401,7 @@ public class ConversationListAdapterTest extends MessengerRobolectricSuite {
                 0,
                 1,
                 TimeUtils.INSTANCE.getNow() - (1000 * 60 * 60 * 24),
-                "Andrew heart",
+                "Andrew Klinker",
                 "(515) 991-8235",
                 "Just finished, it was a lot of fun",
                 null,
@@ -417,7 +417,7 @@ public class ConversationListAdapterTest extends MessengerRobolectricSuite {
                 0,
                 1,
                 TimeUtils.INSTANCE.getNow() - (1000 * 60 * 60 * 24),
-                "Aaron heart",
+                "Aaron Klinker",
                 "(515) 556-7749",
                 "Yeah I'll do it when I get home",
                 null,
@@ -433,7 +433,7 @@ public class ConversationListAdapterTest extends MessengerRobolectricSuite {
                 0,
                 1,
                 TimeUtils.INSTANCE.getNow() - (1000 * 60 * 60 * 55),
-                "Mike heart",
+                "Mike Klinker",
                 "(515) 480-8532",
                 "Yeah so hiking around in some place called beaver meadows now.",
                 null,

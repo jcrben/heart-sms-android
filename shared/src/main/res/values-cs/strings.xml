@@ -300,7 +300,7 @@ pro které jste nevytvořili individuální Kanál oznámení pro úpravu jednot
     <string name="bubble_channel">Notifikační bubliny</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Historie změn</string>
-    <string name="copyright">© 2018 Luke &amp; Jake heart</string>
+    <string name="copyright">© 2018 Luke &amp; Jake Klinker</string>
     <string name="copyright_summary">Zobrazit informace o open source</string>
     <string name="app_version">Verze aplikace</string>
     <string name="account_information">Informace o účtu</string>

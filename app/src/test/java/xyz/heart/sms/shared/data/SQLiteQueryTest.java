@@ -191,10 +191,10 @@ public class SQLiteQueryTest extends MessengerRealDataSuite {
 
     @Test
     public void updateContact() {
-        source.updateContact(context, 1, "5159911493", "Lucas heart", 1, 2, 3, 4, 5, false);
+        source.updateContact(context, 1, "5159911493", "Lucas Klinker", 1, 2, 3, 4, 5, false);
         Contact contact = source.getContact(context, "5159911493");
         assertEquals("5159911493", contact.getPhoneNumber());
-        assertEquals("Lucas heart", contact.getName());
+        assertEquals("Lucas Klinker", contact.getName());
         assertEquals(2, contact.getColors().getColor());
         assertEquals(3, contact.getColors().getColorDark());
         assertEquals(4, contact.getColors().getColorLight());
@@ -284,7 +284,7 @@ public class SQLiteQueryTest extends MessengerRealDataSuite {
         }
 
         assertEquals("Luke Klinker", titles.get(0));
-        assertEquals("Aaron heart", titles.get(1));
+        assertEquals("Aaron Klinker", titles.get(1));
         assertEquals("Aaron, Luke", titles.get(2));
     }
 
@@ -303,7 +303,7 @@ public class SQLiteQueryTest extends MessengerRealDataSuite {
 
         assertEquals(2, titles.size());
         assertEquals("Luke Klinker", titles.get(0));
-        assertEquals("Aaron heart", titles.get(1));
+        assertEquals("Aaron Klinker", titles.get(1));
     }
 
     @Test
@@ -826,7 +826,7 @@ public class SQLiteQueryTest extends MessengerRealDataSuite {
     @Test
     public void insertScheduledMessage() {
         ScheduledMessage message = new ScheduledMessage();
-        message.setTitle("Jake heart");
+        message.setTitle("Jake Klinker");
         message.setTo("515-422-4558");
         message.setData("hey!");
         message.setMimeType("text/plain");

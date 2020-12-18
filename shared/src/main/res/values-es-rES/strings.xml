@@ -198,7 +198,7 @@ Heart pone tus conversaciones en el centro de todo.</string>
     <string name="received_new_message">¡Has recibido un nuevo mensaje de texto!</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Registro de cambios</string>
-    <string name="copyright">© 2016 Jake heart &amp; Luke Klinker</string>
+    <string name="copyright">© 2016 Jake Klinker &amp; Luke Klinker</string>
     <string name="copyright_summary">Ver información de licencias de código abierto</string>
     <string name="app_version">Versión de la Aplicación</string>
     <string name="device_id">ID de dispositivo</string>

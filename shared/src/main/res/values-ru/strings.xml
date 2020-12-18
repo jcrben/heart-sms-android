@@ -290,7 +290,7 @@
     <string name="receiving_a_message">Получение сообщения ...</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Список изменений</string>
-    <string name="copyright">© 2016 Jake heart &amp; Luke Klinker</string>
+    <string name="copyright">© 2016 Jake Klinker &amp; Luke Klinker</string>
     <string name="copyright_summary">Просмотр лицензий открытых источников</string>
     <string name="app_version">Версия приложения</string>
     <string name="account_information">Об учётной записи</string>

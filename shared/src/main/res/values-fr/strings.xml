@@ -286,7 +286,7 @@ où vous n\'avez pas créé un canal de notification individuel pour la personna
     <string name="bubble_channel">Bulles de notification</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Historique des versions de l\'application</string>
-    <string name="copyright">© 2019 Luke &amp; Jake heart</string>
+    <string name="copyright">© 2019 Luke &amp; Jake Klinker</string>
     <string name="copyright_summary">Voir les informations de la licence open source</string>
     <string name="app_version">Version de l\'application</string>
     <string name="account_information">Informations du compte</string>
