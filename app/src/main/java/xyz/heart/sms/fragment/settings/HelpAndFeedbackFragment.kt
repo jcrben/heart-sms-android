@@ -91,6 +91,7 @@ class HelpAndFeedbackFragment : MaterialPreferenceFragmentCompat() {
     }
 
     /**
+     * TODO: Update this email address
      * Sends an email to pulsesmsapp@gmail.com
      */
     private fun displayEmail() {

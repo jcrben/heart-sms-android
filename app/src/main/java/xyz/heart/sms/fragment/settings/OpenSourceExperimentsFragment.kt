@@ -44,7 +44,7 @@ class OpenSourceExperimentsFragment : MaterialPreferenceFragment() {
         findPreference(getString(R.string.pref_open_source_link))
                 .setOnPreferenceClickListener {
                     val intent = Intent(Intent.ACTION_VIEW)
-                    intent.data = Uri.parse("https://github.com/heart-apps/pulse-sms-android")
+                    intent.data = Uri.parse("https://github.com/tnyeanderson/heart-sms-android")
                     startActivity(intent)
                     true
                 }

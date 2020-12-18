@@ -23,7 +23,7 @@ class TextAttributeVcardParser(context: Context) : VcardParser(context) {
         val cards = mutableListOf<MutableList<String>>()
 
         for (line in lines) {
-            Log.v("pulse_vcard", line)
+            Log.v("heart_vcard", line)
 
             if (line.contains(START_LINE)) {
                 cards.add(mutableListOf())
@@ -63,7 +63,7 @@ class TextAttributeVcardParser(context: Context) : VcardParser(context) {
     private fun readPhoneNumber(line: String): String {
         return try {
             when {
-                line.contains("TYPE=") -> { // Pulse's style of vCard
+                line.contains("TYPE=") -> { // Heart's style of vCard
                     val type = line.substring(line.indexOf("=") + 1, line.indexOf(","))
                     val number = line.substring(line.indexOf("VOICE:") + "VOICE:".length)
                     "${StringUtils.titleize(type)}: $number"

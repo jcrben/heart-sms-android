@@ -188,7 +188,7 @@ http://messenger.klinkerapps.com</string>
 أجعل من محدثاتك نبض للرسائل المتقدمة</string>
     <string name="onboarding_content_2">يمكنك إرسال الرسائل من جهازك اللوحي، جهاز الكمبيوتر، ساعتك، أي أجهزة أخرى متصلة.</string>
     <string name="onboarding_content_3">قم بتثبيت الإشعارات أو كتم صوتها، أو اختيار نغمة ملائمة لها أو حتى تخصيص نغمة إشعارات خاصة لأي جهة اتصال تقوم بالتواصل معها.
-لا تتردد واختار برنامج pulse.</string>
+لا تتردد واختار برنامج heart.</string>
     <string name="message_anywhere_onboarding_title_1">راسل أي مكان</string>
     <string name="message_anywhere_onboarding_title_2">للاشتراك أو الدفع لمرة واحدة</string>
     <string name="message_anywhere_onboarding_title_3">لتجربة التطبيق لمدة أسبوع كامل</string>
@@ -464,7 +464,7 @@ http://messenger.klinkerapps.com</string>
     <string name="dashclock_description">معلومات SMS/MMS الغير المقروءة</string>
     <string name="default_text">افتراضي</string>
     <string name="did_you_know">هل كنت تعلم؟</string>
-    <string name="use_from_anywhere">يمكن استخدام برنامج pulse عن طريق أي جهاز متصل بشبكة الانترنت -
+    <string name="use_from_anywhere">يمكن استخدام برنامج heart عن طريق أي جهاز متصل بشبكة الانترنت -
 لا تتأخر وقم بتجربته اليوم</string>
     <string name="use_from_anywhere_short">يمكن استخدام تطبيق نبض الرسائل على أي جهاز من الأجهزة الخاصة بك!</string>
     <string name="learn_more">تعلم أكثر</string>

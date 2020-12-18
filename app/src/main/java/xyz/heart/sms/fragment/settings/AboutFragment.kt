@@ -71,7 +71,7 @@ class AboutFragment : MaterialPreferenceFragmentCompat() {
 
         findPreference(getString(R.string.pref_about_open_source))
                 .setOnPreferenceClickListener {
-                    openWebsite("https://github.com/heart-apps/pulse-sms-android")
+                    openWebsite("https://github.com/tnyeanderson/heart-sms-android")
                     true
                 }
 

@@ -140,7 +140,7 @@ class Notifier(private val context: Context) {
         }
 
         val pm = context.getSystemService(Context.POWER_SERVICE) as PowerManager
-        val wl = pm.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK or PowerManager.ACQUIRE_CAUSES_WAKEUP, "pulse:new-notification")
+        val wl = pm.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK or PowerManager.ACQUIRE_CAUSES_WAKEUP, "heart:new-notification")
         wl.acquire(5000)
     }
 }

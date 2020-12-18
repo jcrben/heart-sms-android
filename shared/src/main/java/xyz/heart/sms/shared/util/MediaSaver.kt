@@ -136,7 +136,7 @@ class MediaSaver(val context: Context) {
                 mime.contains("video") -> Environment.DIRECTORY_MOVIES
                 mime.contains("audio") -> Environment.DIRECTORY_MUSIC
                 else -> Environment.DIRECTORY_PICTURES
-            } + "/Pulse"
+            } + "/Heart"
             val contentUri = when {
                 mime.contains("video") -> MediaStore.Video.Media.EXTERNAL_CONTENT_URI
                 mime.contains("audio") -> MediaStore.Audio.Media.EXTERNAL_CONTENT_URI

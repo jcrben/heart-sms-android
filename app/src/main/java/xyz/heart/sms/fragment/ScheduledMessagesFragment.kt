@@ -174,10 +174,10 @@ class ScheduledMessagesFragment : Fragment(), ScheduledMessageClickListener {
                 && data != null && data.data != null) {
             val uri = data.data!!
             val mimeType = MimeType.IMAGE_JPEG
-            val pulseUri = ImageUtils.scaleToSend(fragmentActivity!!, uri, mimeType)
+            val heartUri = ImageUtils.scaleToSend(fragmentActivity!!, uri, mimeType)
 
-            if (pulseUri != null) {
-                imageData = ShareData(mimeType, pulseUri.toString())
+            if (heartUri != null) {
+                imageData = ShareData(mimeType, heartUri.toString())
             }
 
             if (messageInProcess != null) {

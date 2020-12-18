@@ -15,8 +15,8 @@ import xyz.heart.sms.shared.util.*
 import java.util.*
 
 /**
- * Check whether or not there are messages in the internal database, that are not in Pulse's
- * database. This is useful for if a user goes away from Pulse for awhile, then wants to return to
+ * Check whether or not there are messages in the internal database, that are not in Heart's
+ * database. This is useful for if a user goes away from Heart for awhile, then wants to return to
  * it.
  */
 class NewMessagesCheckService : IntentService("NewMessageCheckService") {
@@ -68,16 +68,16 @@ class NewMessagesCheckService : IntentService("NewMessageCheckService") {
             return
         }
 
-        // grab the latest 60 messages from Pulse's database
+        // grab the latest 60 messages from Heart's database
         // grab the latest 20 messages from the the internal SMS/MMS database
-        // iterate over the internal messages and see if they are in the list from Pulse's database (search by text is fine)
+        // iterate over the internal messages and see if they are in the list from Heart's database (search by text is fine)
         // if they are:
         //      continue, no problems here
         // if they aren't:
         //      insert them into the correct conversation and give the conversation update broadcast
         //      should I worry about updating the conversation list here?
 
-        val pulseMessages = DataSource.getNumberOfMessages(this, 60)
+        val heartMessages = DataSource.getNumberOfMessages(this, 60)
         val internalMessages = SmsMmsUtils.getLatestSmsMessages(this, 20)
 
         val messagesToInsert = ArrayList<Message>()
@@ -98,7 +98,7 @@ class NewMessagesCheckService : IntentService("NewMessageCheckService") {
                 // the message timestamp should be more than the last time this service ran, but more than 5 seconds old,
                 // and it shouldn't already be in the database
                 if (messageTimestamp in (lastRun + 1) until fiveSecondsBefore) {
-                    if (!alreadyInDatabase(pulseMessages, messageBody, messageType)) {
+                    if (!alreadyInDatabase(heartMessages, messageBody, messageType)) {
                         val message = Message()
 
                         message.type = messageType
@@ -117,7 +117,7 @@ class NewMessagesCheckService : IntentService("NewMessageCheckService") {
                         addressesForMessages.add(PhoneNumberUtils.clearFormatting(
                                 internalMessages.getString(internalMessages.getColumnIndex(Telephony.Sms.ADDRESS))))
                     } else {
-                        val message = messageStatusNeedsUpdatedToSent(pulseMessages, messageBody, messageType)
+                        val message = messageStatusNeedsUpdatedToSent(heartMessages, messageBody, messageType)
                         if (message != null) {
                             DataSource.updateMessageType(this, message.id, Message.TYPE_SENT)
                         }

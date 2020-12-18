@@ -1,7 +1,7 @@
 package xyz.heart.sms.shared.util
 
 /**
- * With an app like Pulse, there is the possibility that many messages could come in quickly.
+ * With an app like Heart, there is the possibility that many messages could come in quickly.
  * If that happens, then we don't want to have to refresh the list/UI every time. This class monitors
  * the number of active refreshes and tells the app whether we should refresh the UI or not.
  */

@@ -134,7 +134,7 @@
                 android:id="@+id/try_it"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/pulse_ripple"
+                android:background="@drawable/heart_ripple"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:paddingBottom="16dp"

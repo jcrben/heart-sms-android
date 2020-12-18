@@ -31,12 +31,12 @@
     <string name="api_phone_number">Phone Number</string>
     <string name="api_connecting">Connecting to server…</string>
     <string name="api_device_error">An error occurred while adding this device. Let\'s retry!</string>
-    <string name="api_device_error_gps">Google Play Services is not configured on your device. Pulse will not work without it!</string>
+    <string name="api_device_error_gps">Google Play Services is not configured on your device. Heart will not work without it!</string>
     <string name="api_add_second_primary_device">Looks like you already have a primary device
         (%1$s) for your account and only one is permitted! Do you want to remove the current
         primary device and set this as the new primary?</string>
     <string name="api_amazon_fire">Failed to add the device to the account.\n\n
-        Unfortunately Amazon tablets do not have the correct services installed for Pulse to work. To
+        Unfortunately Amazon tablets do not have the correct services installed for Heart to work. To
         use the app on your Amazon tablet, you will need to use the web app instead of the Android app.</string>
     <string name="api_yes">Yes</string>
     <string name="api_no">No</string>

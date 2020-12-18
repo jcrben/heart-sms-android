@@ -493,7 +493,7 @@ class MyAccountFragment : MaterialPreferenceFragmentCompat() {
             purchaseCancelled()
         } else if (requestCode == PURCHASE_REQUEST && responseCode == Activity.RESULT_OK) {
             val productId = data?.getStringExtra(AccountPickSubscriptionActivity.PRODUCT_ID_EXTRA)
-            Log.v("pulse_purchase", "on activity result. Purchasing product: $productId")
+            Log.v("heart_purchase", "on activity result. Purchasing product: $productId")
 
             when (productId) {
                 ProductAvailable.createLifetime().productId -> purchaseProduct(ProductAvailable.createLifetime())

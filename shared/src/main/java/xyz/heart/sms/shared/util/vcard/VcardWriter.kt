@@ -12,10 +12,10 @@ object VcardWriter {
 
     @Throws(IOException::class)
     fun writeContactCard(context: Context, firstName: String, lastName: String, phoneNumber: String): Uri {
-        val pulseDir = File(context.filesDir, "Pulse")
-        val contactCard = File(pulseDir, "contact.vcf")
-        if (!pulseDir.exists()) {
-            pulseDir.mkdir()
+        val heartDir = File(context.filesDir, "Heart")
+        val contactCard = File(heartDir, "contact.vcf")
+        if (!heartDir.exists()) {
+            heartDir.mkdir()
         }
 
         val fw = FileWriter(contactCard)

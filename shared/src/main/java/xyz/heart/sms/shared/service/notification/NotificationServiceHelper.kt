@@ -61,7 +61,7 @@ object NotificationServiceHelper {
         // return the size, since this is how many will need to be updated with the group key
 
         // this won't work perfectly, since there is always the chance that there could be other notifications
-        // from Pulse, that are active (scheduled message sent, message failed to send, etc)
+        // from Heart, that are active (scheduled message sent, message failed to send, etc)
 
         return manager.activeNotifications
                 .filter { it.groupKey != NotificationConstants.GROUP_KEY_MESSAGES }

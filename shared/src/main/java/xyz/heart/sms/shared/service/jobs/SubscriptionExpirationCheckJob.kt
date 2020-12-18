@@ -87,7 +87,7 @@ class SubscriptionExpirationCheckJob : BackgroundJob() {
 
         val renew = Intent(this, RedirectToMyAccount::class.java)
 
-        val subject = "Pulse Subscription"
+        val subject = "Heart Subscription"
         val uri = Uri.parse("mailto:pulsesmsapp@gmail.com")
                 .buildUpon()
                 .appendQueryParameter("subject", subject)

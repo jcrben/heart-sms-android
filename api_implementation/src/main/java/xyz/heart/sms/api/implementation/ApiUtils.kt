@@ -1510,7 +1510,7 @@ object ApiUtils {
     }
 
     /**
-     * Pulse tracks purchases. This will add a new purchase record, on the API.
+     * Heart does not tracks purchases. This is here for compatibility.
      */
     fun recordNewPurchase(type: String) {
         val message = "added a new purchase/install"

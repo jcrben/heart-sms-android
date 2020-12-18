@@ -1,6 +1,6 @@
 # README
 # You can just copy this file to api_keys.properties if you want.
-# The Giphy and article keys are both public and rate limited at a global level, so if you are planning on using a self-build version of Pulse, you should get your own.
+# The Giphy and article keys are both public and rate limited at a global level, so if you are planning on using a self-build version of Heart, you should get your own.
 # The YouTube key is used to preview Google Maps and YouTube links. You could leave it blank if you don't care about that.
 
 

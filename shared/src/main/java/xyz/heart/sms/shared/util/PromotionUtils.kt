@@ -22,18 +22,8 @@ class PromotionUtils(private val context: Activity) {
     }
 
     private fun askForRating() {
-        if (Account.exists() && !Account.primary) {
-            // only prompt for rating on the primary device
-            return
-        }
-
-        Handler().postDelayed({
-            RatingPrompt.show(context, RatingPromptOptions.Builder()
-                    .useAlternateStyle(RatingPromptOptions.Popup.Builder("Pulse")
-                            .accentColor(Settings.mainColorSet.color)
-                            .darkTheme(Settings.isCurrentlyDarkTheme(context))
-                    ).build())
-        }, 500)
+        // Never ask for a rating
+        return;
     }
     
 }
