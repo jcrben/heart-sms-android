@@ -20,7 +20,7 @@
     android:shape="oval">
 
     <solid
-        android:color="@color/pulseColorPrimary"/>
+        android:color="@color/heartColorPrimary"/>
 
     <size
         android:width="10dp"

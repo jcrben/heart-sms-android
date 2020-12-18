@@ -15,9 +15,9 @@
   ~ limitations under the License.
   -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Pulse</string>
-    <string name="app_name_long">Pulse (SMS/Tablet Messenger)</string>
-    <string name="app_title">Pulse</string>
+    <string name="app_name">Heart</string>
+    <string name="app_name_long">Heart (SMS/Tablet Messenger)</string>
+    <string name="app_title">Heart</string>
     <!-- Launcher Shortcuts -->
     <string name="shortcut_compose_short">Nowa wiadomość</string>
     <string name="shortcut_compose_long">Rozpocznij nową konwersację!</string>
@@ -103,7 +103,7 @@
     </plurals>
     <string name="undo">Cofnij</string>
     <string name="enter_search">Wyszukaj...</string>
-    <string name="text_anywhere_description">Czy o tym wiedziałeś: Pulse to coś więcej niż aplikacja na telefon. Możesz używać Pulse do wysyłania wiadomości z <b>dowolnego</b> urządzenia!</string>
+    <string name="text_anywhere_description">Czy o tym wiedziałeś: Heart to coś więcej niż aplikacja na telefon. Możesz używać Heart do wysyłania wiadomości z <b>dowolnego</b> urządzenia!</string>
     <string name="convo_list_try_it">Wypróbuj!</string>
     <string name="convo_list_not_now">Nie teraz</string>
     <string name="no_private_messages_description">Skonfiguruj prywatne rozmowy w menu ustawień rozmów prywatnych!</string>
@@ -113,8 +113,8 @@
     <string name="conversations">Rozmowy</string>
     <string name="messages">Wiadomości</string>
     <!-- Invite Friends Screen -->
-    <string name="invite_friends_title">Lubisz aplikację Pulse?</string>
-    <string name="invite_friends_summary">My już polubiliśmy i czekamy na resztę! Staramy się dotrzeć z Pulse do kogo możemy aby kontynuować rozwijanie jej możliwości i najlepszych cech. Zapraszając swoich znajomych pomożesz nam tego dokonać!\n\nWybierz z listy znajomych, których chcesz poinformować o aplikacji. Otrzymają wiadomość SMS z krótkim opisem i linkiem do pobrania aplikacji!</string>
+    <string name="invite_friends_title">Lubisz aplikację Heart?</string>
+    <string name="invite_friends_summary">My już polubiliśmy i czekamy na resztę! Staramy się dotrzeć z Heart do kogo możemy aby kontynuować rozwijanie jej możliwości i najlepszych cech. Zapraszając swoich znajomych pomożesz nam tego dokonać!\n\nWybierz z listy znajomych, których chcesz poinformować o aplikacji. Otrzymają wiadomość SMS z krótkim opisem i linkiem do pobrania aplikacji!</string>
     <string name="invite_friends_sms">Zacząłem używać nowej aplikacji do SMS-ów i myślę, że spodoba się również Tobie! Dodatkowo jest bezpłatna, możesz ją pobrać stąd: http://messenger.klinkerapps.com</string>
     <!-- Message List Screen -->
     <string name="type_message">Napisz wiadomość</string>
@@ -220,7 +220,7 @@ czas ją rozpocząć!</string>
     <string name="onboarding_title_3">Potężne możliwości personalizacji</string>
     <string name="onboarding_content_1">Szybkie i płynne układy, do tego perfekcyjnie wykonane i z możliwością bezbłędnej integracji.</string>
     <string name="onboarding_content_2">Wysyłaj wiadomości z tabletu, komputera, smart zegarka lub każdego innego urządzenia podłączonego do Twojego konta.</string>
-    <string name="onboarding_content_3">Przypinaj, wyciszaj, dostosowuj wygląd i powiadomienia dla każdego kontaktu, z którym rozmawiasz. Spraw, by Pulse był twój.</string>
+    <string name="onboarding_content_3">Przypinaj, wyciszaj, dostosowuj wygląd i powiadomienia dla każdego kontaktu, z którym rozmawiasz. Spraw, by Heart był twój.</string>
     <string name="message_anywhere_onboarding_title_1">Wysyłaj wiadomości gdziekolwiek jesteś</string>
     <string name="message_anywhere_onboarding_title_2">Abonament lub pojedynczy zakup</string>
     <string name="message_anywhere_onboarding_title_3">Tygodniowa wersja próbna</string>
@@ -291,7 +291,7 @@ czas ją rozpocząć!</string>
     <string name="bubble_channel">Dymki powiadomień</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Lista zmian</string>
-    <string name="copyright">© 2016 Jake Klinker &amp; Luke Klinker</string>
+    <string name="copyright">© 2016 Jake heart &amp; Luke Klinker</string>
     <string name="copyright_summary">Wyświetl informacje o licencji open source</string>
     <string name="app_version">Wersja aplikacji</string>
     <string name="account_information">Informacje o koncie</string>
@@ -301,7 +301,7 @@ czas ją rozpocząć!</string>
     <string name="device_id">ID urządzenia</string>
     <string name="device_info">Informacje o urządzeniu</string>
     <string name="website">Strona internetowa</string>
-    <string name="view_platforms">Dostępne platformy systemowe Pulse</string>
+    <string name="view_platforms">Dostępne platformy systemowe Heart</string>
     <string name="access_messages_from_any_device">Dostęp i wysyłanie wiadomości z dowolnego urządzenia!</string>
     <string name="beta_disclaimer">Ten projekt jest nadal w fazie testów, zgłoś problemy, które być może znajdziesz!</string>
     <string name="app_info">Informacje o aplikacji</string>
@@ -312,15 +312,15 @@ czas ją rozpocząć!</string>
     <string name="get_help">Uzyskaj pomoc</string>
     <string name="get_help_summary">Masz pytanie? Każdego dnia dostaję szaloną ilość wiadomości e-mail, które jednoosobowemu zespołowi zabierają czas potrzebny na rozwój nowych funkcji. Aby mi pomóc, najpierw sprawdź w FAQ, czy już nie odpowiedziałem na twoje pytanie.</string>
     <string name="get_help_summary_2">Sekcja pomocy jest dość obszerna, ale jeśli nie znajdziesz swojego konkretnego pytania, skontaktuj się ze mną, a z przyjemnością odpowiem!</string>
-    <string name="features">Funkcje Pulse</string>
+    <string name="features">Funkcje Heart</string>
     <string name="issues">Śledzenie problemów</string>
     <string name="issues_summary">Służy także jako plan przyszłego rozwoju</string>
     <string name="google_plus">Google+</string>
-    <string name="google_plus_summary">Społeczność Pulse Beta</string>
+    <string name="google_plus_summary">Społeczność Heart Beta</string>
     <string name="email">Email</string>
     <string name="email_summary">pulsesmsapp@gmail.com</string>
     <string name="twitter">Twitter</string>
-    <string name="twitter_summary">\@PulseSMS</string>
+    <string name="twitter_summary">\@HeartSMS</string>
     <string name="support">Wsparcie</string>
     <plurals name="message_count">
         <item quantity="one">%1$d wiadomość</item>
@@ -437,7 +437,7 @@ czas ją rozpocząć!</string>
     <string name="trial_subscription_summary">Kliknij tutaj, aby uaktualnić lub anulować okres próbny!</string>
     <string name="upgrade_or_cancel_title">Koniec okresu próbnego?</string>
     <string name="trial_expired">Dzięki za okres próbny!</string>
-    <string name="upgrade_or_cancel">Możesz uaktualnić swoje konto do abonamentu lub dożywotniego członkostwa, aby nadal używać Pulse na wszystkich urządzeniach!\n\nCzy chcesz anulować?
+    <string name="upgrade_or_cancel">Możesz uaktualnić swoje konto do abonamentu lub dożywotniego członkostwa, aby nadal używać Heart na wszystkich urządzeniach!\n\nCzy chcesz anulować?
 Twoje konto zostanie usunięte i nie zostaniesz obciążony opłatą. Możesz nadal bezpłatnie korzystać z aplikacji w telefonie! W każdej chwili możesz wrócić.</string>
     <string name="upgrade">Uaktualnij!</string>
     <string name="cancel_trial">Anuluj okres próbny</string>
@@ -490,7 +490,7 @@ Po zakończeniu będziesz musiał zalogować się ponownie na wszystkich Twoich 
     <string name="emoji_style_android_o">Android Oreo od Google</string>
     <string name="settings_phone_number">Numer telefonu</string>
     <string name="disable_battery_optimization">Wyłącz optymalizację baterii</string>
-    <string name="disable_battery_optimization_summary">Jeśli wiadomości z telefonu nie docierają do internetu, spróbuj wyłączyć optymalizacje baterii dla Pulse.</string>
+    <string name="disable_battery_optimization_summary">Jeśli wiadomości z telefonu nie docierają do internetu, spróbuj wyłączyć optymalizacje baterii dla Heart.</string>
     <string name="hex">Kolor w formacie Hex</string>
     <!-- MMS Configuration Settings -->
     <string name="max_mms_size">Maksymalna wielkość obrazu</string>
@@ -510,7 +510,7 @@ Po zakończeniu będziesz musiał zalogować się ponownie na wszystkich Twoich 
     <string name="user_agent_profile_tag">Nazwa znacznika profilu agenta użytkownika</string>
     <!-- Advanced Features Settings -->
     <string name="signature">Podpis</string>
-    <string name="signature_summary">Podpisy nie będą wyświetlane na liście wiadomości Pulse, zostaną wyświetlone tylko odbiorcy wiadomości</string>
+    <string name="signature_summary">Podpisy nie będą wyświetlane na liście wiadomości Heart, zostaną wyświetlone tylko odbiorcy wiadomości</string>
     <string name="cleanup_old_messages">Usuń stare wiadomości</string>
     <string name="cleanup_old_messages_summary">Ta operacja działa raz dziennie, aby usunąć wszystkie wiadomości starsze niż wybrany okres</string>
     <string name="cleanup_old_messages_now_summary">Ta operacja natychmiast usunie wszystkie starsze niż wybrany okres wiadomości w tej rozmowie</string>
@@ -529,15 +529,15 @@ Po zakończeniu będziesz musiał zalogować się ponownie na wszystkich Twoich 
     <string name="use_internal_browser">Używaj wbudowanej przeglądarki internetowej</string>
     <string name="internal_browser_summary">Wyłączenie tej opcji spowoduje również wyłączenie podglądu linków na listach wiadomości</string>
     <string name="use_smart_replies">Proponuj inteligentne odpowiedzi</string>
-    <string name="use_smart_replies_summary">Pulse zasugeruje odpowiednie odpowiedzi, jeśli są dostępne. Są one generowane bezpośrednio na urządzeniu, a nie na zdalnym serwerze</string>
-    <string name="use_smart_replies_dialog">Pulse zasugeruje odpowiednie odpowiedzi, jeśli są dostępne. Są one generowane bezpośrednio na urządzeniu, a nie na zdalnym serwerze.\n\nJeśli wolisz nie korzystać z tej funkcji, możesz ją wyłączyć w ustawieniach.</string>
+    <string name="use_smart_replies_summary">Heart zasugeruje odpowiednie odpowiedzi, jeśli są dostępne. Są one generowane bezpośrednio na urządzeniu, a nie na zdalnym serwerze</string>
+    <string name="use_smart_replies_dialog">Heart zasugeruje odpowiednie odpowiedzi, jeśli są dostępne. Są one generowane bezpośrednio na urządzeniu, a nie na zdalnym serwerze.\n\nJeśli wolisz nie korzystać z tej funkcji, możesz ją wyłączyć w ustawieniach.</string>
     <string name="use_smart_reply_settings">Ustawienia</string>
     <string name="message_backup">Kopia zapasowa wiadomości</string>
-    <string name="message_backup_pref_summary">Martwisz się, że utracisz swoje wiadomości? Pulse nie dopuści do tego</string>
-    <string name="message_backup_summary">Czy o tym wiedziałeś: Usługa internetowa Pulse opiera się na tworzeniu kopii zapasowych wiadomości. Po zarejestrowaniu konta Pulse możesz zalogować się na to konto z dowolnego urządzenia lub tabletu, by przywrócić wszystkie wiadomości automatycznie!\n\n Brak problemów i ręcznego tworzenia kopii zapasowych.
-Z Pulse wszystko przebiega gładko, łatwo i całkowicie automatyczne.</string>
-    <string name="message_backup_summary_have_account">Super, wygląda na to, że już masz konto Pulse.
-Posiadając konto, Pulse automatycznie tworzy kopię zapasową wiadomości które wysyłasz i otrzymujesz. Działa to tak, że używając Pulse na innych urządzeniach korzystasz właśnie z tej kopii. Jeśli chcesz odtworzyć kopię zapasową na nowym urządzeniu, jedyne co musisz zrobić to się na nim zalogować do swojego konta Pulse.</string>
+    <string name="message_backup_pref_summary">Martwisz się, że utracisz swoje wiadomości? Heart nie dopuści do tego</string>
+    <string name="message_backup_summary">Czy o tym wiedziałeś: Usługa internetowa Heart opiera się na tworzeniu kopii zapasowych wiadomości. Po zarejestrowaniu konta Heart możesz zalogować się na to konto z dowolnego urządzenia lub tabletu, by przywrócić wszystkie wiadomości automatycznie!\n\n Brak problemów i ręcznego tworzenia kopii zapasowych.
+Z Heart wszystko przebiega gładko, łatwo i całkowicie automatyczne.</string>
+    <string name="message_backup_summary_have_account">Super, wygląda na to, że już masz konto Heart.
+Posiadając konto, Heart automatycznie tworzy kopię zapasową wiadomości które wysyłasz i otrzymujesz. Działa to tak, że używając Heart na innych urządzeniach korzystasz właśnie z tej kopii. Jeśli chcesz odtworzyć kopię zapasową na nowym urządzeniu, jedyne co musisz zrobić to się na nim zalogować do swojego konta Heart.</string>
     <string name="auto_reply_configuration">Konfiguracja automatycznych odpowiedzi</string>
     <string name="auto_reply_configuration_summary">Skonfiguruj automatyczne odpowiedzi w zależności od sytuacji</string>
     <string name="auto_replies">Automatyczne odpowiedzi</string>
@@ -606,7 +606,7 @@ Posiadając konto, Pulse automatycznie tworzy kopię zapasową wiadomości któr
     <string name="set_passcode">Zapisz kod dostępu</string>
     <string name="confirm_fingerprint">Potwierdź odciskiem palca, aby kontynuować. Dotknij czytnika teraz.</string>
     <string name="confirm_passcode">Potwierdź kod, aby kontynuować.</string>
-    <string name="confirm_pulse_password">Potwierdź uprawnienia Pulse, aby kontynuować.</string>
+    <string name="confirm_heart_password">Potwierdź uprawnienia Heart, aby kontynuować.</string>
     <string name="type_passcode">Utwórz kod dostępu.</string>
     <string name="incorrect_passcode">Niepoprawny kod dostępu.</string>
     <string name="verify">Sprawdź</string>
@@ -617,8 +617,8 @@ Jeśli chcesz dodać to zabezpieczenie, skonfiguruj hasło w sekcji <i>Funkcje z
     <string name="dashclock_description">Informacja o nieprzeczytanych SMS/MMS</string>
     <string name="default_text">Domyślny</string>
     <string name="did_you_know">Czy wiesz że?</string>
-    <string name="use_from_anywhere">Pulse może być używany na każdym urządzeniu podłączonym do Internetu - wypróbuj Pulse już dziś!</string>
-    <string name="use_from_anywhere_short">Pulse może być używany na każdym Twoim urządzeniu!</string>
+    <string name="use_from_anywhere">Heart może być używany na każdym urządzeniu podłączonym do Internetu - wypróbuj Heart już dziś!</string>
+    <string name="use_from_anywhere_short">Heart może być używany na każdym Twoim urządzeniu!</string>
     <string name="learn_more">Dowiedz się więcej</string>
     <string name="dismiss">Odrzuć</string>
     <string name="renew">Odnów</string>
@@ -636,11 +636,11 @@ Jeśli chcesz dodać to zabezpieczenie, skonfiguruj hasło w sekcji <i>Funkcje z
     <string name="default_channel">Kanał domyślny</string>
     <string name="channels_global_warning">Wiele ustawień globalnych jest teraz dostępnych tylko na kanał.</string>
     <string name="channels_global_warning_2">W przypadku systemu Android Oreo aplikacje muszą korzystać z <i> kanałów powiadomień </i> w celu dostosowania dzwonka, wibracji, diody LED i wszystkich innych opcji powiadomień. \n\n
-Możesz dostosować te opcje za pomocą przycisku poniżej i przeczytać więcej o tej zmianie w sekcji pomocy Pulse.</string>
-    <string name="channels_global_warning_3">W systemie Android Oreo niektóre z powyższych opcji przekierują do systemowych ustawień <i>Powiadomienia</i> w celu ich dostosowania. Aby dowiedzieć się więcej o powiadomieniach, jak działają i dlaczego muszą być używane, zajrzyj na stronę pomocy Pulse.</string>
+Możesz dostosować te opcje za pomocą przycisku poniżej i przeczytać więcej o tej zmianie w sekcji pomocy Heart.</string>
+    <string name="channels_global_warning_3">W systemie Android Oreo niektóre z powyższych opcji przekierują do systemowych ustawień <i>Powiadomienia</i> w celu ich dostosowania. Aby dowiedzieć się więcej o powiadomieniach, jak działają i dlaczego muszą być używane, zajrzyj na stronę pomocy Heart.</string>
     <string name="off">Wyłącz</string>
     <string name="on">Włącz</string>
-    <string name="share_promo">Cześć, używam aplikacji Pulse do wysyłania SMSów i jest świetna! Daj jej szansę i wypróbuj ją:</string>
+    <string name="share_promo">Cześć, używam aplikacji Heart do wysyłania SMSów i jest świetna! Daj jej szansę i wypróbuj ją:</string>
     <string name="verifying_password">Weryfikacja hasła...</string>
     <!-- Rate it -->
     <string name="rate_it">Oceń aplikacje!</string>
@@ -649,7 +649,7 @@ Możesz dostosować te opcje za pomocą przycisku poniżej i przeczytać więcej
     <string name="rate_it_summary"><b>Oceny 5-gwiazdkowe</b> są niezwykle pomocne dla rozwoju aplikacji
 i widoczności w Sklepie Play. Jeśli chcesz, aby aplikacja <i>dalej wznosiła się w rankingu</i>, pomóż mi!</string>
     <string name="rate_it_not_ready">Nie jesteś gotowy, aby ocenić? Nie ma problemu. Wycofaj się z tego okna dialogowego, nigdy więcej się nie pojawi.</string>
-    <string name="love_pulse_question">Lubisz Pulse?</string>
+    <string name="love_heart_question">Lubisz Heart?</string>
     <string name="give_a_rating">Rozważ ocenienie aplikacji lub podziel się nią ze znajomymi!/n/n
 Twoja 5-cio gwiazdkowa ocena rozgrzeje moje serce :)</string>
     <!-- Times -->
@@ -693,13 +693,13 @@ Jeżeli nie odnowisz go na czas, aplikacja wyloguje Cię automatycznie z Twojego
     <string name="monthly_purchase_summary">Chcesz tylko wypróbować? Nie ma problemu.</string>
     <string name="change_subscription_message">Chcesz upgrade? Świetnie! Po wybraniu opcji na następnym ekranie, w aplikacji Play Store<b>musisz</b> anulować swoją subskrypcję lub wersję próbną. <b>Nie mogę</b> zrobić tego automatycznie.</string>
     <string name="beautiful_powerful_instant">Piękny, potężny, błyskawiczny.</string>
-    <string name="optimized_for_all_your_devices">Pulse jest zoptymalizowany do działania <b>ze wszystkimi</b> Twoimi urządzeniami.
+    <string name="optimized_for_all_your_devices">Heart jest zoptymalizowany do działania <b>ze wszystkimi</b> Twoimi urządzeniami.
 Wysyłaj wiadomości z przeglądarki internetowej, komputera, tabletu, smart zegarka, lub nawet ze smart tv.</string>
     <string name="true_imessage_competitor">Pierwszy, <b>prawdziwy</b> konkurent iMessage dla systemu Android.</string>
-    <string name="trial_description">Żadna konkurencyjna aplikacja nie może nawet zbliżyć się do Pulse w <b>nieskończonej ilości obsługiwanych platform</b> połączonej z <b>niską ceną</b>. Wiadomości synchronizowane są pomiędzy wszystkimi urządzeniami, natychmiast i bez problemów.</string>
+    <string name="trial_description">Żadna konkurencyjna aplikacja nie może nawet zbliżyć się do Heart w <b>nieskończonej ilości obsługiwanych platform</b> połączonej z <b>niską ceną</b>. Wiadomości synchronizowane są pomiędzy wszystkimi urządzeniami, natychmiast i bez problemów.</string>
     <string name="purchase_description">Wypróbuj wersję online przez <b>siedem dni</b>, a następnie zdecyduj, w jaki sposób chcesz wesprzeć aplikację:\n\n<b>10,99 USD</b> za dożywotnie członkostwo\n<b>5,99 USD</b> rocznie\n<b>1,99 USD</b> co trzy miesiące\n<b>0,99 USD</b> miesięcznie</string>
     <string name="start_free_trial">Rozpocznij bezpłatny okres próbny!</string>
-    <string name="create_your_pulse_account">Utwórz konto Pulse!</string>
+    <string name="create_your_heart_account">Utwórz konto Heart!</string>
     <string name="try_it">Wypróbuj teraz!</string>
     <string name="select_purchase">Wybierz zakup</string>
     <string name="have_an_account">Masz już konto?\nZaloguj się</string>
@@ -715,7 +715,7 @@ Wysyłaj wiadomości z przeglądarki internetowej, komputera, tabletu, smart zeg
     <string name="three_month_purchase_improved">$1.99 /\n3 miesiące</string>
     <string name="yearly_purchase_improved">$5.99 /\nrok</string>
     <string name="subscription_toast"><b>Nie poniesiesz żadnych kosztów</b> przed zakończeniem 7-dniowego okresu próbnego. Możesz zrezygnować w każdej chwili.</string>
-    <string name="redirect_to_play_store">Dzięki za uaktualnienie! Anuluj poprzedni abonament w <b> Sklepie Play </b>. Pulse <b> nie może </b> zrobić tego automatycznie.</string>
+    <string name="redirect_to_play_store">Dzięki za uaktualnienie! Anuluj poprzedni abonament w <b> Sklepie Play </b>. Heart <b> nie może </b> zrobić tego automatycznie.</string>
     <string name="play_store">Sklep Play</string>
     <string name="notification_trial_title">Tekst z dowolnego urządzenia - wersja próbna</string>
     <string name="notification_days_remaining_in_trial">Pozostało %s dni okresu próbnego. Kliknij, aby uaktualnić!</string>

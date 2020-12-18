@@ -15,9 +15,9 @@
   ~ limitations under the License.
   -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Pulse</string>
-    <string name="app_name_long">Pulse (чат и SMS)</string>
-    <string name="app_title">Pulse</string>
+    <string name="app_name">Heart</string>
+    <string name="app_name_long">Heart (чат и SMS)</string>
+    <string name="app_title">Heart</string>
     <!-- Launcher Shortcuts -->
     <string name="shortcut_compose_short">Новое сообщение</string>
     <string name="shortcut_compose_long">Начните новый диалог!</string>
@@ -104,7 +104,7 @@
     </plurals>
     <string name="undo">Отменить</string>
     <string name="enter_search">Найти...</string>
-    <string name="text_anywhere_description">Знаете ли Вы:  Pulse - это больше, чем просто мобильное приложение. Вы можете пользоваться Pulse на <b>любом</b> устройстве!</string>
+    <string name="text_anywhere_description">Знаете ли Вы:  Heart - это больше, чем просто мобильное приложение. Вы можете пользоваться Heart на <b>любом</b> устройстве!</string>
     <string name="convo_list_try_it">Попробуйте!</string>
     <string name="convo_list_not_now">Позже</string>
     <string name="no_private_messages_description">Настройте личные беседы из меню настроек!</string>
@@ -114,7 +114,7 @@
     <string name="conversations">Диалоги</string>
     <string name="messages">Сообщения</string>
     <!-- Invite Friends Screen -->
-    <string name="invite_friends_title">Понравился Pulse?</string>
+    <string name="invite_friends_title">Понравился Heart?</string>
     <string name="invite_friends_summary">И нам тоже, и остальным понравится! Распространяя это приложение, вы помогаете его развитию. Приглашайте своих друзей! \n\nВыберите контакты из списка ниже, с которыми вы бы хотели поделиться, и мы отправим им SMS  с коротким описанием и ссылку для загрузки!</string>
     <string name="invite_friends_sms">Я начал использовать новое приложение для переписки и думаю, что оно тебе бы понравилось! К тому же оно бесплатное. Можешь загрузить его тут: http://messenger.klinkerapps.com</string>
     <!-- Message List Screen -->
@@ -220,7 +220,7 @@
     <string name="onboarding_title_3">Продвинутая персонализация</string>
     <string name="onboarding_content_1">Плавные переходы, продуманный дизайн и интеграция между множеством устройств.</string>
     <string name="onboarding_content_2">Переписывайтесь на своём планшете, умных часах или любом другом устройстве.</string>
-    <string name="onboarding_content_3">Закрепляйте, приглушайте, раскрашивайте и настраивайте уведомления для любого диалога. Сделайте Pulse своим.</string>
+    <string name="onboarding_content_3">Закрепляйте, приглушайте, раскрашивайте и настраивайте уведомления для любого диалога. Сделайте Heart своим.</string>
     <string name="message_anywhere_onboarding_title_1">Переписывайте где угодно</string>
     <string name="message_anywhere_onboarding_title_2">Подписка или единоразовый платёж</string>
     <string name="message_anywhere_onboarding_title_3">Пробный период 7 дней</string>
@@ -290,7 +290,7 @@
     <string name="receiving_a_message">Получение сообщения ...</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Список изменений</string>
-    <string name="copyright">© 2016 Jake Klinker &amp; Luke Klinker</string>
+    <string name="copyright">© 2016 Jake heart &amp; Luke Klinker</string>
     <string name="copyright_summary">Просмотр лицензий открытых источников</string>
     <string name="app_version">Версия приложения</string>
     <string name="account_information">Об учётной записи</string>
@@ -299,9 +299,9 @@
     <string name="be_careful_using_these_settings">Следуйте инструкциям и будьте осторожны, используя эти опции.</string>
     <string name="device_id">ID устройства</string>
     <string name="device_info">Об устройстве</string>
-    <string name="open_source_summary">Pulse - проект с открытым исходным кодом! Проверьте это на GitHub</string>
+    <string name="open_source_summary">Heart - проект с открытым исходным кодом! Проверьте это на GitHub</string>
     <string name="website">Сайт</string>
-    <string name="view_platforms">Доступные платформы Pulse</string>
+    <string name="view_platforms">Доступные платформы Heart</string>
     <string name="access_messages_from_any_device">Перейти и обмениваться сообщениями с любого устройства!</string>
     <string name="beta_disclaimer">Проект находится в состоянии бета-теста, пожалуйста, сообщайте о любых неисправностях.</string>
     <string name="app_info">О приложении</string>
@@ -316,11 +316,11 @@
     <string name="issues">Трекер задач</string>
     <string name="issues_summary">Также может служить в качестве плана разработки</string>
     <string name="google_plus">Google+</string>
-    <string name="google_plus_summary">Бета-сообщество Pulse</string>
+    <string name="google_plus_summary">Бета-сообщество Heart</string>
     <string name="email">Email</string>
     <string name="email_summary">pulsesmsapp@gmail.com</string>
     <string name="twitter">Twitter</string>
-    <string name="twitter_summary">\@PulseSMS</string>
+    <string name="twitter_summary">\@HeartSMS</string>
     <string name="support">Поддержка</string>
     <plurals name="message_count">
         <item quantity="one">%1$d сообщение</item>
@@ -438,7 +438,7 @@
     <string name="trial_subscription_summary">Нажмите здесь, чтобы обновить или отменить пробную версию!</string>
     <string name="upgrade_or_cancel_title">Закончить пробный период?</string>
     <string name="trial_expired">Спасибо за пробный период!</string>
-    <string name="upgrade_or_cancel">Вы можете обновить свою учетную запись до подписки или пожизненного членства, чтобы продолжать использовать Pulse на всех своих устройствах!\n\nХотите отменить?
+    <string name="upgrade_or_cancel">Вы можете обновить свою учетную запись до подписки или пожизненного членства, чтобы продолжать использовать Heart на всех своих устройствах!\n\nХотите отменить?
 Ваша учетная запись будет удалена без какой-либо платы. Вы можете продолжать использовать приложение на своем телефоне бесплатно! Вы всегда можете вернуться.</string>
     <string name="upgrade">Обновить!</string>
     <string name="cancel_trial">Отменить пробную версию</string>
@@ -487,7 +487,7 @@
     <string name="emoji_style_android_o">Google\'s Android O</string>
     <string name="settings_phone_number">Телефонный номер</string>
     <string name="disable_battery_optimization">Отключить оптимизацию батареи</string>
-    <string name="disable_battery_optimization_summary">Если сообщения не поступают с вашего телефона в Интернет, попробуйте отключить оптимизацию батареи для Pulse.</string>
+    <string name="disable_battery_optimization_summary">Если сообщения не поступают с вашего телефона в Интернет, попробуйте отключить оптимизацию батареи для Heart.</string>
     <!-- MMS Configuration Settings -->
     <string name="max_mms_size">Максимальный размер изображения</string>
     <string name="max_mms_size_summary">Не устанавливайте это значение выше, чем позволяет ваш оператор</string>
@@ -505,7 +505,7 @@
     <string name="user_agent_profile_tag">Тэг профиля в системе</string>
     <!-- Advanced Features Settings -->
     <string name="signature">Подпись</string>
-    <string name="signature_summary">Подпись не будет отображаться в списке сообщений Pulse, её увидит только получатель сообщения.</string>
+    <string name="signature_summary">Подпись не будет отображаться в списке сообщений Heart, её увидит только получатель сообщения.</string>
     <string name="cleanup_old_messages">Удалить старые сообщения</string>
     <string name="cleanup_old_messages_summary">Это выполняется один раз в день для удаления любых сообщений, которые были старше вашего выбранного периода времени</string>
     <string name="cleanup_old_messages_now_summary">Запуск удаления любых сообщений в этом разговоре старше выбранного периода времени</string>
@@ -523,21 +523,21 @@
     <string name="secure_private_conversations_summary">Требуется ввести PIN-код для доступа к личным диалогам.</string>
     <string name="use_internal_browser">Использовать встроенный браузер</string>
     <string name="use_smart_replies">Предлагать умные ответы</string>
-    <string name="use_smart_replies_summary">Pulse предложит соответствующие ответы, когда они будут доступны. Они генерируются непосредственно на устройстве, а не на удаленном сервере.</string>
-    <string name="use_smart_replies_dialog">Pulse предложит соответствующие ответы, когда они будут доступны. Они генерируются непосредственно на устройстве, а не на удаленном сервере.\n\nЕсли вы не хотите использовать эту функцию, ее можно отключить в настройках.</string>
+    <string name="use_smart_replies_summary">Heart предложит соответствующие ответы, когда они будут доступны. Они генерируются непосредственно на устройстве, а не на удаленном сервере.</string>
+    <string name="use_smart_replies_dialog">Heart предложит соответствующие ответы, когда они будут доступны. Они генерируются непосредственно на устройстве, а не на удаленном сервере.\n\nЕсли вы не хотите использовать эту функцию, ее можно отключить в настройках.</string>
     <string name="use_smart_reply_settings">Настройки</string>
     <string name="handle_messages_from_unknown_numbers">Получение сообщений от неизвестных контактов</string>
     <string name="unknown_numbers_default">Получать сообщения</string>
     <string name="unknown_numbers_mute">Отключить уведомления для диалога</string>
     <string name="unknown_numbers_block">Заблокировать сообщение как спам. Будьте осторожны и помните, что вы это включили!</string>
     <string name="message_backup">Резервное копирование сообщений</string>
-    <string name="message_backup_pref_summary">Боитесь потерять ваши сообщения? Pulse сохранит их</string>
-    <string name="message_backup_summary">Знаете ли вы: онлайн-сервис Pulse позволяет сохранить ваши сообщения.
-        Когда вы регистрируете учетную запись Pulse, вы можете войти в эту учетную запись на любом устройстве или планшете,
+    <string name="message_backup_pref_summary">Боитесь потерять ваши сообщения? Heart сохранит их</string>
+    <string name="message_backup_summary">Знаете ли вы: онлайн-сервис Heart позволяет сохранить ваши сообщения.
+        Когда вы регистрируете учетную запись Heart, вы можете войти в эту учетную запись на любом устройстве или планшете,
         чтобы восстановить все ваши сообщения, автоматически!\n\nБольше нет необходимости делать ручное резервное копирование.
-        С Pulse все удобно, просто и полностью автоматически.</string>
-    <string name="message_backup_summary_have_account">Похоже, у вас уже есть учетная запись в Pulse, отлично!
-        С вашей учетной записью Pulse автоматически создаст резервную копию всех сообщений, которые вы отправляете и получаете. Когда вы
+        С Heart все удобно, просто и полностью автоматически.</string>
+    <string name="message_backup_summary_have_account">Похоже, у вас уже есть учетная запись в Heart, отлично!
+        С вашей учетной записью Heart автоматически создаст резервную копию всех сообщений, которые вы отправляете и получаете. Когда вы
         используйте на приложение на других ваших устройствах, вы на самом деле просто получаете доступ к этой резервной копии. Чтобы восстановить
         сообщения на новое устройство, все, что вам нужно сделать, это войти в свою учетную запись.</string>
     <string name="auto_reply_configuration">Настройка автоответов</string>
@@ -565,9 +565,9 @@
     <string name="no_folder">Нет папки</string>
     <!-- Open Source Experiments Settings -->
     <string name="experiments_info_section_title">О чем эта страница?</string>
-    <string name="experiments_info_open_source">Pulse - проект с открытым исходным кодом!</string>
+    <string name="experiments_info_open_source">Heart - проект с открытым исходным кодом!</string>
     <string name="experiments_info_open_source_summary">Это означает, что любой разработчик может добавить код и новые функции в приложение.</string>
-    <string name="experiments_info_disclaimer_1">Этот раздел настроек - просто место для хранения функций, которые добавлены сообществом. <b> Эти функции официально не поддерживаются приложениями Klinker. </b> Они были добавлены и будут поддерживаться сообществом.</string>
+    <string name="experiments_info_disclaimer_1">Этот раздел настроек - просто место для хранения функций, которые добавлены сообществом. <b> Эти функции официально не поддерживаются приложениями heart. </b> Они были добавлены и будут поддерживаться сообществом.</string>
     <string name="experiments_info_disclaimer_2">Работоспособность этих функций не гарантируется, они могут работать нестабильно или могут быть отключены. <b> Эти функции не поддерживаются. </b></string>
     <string name="experiments_info_disclaimer_3">Тем не менее, они не были бы добавлены в приложение, если бы они не работали, не решали определенную проблему или не добавляли функциональность приложения.</string>
     <string name="experiments_preferences_section_title">Экспериментальные настройки</string>
@@ -621,7 +621,7 @@
     <string name="set_passcode">Сохранить пароль</string>
     <string name="confirm_fingerprint">Подтвердите отпечаток для продолжения. Прикоснитесь к сканеру.</string>
     <string name="confirm_passcode">Подтвердите пароль для продолжения.</string>
-    <string name="confirm_pulse_password">Подтвердите данные учетные данные Pulse для продолжения.</string>
+    <string name="confirm_heart_password">Подтвердите данные учетные данные Heart для продолжения.</string>
     <string name="type_passcode">Создать пароль.</string>
     <string name="incorrect_passcode">Неверный пароль.</string>
     <string name="verify">Проверить</string>
@@ -632,8 +632,8 @@
     <string name="dashclock_description">Информация о непрочитанных SMS/MMS</string>
     <string name="default_text">Стандартный</string>
     <string name="did_you_know">Знаете ли вы?</string>
-    <string name="use_from_anywhere">Pulse может быть использован на любом подключенном устройстве - попробуйте уже сегодня!</string>
-    <string name="use_from_anywhere_short">Pulse можно использовать на любом вашем устройстве!</string>
+    <string name="use_from_anywhere">Heart может быть использован на любом подключенном устройстве - попробуйте уже сегодня!</string>
+    <string name="use_from_anywhere_short">Heart можно использовать на любом вашем устройстве!</string>
     <string name="learn_more">Узнать больше</string>
     <string name="dismiss">Отклонить</string>
     <string name="renew">Обновить</string>
@@ -650,11 +650,11 @@
     <string name="default_channel">Стандартный канал</string>
     <string name="channels_global_warning">Многие глобальные настройки теперь возможны только для определенного канала.</string>
     <string name="channels_global_warning_2">В Android Oreo приложения вынуждены проходить через <i> каналы уведомлений </i>, чтобы настроить мелодию звонка, вибрацию, светодиод и все другие параметры уведомлений. \n\n
-        Вы можете настроить эти параметры с помощью кнопки ниже и узнать больше об этом изменении в справке Pulse.</string>
-    <string name="channels_global_warning_3">В Android Oreo некоторые из перечисленных выше вариантов перенаправят вас на системные настройки <i> Каналы уведомлений </i> для настройки. Чтобы узнать больше об этих каналах, о том, как они работают и почему они должны использоваться, см. справку Pulse.</string>
+        Вы можете настроить эти параметры с помощью кнопки ниже и узнать больше об этом изменении в справке Heart.</string>
+    <string name="channels_global_warning_3">В Android Oreo некоторые из перечисленных выше вариантов перенаправят вас на системные настройки <i> Каналы уведомлений </i> для настройки. Чтобы узнать больше об этих каналах, о том, как они работают и почему они должны использоваться, см. справку Heart.</string>
     <string name="off">Не включать</string>
     <string name="on">Включать</string>
-    <string name="share_promo">Привет! Мне очень понравилось переписываться через Pulse! Попробуй и ты, по это ссылке: https://play.google.com/store/apps/details?id=xyz.klinker.messenger</string>
+    <string name="share_promo">Привет! Мне очень понравилось переписываться через Heart! Попробуй и ты, по это ссылке: https://play.google.com/store/apps/details?id=xyz.heart.sms</string>
     <string name="verifying_password">Проверяем пароль...</string>
     <!-- Rate it -->
     <string name="rate_it">Оценить!</string>
@@ -662,7 +662,7 @@
     <string name="rate_it_title">Высокий рейнтинг имеет большое значение</string>
     <string name="rate_it_summary"><b> Высокий рейтинг </b> очень важен для продвижения приложения! Если вы хотите, чтобы приложение <i> продолжало развиваться </i>, пожалуйста, уделите этому немного времени.</string>
     <string name="rate_it_not_ready"><b> Не готовы оценить? </b> Нет проблем. Нажмите кнопку назад вашего телефона, и я больше не буду вас беспокоить.</string>
-    <string name="love_pulse_question">Понравился Pulse?</string>
+    <string name="love_heart_question">Понравился Heart?</string>
     <string name="give_a_rating">Оцените приложение или поделитесь им с вашими друзьями!\n\nВаша оценка на 5 звезд согреет моё сердце :)</string>
     <!-- Times -->
     <string name="one_second">1 секунда</string>
@@ -703,7 +703,7 @@
     <string name="monthly_purchase_summary">Просто попробовать? Нет проблем.</string>
     <string name="change_subscription_message">Хотите улучшить? Отлично! После того как вы сделаете свой выбор на следующей странице, перейдите в Play Store  и отмените старую подписку.</string>
     <string name="beautiful_powerful_instant">Красивый, мощный, мгновенный.</string>
-    <string name="optimized_for_all_your_devices">Pulse оптимизирован под <b>любые</b> ваши устройства.
+    <string name="optimized_for_all_your_devices">Heart оптимизирован под <b>любые</b> ваши устройства.
 Отправляйте текстовые сообщения через: web-приложение, ПК, планшет, умные часы и даже ТВ.</string>
     <string name="true_imessage_competitor">Первый <b>настоящий</b> конкурент iMessage на Android.</string>
     <string name="try_it">Попробуйте!</string>

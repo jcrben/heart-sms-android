@@ -139,7 +139,7 @@
         name="5.0.0"
         description="January 1st, 2020">
         <text>The Pulse Android app is now fully open source!</text>
-        <text>Check it out: https://github.com/klinker-apps/pulse-sms-android</text>
+        <text>Check it out: https://github.com/heart-apps/pulse-sms-android</text>
         <text>For more details: https://blog.klinkerapps.com/pulse-sms-open-source</text>
     </version>
 
@@ -258,7 +258,7 @@
     <version
         name="4.11.8"
         description="September 10th, 2019">
-        <!-- MMS Changes: https://github.com/klinker41/android-smsmms/releases/tag/v5.2.0 -->
+        <!-- MMS Changes: https://github.com/heart41/android-smsmms/releases/tag/v5.2.0 -->
         <!-- Remove korean character's in conversation snippet, for user request -->
         <text>Bug fixes</text>
     </version>
@@ -432,7 +432,7 @@
         name="4.7.1"
         description="March 11th, 2019">
         <!-- Change how the message loading works, with large conversations (notify all messages of the change, when a message is added) -->
-        <!-- fix draft snippets not being removed https://github.com/klinker-apps/messenger-issues/issues/844 -->
+        <!-- fix draft snippets not being removed https://github.com/heart-apps/messenger-issues/issues/844 -->
         <text>Bug fixes and performance improvements</text>
     </version>
 
@@ -496,7 +496,7 @@
         <!-- Added new fotoapparat camera view (behind a feature flag, for now) -->
         <!-- Updated fast scroll library to get rid of a ton of warnings that the scroller was throwing into the log files -->
         <!-- Force resync contacts to web -->
-        <text>Contact management improvements for the web version: https://github.com/klinker-apps/messenger-issues/issues/620</text>
+        <text>Contact management improvements for the web version: https://github.com/heart-apps/messenger-issues/issues/620</text>
         <text>Bug fixes</text>
         <text>Performance improvements</text>
         <text>Prep for future features</text>
@@ -628,7 +628,7 @@
     <version
         name="4.1.0"
         description="September 3rd, 2018">
-        <!-- Add menu item to call with duo, but it didn't work: https://github.com/klinker-apps/messenger-issues/issues/704 -->
+        <!-- Add menu item to call with duo, but it didn't work: https://github.com/heart-apps/messenger-issues/issues/704 -->
         <text>Option to decouple the app bar theme from the primary color. This will allow you to use a white (or dark) app bar, while still maintaining the message coloring.</text>
         <text>This was requested by users, since that is how Google has started to do it in some of their apps.</text>
         <text>Find this preference under the "Theme" section of settings. The web and desktop apps contain the same functionality.</text>
@@ -685,7 +685,7 @@
         <text>Pulse got a brand new web app! It is faster, smoother, has some great new features, and comes with plenty of bug fixes</text>
         <text>To start using it, head to https://pulsesms.app</text>
         <text>To learn more: https://blog.klinkerapps.com/upgrading-pulses-web-app</text>
-        <text>To top it off, it is open source: https://github.com/klinker-apps/messenger-web</text>
+        <text>To top it off, it is open source: https://github.com/heart-apps/messenger-web</text>
     </version>
 
     <version
@@ -728,8 +728,8 @@
         description="June 20th, 2018">
         <!-- Duplicate scheduled messages (I am just not allowing that broadcast receiver to run more than once every 20 seconds -->
         <!-- Changes to the group message coloring (changes are now persisted on the same thread (UI) to prevent race conditions) -->
-        <!-- Changes to how sharing from other apps works https://github.com/klinker-apps/messenger-issues/issues/681 -->
-        <!-- Changes to the delivery receiver, if the database isn't able to find the message by searching https://github.com/klinker-apps/messenger-issues/issues/683 -->
+        <!-- Changes to how sharing from other apps works https://github.com/heart-apps/messenger-issues/issues/681 -->
+        <!-- Changes to the delivery receiver, if the database isn't able to find the message by searching https://github.com/heart-apps/messenger-issues/issues/683 -->
         <!-- Apply the apache http library through the sms/mms library's v5.0.2 -->
         <text>Bug fixes</text>
     </version>
@@ -1671,7 +1671,7 @@
         name="1.8.8"
         description="November 14th, 2016">
         <text>Auto-play GIFs in the message list</text>
-        <text>Improvements to GIF search and open-source (https://github.com/klinker24/Android-GiphySearch)</text>
+        <text>Improvements to GIF search and open-source (https://github.com/heart24/Android-GiphySearch)</text>
         <text>Few more bug fixes related to updating conversation images</text>
     </version>
 

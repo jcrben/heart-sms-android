@@ -15,9 +15,9 @@
   ~ limitations under the License.
   -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Pulse</string>
-    <string name="app_name_long">Pulse (SMS/Tablet Messenger)</string>
-    <string name="app_title">Pulse</string>
+    <string name="app_name">Heart</string>
+    <string name="app_name_long">Heart (SMS/Tablet Messenger)</string>
+    <string name="app_title">Heart</string>
     <!-- Launcher Shortcuts -->
     <string name="shortcut_compose_short">Nieuw bericht</string>
     <string name="shortcut_compose_long">Maak een nieuwe conversatie!</string>
@@ -95,8 +95,8 @@
     </plurals>
     <string name="undo">Ongedaan maken</string>
     <string name="enter_search">Zoeken naar...</string>
-    <string name="text_anywhere_description">Wist je dat: Pulse is een veel meer dan een app. 
-Je kan Pulse gebruiken om vanop <b>elk</b> toestel te sms\'en.</string>
+    <string name="text_anywhere_description">Wist je dat: Heart is een veel meer dan een app. 
+Je kan Heart gebruiken om vanop <b>elk</b> toestel te sms\'en.</string>
     <string name="convo_list_try_it">Probeer het!</string>
     <string name="convo_list_not_now">Niet nu</string>
     <string name="no_private_messages_description">Stel een geheime conversatie in vanuit het instellingenmenu!</string>
@@ -106,8 +106,8 @@ Je kan Pulse gebruiken om vanop <b>elk</b> toestel te sms\'en.</string>
     <string name="conversations">Conversaties</string>
     <string name="messages">Berichten</string>
     <!-- Invite Friends Screen -->
-    <string name="invite_friends_title">Hou je van Pulse?</string>
-    <string name="invite_friends_summary">Net zoals ons en vele andere! We proberen Pulse naar zoveel mogelijk gebruikers te krijgen als mogelijk zodat we kunnen blijven optimaliseren en functies kunnen blijven toevoegen. Nodig je vrienden uit en help ons bij het verspreiden!\n\nSelecteer vrienden die je wilt uitnodigen. Wij zenden hen een korte SMS met informatie en een link om Pulse te downloaden.</string>
+    <string name="invite_friends_title">Hou je van Heart?</string>
+    <string name="invite_friends_summary">Net zoals ons en vele andere! We proberen Heart naar zoveel mogelijk gebruikers te krijgen als mogelijk zodat we kunnen blijven optimaliseren en functies kunnen blijven toevoegen. Nodig je vrienden uit en help ons bij het verspreiden!\n\nSelecteer vrienden die je wilt uitnodigen. Wij zenden hen een korte SMS met informatie en een link om Heart te downloaden.</string>
     <string name="invite_friends_sms">Ik gebruik een nieuwe SMS app en ik denk dat je er ook zal van gaan houden! En het is gratis om te downloaden: http://messenger.klinkerapps.com</string>
     <!-- Message List Screen -->
     <string name="type_message">Jouw bericht</string>
@@ -208,9 +208,9 @@ Je kan Pulse gebruiken om vanop <b>elk</b> toestel te sms\'en.</string>
     <string name="onboarding_title_1">Berichten anders ingedeeld</string>
     <string name="onboarding_title_2">Overal toegankelijk</string>
     <string name="onboarding_title_3">Enorme aanpassingsmogelijkheden</string>
-    <string name="onboarding_content_1">Snel, eenvoudig, modern design en naadloze integratie. Pulse plaatst jouw conversaties in de spotlight.</string>
+    <string name="onboarding_content_1">Snel, eenvoudig, modern design en naadloze integratie. Heart plaatst jouw conversaties in de spotlight.</string>
     <string name="onboarding_content_2">SMS vanaf jouw tablet, computer, smartwatch, of elk ander verbonden toestel.</string>
-    <string name="onboarding_content_3">Prik conversaties vast, kies een thema en pas notificaties aan voor elk contact. Maak Pulse van jou!</string>
+    <string name="onboarding_content_3">Prik conversaties vast, kies een thema en pas notificaties aan voor elk contact. Maak Heart van jou!</string>
     <string name="message_anywhere_onboarding_title_1">SMS overal</string>
     <string name="message_anywhere_onboarding_title_2">Abonnement of eenmalige betaling</string>
     <string name="message_anywhere_onboarding_title_3">1 week trial</string>
@@ -270,7 +270,7 @@ Je kan Pulse gebruiken om vanop <b>elk</b> toestel te sms\'en.</string>
     <string name="receiving_a_message">Een bericht ontvangen...</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Changelog</string>
-    <string name="copyright">© 2018 Jake Klinker &amp; Luke Klinker</string>
+    <string name="copyright">© 2018 Jake heart &amp; Luke Klinker</string>
     <string name="copyright_summary">Bekijk open source license information</string>
     <string name="app_version">App Versie</string>
     <string name="account_information">Account informatie</string>
@@ -280,7 +280,7 @@ Je kan Pulse gebruiken om vanop <b>elk</b> toestel te sms\'en.</string>
     <string name="device_id">Toestel ID</string>
     <string name="device_info">Toestel Info</string>
     <string name="website">Website</string>
-    <string name="view_platforms">Beschikbare Pulse-platformen</string>
+    <string name="view_platforms">Beschikbare Heart-platformen</string>
     <string name="access_messages_from_any_device">Krijg toegang en verzend berichten vanop elk toestel!</string>
     <string name="beta_disclaimer">Dit project is nog in ontwikkeling, gelieve eventuele fouten te rapporteren!</string>
     <string name="app_info">App info</string>
@@ -291,15 +291,15 @@ Je kan Pulse gebruiken om vanop <b>elk</b> toestel te sms\'en.</string>
     <string name="get_help">Help krijgen</string>
     <string name="get_help_summary">Heb je een vraag? Ik kan als alleenstaande developer niet alle aanvragen verwerken. Gelieve jouw vraag hieronder op te zoeken. Niets gevonden? E-mail me gaan gerust.</string>
     <string name="get_help_summary_2">De help-sectie is reeds zeer uitgebreid. Toch niet gevonden wat je zocht? Neem gerust contact met mij op!</string>
-    <string name="features">Functies van Pulse</string>
+    <string name="features">Functies van Heart</string>
     <string name="issues">Issue Tracker</string>
     <string name="issues_summary">Toont ook een feature roadmap</string>
     <string name="google_plus">Google+</string>
-    <string name="google_plus_summary">Pulse Beta Community</string>
+    <string name="google_plus_summary">Heart Beta Community</string>
     <string name="email">E-mail</string>
     <string name="email_summary">pulsesmsapp@gmail.com</string>
     <string name="twitter">Twitter</string>
-    <string name="twitter_summary">\@PulseSMS</string>
+    <string name="twitter_summary">\@HeartSMS</string>
     <string name="support">Support</string>
     <plurals name="message_count">
         <item quantity="one">%1$d bericht</item>
@@ -409,7 +409,7 @@ Je kan Pulse gebruiken om vanop <b>elk</b> toestel te sms\'en.</string>
     <string name="trial_subscription_summary">Druk hier om te proefversie te beëindigen of te upgraden!</string>
     <string name="upgrade_or_cancel_title">Klaar met de proefversie?</string>
     <string name="trial_expired">Bedankt voor het uitproberen!</string>
-    <string name="upgrade_or_cancel">Je kunt je account upgraden naar een periodiek of levenslang abonnement om Pulse op al je toestellen te blijven gebruiken.\n\nWil je annuleren?
+    <string name="upgrade_or_cancel">Je kunt je account upgraden naar een periodiek of levenslang abonnement om Heart op al je toestellen te blijven gebruiken.\n\nWil je annuleren?
         Je account wordt verwijderd en er wordt niets in rekening gebracht.  Je kunt de app gratis blijven gebruiken op je telefoon. Het staat je vrij om terug te keren!</string>
     <string name="upgrade">Upgraden!</string>
     <string name="cancel_trial">Proefversie beëindigen</string>
@@ -460,7 +460,7 @@ Nadien zal je opnieuw moeten inloggen op al jouw toestellen. Wil je doorgaan?</s
     <string name="emoji_style_android_o">Google\'s Android Oreo</string>
     <string name="settings_phone_number">Telefoonnummer</string>
     <string name="disable_battery_optimization">Batterijoptimalisatie uitschakelen</string>
-    <string name="disable_battery_optimization_summary">Als berichten niet getoond worden op het web, deactiveer batterijoptimalisatie voor Pulse.</string>
+    <string name="disable_battery_optimization_summary">Als berichten niet getoond worden op het web, deactiveer batterijoptimalisatie voor Heart.</string>
     <string name="hex">Hexcode</string>
     <!-- MMS Configuration Settings -->
     <string name="max_mms_size">Max afbeelding grootte</string>
@@ -480,7 +480,7 @@ Nadien zal je opnieuw moeten inloggen op al jouw toestellen. Wil je doorgaan?</s
     <string name="user_agent_profile_tag">User agent profile tag name</string>
     <!-- Advanced Features Settings -->
     <string name="signature">Handtekening</string>
-    <string name="signature_summary">Handtekeningen worden niet weergegeven in Pulse maar worden wel verzonden.</string>
+    <string name="signature_summary">Handtekeningen worden niet weergegeven in Heart maar worden wel verzonden.</string>
     <string name="cleanup_old_messages">Oude berichten opkuisen</string>
     <string name="cleanup_old_messages_summary">Dit loopt dagelijks en verwijderd alle berichten ouder dan de ingestelde periode</string>
     <string name="cleanup_old_messages_now_summary">Verwijder onmiddellijk alle berichten in deze conversatie die ouder zijn dat de opgegeven datum</string>
@@ -499,13 +499,13 @@ Nadien zal je opnieuw moeten inloggen op al jouw toestellen. Wil je doorgaan?</s
     <string name="use_internal_browser">Gebruik interne browser</string>
     <string name="internal_browser_summary">Als je dit uitschakelt, zullen er ook geen web-previews worden weergegeven</string>
     <string name="message_backup">Berichtenbackup</string>
-    <string name="message_backup_pref_summary">Schrik voor het verliezen van berichten? Pulse helpt je</string>
-    <string name="message_backup_summary">Wist je dat: Pulse\'s online service is gebouwd rond het maken van een back-up van jouw sms\'en. Met een Pulse-account, kan je inloggen op elk toestel en heb je meteen toegang tot al jouw sms\'en.
+    <string name="message_backup_pref_summary">Schrik voor het verliezen van berichten? Heart helpt je</string>
+    <string name="message_backup_summary">Wist je dat: Heart\'s online service is gebouwd rond het maken van een back-up van jouw sms\'en. Met een Heart-account, kan je inloggen op elk toestel en heb je meteen toegang tot al jouw sms\'en.
 
 Geen gezeur en gedoe met het maken van manuele back-ups.
-Met Pulse wordt alles automatisch voor jou gedaan!</string>
-    <string name="message_backup_summary_have_account">Het lijkt erop dat je al een Pulse-account hebt, goed zo!
-Dankzij jouw account zal Pulse een back-up maken van al je berichten die je ontvangt en verzend. Wanneer je Pulse opent op een ander toestel zie je de berichten in deze back-up. Om je berichten te herstellen op een nieuw toestel, dien je gewoon in te loggen met dit account.</string>
+Met Heart wordt alles automatisch voor jou gedaan!</string>
+    <string name="message_backup_summary_have_account">Het lijkt erop dat je al een Heart-account hebt, goed zo!
+Dankzij jouw account zal Heart een back-up maken van al je berichten die je ontvangt en verzend. Wanneer je Heart opent op een ander toestel zie je de berichten in deze back-up. Om je berichten te herstellen op een nieuw toestel, dien je gewoon in te loggen met dit account.</string>
     <string name="auto_reply_configuration">Automatisch antwoorden instellen</string>
     <string name="auto_reply_configuration_summary">Stel automatisch antwoorden zo in dat antwoorden worden gebaseerd op de huidige situatie</string>
     <string name="auto_replies">Automatisch antwoorden</string>
@@ -571,7 +571,7 @@ Dankzij jouw account zal Pulse een back-up maken van al je berichten die je ontv
     <string name="set_passcode">Wachtwoord opslaan</string>
     <string name="confirm_fingerprint">Bevestig vingerafdruk om door te gaan. Scan je vinger nu.</string>
     <string name="confirm_passcode">Bevestig wachtwoord om door te gaan.</string>
-    <string name="confirm_pulse_password">Bevestig je Pulse account-details om door te gaan.</string>
+    <string name="confirm_heart_password">Bevestig je Heart account-details om door te gaan.</string>
     <string name="type_passcode">Maak een wachtwoord aan.</string>
     <string name="incorrect_passcode">Fout wachtwoord.</string>
     <string name="verify">Verifiëren</string>
@@ -582,8 +582,8 @@ Indien je deze functie wilt gebruiken, kan je een wachtwoord instellen in <i>Gea
     <string name="dashclock_description">Ongelezen SMS/MMS informatie</string>
     <string name="default_text">Standaard</string>
     <string name="did_you_know">Wist je dat?</string>
-    <string name="use_from_anywhere">Pulse kan gebruikt worden om vanaf elk toestel met internet te SMS\'en!</string>
-    <string name="use_from_anywhere_short">Pulse kan gebruikt worden op elk toestel!</string>
+    <string name="use_from_anywhere">Heart kan gebruikt worden om vanaf elk toestel met internet te SMS\'en!</string>
+    <string name="use_from_anywhere_short">Heart kan gebruikt worden op elk toestel!</string>
     <string name="learn_more">Kom meer te weten</string>
     <string name="dismiss">Negeren</string>
     <string name="renew">Hernieuwen</string>
@@ -604,8 +604,8 @@ Gebruik het standaard kanaal om meldingen weer te geven voor conversaties die je
     <string name="channels_global_warning_3">Met Android Oreo kunnen sommige van de bovenstaande opties je doorsturen naar de <i>meldingskanalen</i> van het systeem. Als je meer wilt weten over de werking hiervan, neem dan een kijkje op de Hulp-pagina.</string>
     <string name="off">Uit</string>
     <string name="on">Aan</string>
-    <string name="share_promo">Hey, I am loving Pulse for texting! Give it a try:
-https://play.google.com/store/apps/details?id=xyz.klinker.messenger</string>
+    <string name="share_promo">Hey, I am loving Heart for texting! Give it a try:
+https://play.google.com/store/apps/details?id=xyz.heart.sms</string>
     <string name="verifying_password">Wachtwoord verifiëren...</string>
     <!-- Rate it -->
     <string name="rate_it">Rate it!</string>
@@ -613,7 +613,7 @@ https://play.google.com/store/apps/details?id=xyz.klinker.messenger</string>
     <string name="rate_it_summary"><b>5-sterren beoordelingen</b> helpen enorm veel aan de populariteit van de app
 en de weergave in de Play Store. Als je de app wil zien groeien, help me hiermee!</string>
     <string name="rate_it_not_ready">Nog niet klaar om jouw beoordeling achter te laten? Sluit dit venster en we vragen je er niet meer achter.</string>
-    <string name="love_pulse_question">Hou je van Pulse?</string>
+    <string name="love_heart_question">Hou je van Heart?</string>
     <string name="give_a_rating">Overweeg om een waardering te plaatsen of te delen met vrienden!\n\nJouw 5-sterren reviews verwarmen mijn hart.</string>
     <!-- Times -->
     <string name="one_second">Eén second</string>
@@ -654,13 +654,13 @@ Indien je geen nieuw abonnement afsluit binnen de 2 dagen, zal je automatisch wo
     <string name="monthly_purchase_summary">Wil je juist proberen? Geen probleem.</string>
     <string name="change_subscription_message">Wil je upgraden? Super! Nadat je je selectie hebt aangepast in het volgende scherm, dien je naar de Play Store te gaan en annuleer je het oude abonnement manueel. Dit gebeurt <b>niet</b> automatisch.</string>
     <string name="beautiful_powerful_instant">Welkom in een moderne wereld.</string>
-    <string name="optimized_for_all_your_devices">Pulse is geoptimaliseerd voor <b>al</b> jouw toestellen.
+    <string name="optimized_for_all_your_devices">Heart is geoptimaliseerd voor <b>al</b> jouw toestellen.
 Verstuur berichten via het web, desktop pc, je tablet, je smartwatch en zelfs je televisie.</string>
     <string name="true_imessage_competitor">Het eerste <b>echte</b> iMessage alternatief voor Android.</string>
-    <string name="trial_description">Geen enkele andere app kan tippen aan de <b>eindeloze platformondersteuning</b> en <b>lage prijs</b> van Pulse. Synchroniseer berichten direct en naadloos tussen al je toestellen.</string>
+    <string name="trial_description">Geen enkele andere app kan tippen aan de <b>eindeloze platformondersteuning</b> en <b>lage prijs</b> van Heart. Synchroniseer berichten direct en naadloos tussen al je toestellen.</string>
     <string name="purchase_description">Geef de online versie een kans. Je kunt <b>7 dagen</b> lang alles uittesten. Daarna kan je beslissen om een abonnement af te sluiten:\n\n<b>$10.99</b> voor een levenslang abonnement\n<b>$5.99</b> per jaar\n<b>$1.99</b> per 3 maanden\n<b>$0.99</b> per maand</string>
     <string name="start_free_trial">Begin je proefperiode nu!</string>
-    <string name="create_your_pulse_account">Creëer een Pulse-account!</string>
+    <string name="create_your_heart_account">Creëer een Heart-account!</string>
     <string name="try_it">Probeer nu!</string>
     <string name="select_purchase">Kies een aankoop</string>
     <string name="have_an_account">Heb je een account?\nInloggen</string>

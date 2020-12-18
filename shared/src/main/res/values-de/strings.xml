@@ -15,9 +15,9 @@
   ~ limitations under the License.
   -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Pulse</string>
-    <string name="app_name_long">Pulse (SMS/Tablet Messenger)</string>
-    <string name="app_title">Pulse</string>
+    <string name="app_name">Heart</string>
+    <string name="app_name_long">Heart (SMS/Tablet Messenger)</string>
+    <string name="app_title">Heart</string>
     <!-- Launcher Shortcuts -->
     <string name="shortcut_compose_short">Neue Nachricht</string>
     <string name="shortcut_compose_long">Starten Sie eine neue Unterhaltung!</string>
@@ -87,16 +87,16 @@
     </plurals>
     <string name="undo">Rückgängig</string>
     <string name="enter_search">Suche nach...</string>
-    <string name="text_anywhere_description">Wussten Sie schon: Pulse ist weit mehr als nur eine App auf dem Smartphone.
-Sie können mit Pulse SMS von <b>jedem</b> Gerät senden!</string>
+    <string name="text_anywhere_description">Wussten Sie schon: Heart ist weit mehr als nur eine App auf dem Smartphone.
+Sie können mit Heart SMS von <b>jedem</b> Gerät senden!</string>
     <string name="convo_list_try_it">Versuchen Sie es!</string>
     <string name="convo_list_not_now">Nicht jetzt</string>
     <!-- Search Screen -->
     <string name="conversations">Unterhaltungen</string>
     <string name="messages">Nachrichten</string>
     <!-- Invite Friends Screen -->
-    <string name="invite_friends_title">Lieben Sie Pulse?</string>
-    <string name="invite_friends_summary">Wir lieben es auch, und auch andere werden es lieben! Wir versuchen, unsere App in so viele Hände wie möglich zu bekommen, um auch weiterhin das bestmögliche Produkt für Sie entwickeln zu können. Indem Sie Ihre Freunde einladen, helfen Sie uns dabei! \n\nWählen Sie unten die Freunde, die Sie über Pulse informieren möchten, und Pulse wird ihnen eine SMS mit einer kurzen Beschreibung und einem Download-Link schicken.</string>
+    <string name="invite_friends_title">Lieben Sie Heart?</string>
+    <string name="invite_friends_summary">Wir lieben es auch, und auch andere werden es lieben! Wir versuchen, unsere App in so viele Hände wie möglich zu bekommen, um auch weiterhin das bestmögliche Produkt für Sie entwickeln zu können. Indem Sie Ihre Freunde einladen, helfen Sie uns dabei! \n\nWählen Sie unten die Freunde, die Sie über Heart informieren möchten, und Heart wird ihnen eine SMS mit einer kurzen Beschreibung und einem Download-Link schicken.</string>
     <string name="invite_friends_sms">Ich habe angefangen, eine tolle neue SMS-App zu nutzen, und sie könnte dir auch gefallen! Und das beste: Sie ist kostenlos! Wenn du sie ausprobieren möchtest, lade sie doch einfach herunter unter: http://messenger.klinkerapps.com</string>
     <!-- Message List Screen -->
     <string name="type_message">Nachricht eingeben</string>
@@ -180,9 +180,9 @@ Sie können mit Pulse SMS von <b>jedem</b> Gerät senden!</string>
     <string name="onboarding_title_2">Überall verfügbar</string>
     <string name="onboarding_title_3">Vielfältige Personalisierung</string>
     <string name="onboarding_content_1">Weiche, intuitive Layouts mit einem kraftvollen Design und nahtloser Integration.
-Pulse stellt Ihre Unterhaltungen in den Mittelpunkt.</string>
+Heart stellt Ihre Unterhaltungen in den Mittelpunkt.</string>
     <string name="onboarding_content_2">Nutzen Sie SMS von Ihrem Tablet, Computer, Ihrer Smart Watch, oder jedem anderen vernetzten Gerät.</string>
-    <string name="onboarding_content_3">Personalisieren Sie die Benachrichtigungen für jeden Kontakt einzeln, oder stellen Sie sie einfach ab. Machen Sie Pulse zu Ihrem!</string>
+    <string name="onboarding_content_3">Personalisieren Sie die Benachrichtigungen für jeden Kontakt einzeln, oder stellen Sie sie einfach ab. Machen Sie Heart zu Ihrem!</string>
     <string name="message_anywhere_onboarding_title_1">SMS überall</string>
     <string name="message_anywhere_onboarding_title_2">Zahlung als Abo oder einmalig lebenslang</string>
     <string name="message_anywhere_onboarding_title_3">7 Tage Testzeitraum</string>
@@ -239,7 +239,7 @@ Pulse stellt Ihre Unterhaltungen in den Mittelpunkt.</string>
     <string name="receiving_a_message">Empfange eine Nachricht...</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Letzte Änderungen</string>
-    <string name="copyright">© 2017 Luke &amp; Jake Klinker</string>
+    <string name="copyright">© 2017 Luke &amp; Jake heart</string>
     <string name="copyright_summary">Open-Source-Lizenzinformation ansehen</string>
     <string name="app_version">App Version</string>
     <string name="account_information">Accountinformationen</string>
@@ -259,15 +259,15 @@ Pulse stellt Ihre Unterhaltungen in den Mittelpunkt.</string>
     <string name="get_help">Hilfe erhalten</string>
     <string name="get_help_summary">Sie haben eine Frage? Als Ein-Mann-Team beantworte ich täglich eine unglaubliche Menge an E-Mails, was mich viel Zeit kostet, die ich lieber in die Entwicklung neuer Features stecken würde. Es würde mir sehr helfen, wenn Sie einfach hier kurz suchen würden, ob Ihre Frage möglicherweise bereits beantwortet wurde.</string>
     <string name="get_help_summary_2">Der Hilfe-Bereich ist sehr ausführlich. Sollten Sie trotzdem keine Antwort auf Ihre spezifische Frage finden, dann schreiben Sie mir gerne. Ich werde mich dann mit Ihnen in Verbindung setzen.</string>
-    <string name="features">Die Features von Pulse</string>
+    <string name="features">Die Features von Heart</string>
     <string name="issues">Issue Tracker</string>
     <string name="issues_summary">Dient auch für die Planung neuer Funktionen</string>
     <string name="google_plus">Google+</string>
-    <string name="google_plus_summary">Pulse Beta Community</string>
+    <string name="google_plus_summary">Heart Beta Community</string>
     <string name="email">E-Mail</string>
     <string name="email_summary">pulsesmsapp@gmail.com</string>
     <string name="twitter">Twitter</string>
-    <string name="twitter_summary">\@PulseSMS</string>
+    <string name="twitter_summary">\@HeartSMS</string>
     <string name="support">Support</string>
     <plurals name="message_count">
         <item quantity="one">%1$d Nachricht</item>
@@ -412,7 +412,7 @@ Nach dem Beenden müssen Sie sich in allen anderen Geräten neu einloggen. Fortf
     <string name="user_agent_profile_tag">User Agent Profil Tag-Name</string>
     <!-- Advanced Features Settings -->
     <string name="signature">Signatur</string>
-    <string name="signature_summary">ACHTUNG: Signaturen an gesendeten Nachrichten werden NICHT in der Nachrichtenliste von Pulse angezeigt. Nur die Empfänger werden die Signaturen sehen.</string>
+    <string name="signature_summary">ACHTUNG: Signaturen an gesendeten Nachrichten werden NICHT in der Nachrichtenliste von Heart angezeigt. Nur die Empfänger werden die Signaturen sehen.</string>
     <string name="cleanup_old_messages">Alte Nachrichten löschen</string>
     <string name="delayed_sending">Verzögertes Senden</string>
     <string name="quick_compose">Schnell Verfassen</string>
@@ -453,9 +453,9 @@ Nach dem Beenden müssen Sie sich in allen anderen Geräten neu einloggen. Fortf
     <string name="dashclock_description">Ungelesene SMS/MMS Information</string>
     <string name="default_text">Standard</string>
     <string name="did_you_know">Wussten Sie schon?</string>
-    <string name="use_from_anywhere">Pulse kann auf jedem Gerät mit Internetverbindung genutzt werden -
+    <string name="use_from_anywhere">Heart kann auf jedem Gerät mit Internetverbindung genutzt werden -
 jetzt ausprobieren!</string>
-    <string name="use_from_anywhere_short">Pulse kann von jedem Ihrer Geräte aus genutzt werden!</string>
+    <string name="use_from_anywhere_short">Heart kann von jedem Ihrer Geräte aus genutzt werden!</string>
     <string name="learn_more">Mehr erfahren</string>
     <string name="dismiss">Verwerfen</string>
     <string name="renew">Erneuern</string>
@@ -473,12 +473,12 @@ jetzt ausprobieren!</string>
     <string name="channels_global_warning_2">Die Android <i>Benachrichtigungskanäle</i> sind nun für die meisten Einstellungen notwendig.\n\nSie können jede Unterhaltung einzeln konfigurieren, indem Sie einen <i>Benachrichtigungskanal</i> im Einstellungsmenü der jeweiligen Unterhaltung erstellen. Nutzen Sie den Standard-Kanal für die Konfiguration aller Unterhaltungen, für die sie keinen individuellen Kanal erstellt haben.</string>
     <string name="off">Aus</string>
     <string name="on">Ein</string>
-    <string name="share_promo">Hey, ich liebe diese tolle neue SMS-App: Pulse! Probier sie jetzt aus: https://play.google.com/store/apps/details?id=xyz.klinker.messenger</string>
+    <string name="share_promo">Hey, ich liebe diese tolle neue SMS-App: Heart! Probier sie jetzt aus: https://play.google.com/store/apps/details?id=xyz.heart.sms</string>
     <string name="verifying_password">Prüfe Passwort...</string>
     <!-- Rate it -->
     <string name="rate_it">Jetzt bewerten!</string>
-    <string name="love_pulse_question">Gefällt Ihnen Pulse?</string>
-    <string name="give_a_rating">Erzählen Sie Ihren Freunden von Pulse, oder hinterlassen Sie eine Bewertung!\n\n
+    <string name="love_heart_question">Gefällt Ihnen Heart?</string>
+    <string name="give_a_rating">Erzählen Sie Ihren Freunden von Heart, oder hinterlassen Sie eine Bewertung!\n\n
 Ich würde mich sehr über eine 5-Sterne-Bewertung freuen! :)</string>
     <!-- Times -->
     <string name="one_second">Eine Sekunde</string>
@@ -516,7 +516,7 @@ Wenn Sie innerhalb von zwei Tagen kein neues Abo abschließen, werden Sie aus Ih
     <string name="monthly_purchase_summary">Nur ausprobieren? Kein Problem!</string>
     <string name="change_subscription_message">Sie möchten upgraden? Super! Nachdem Sie auf der nächsten Seite Ihre Auswahl getroffen haben sollten Sie die Play Store-App öffnen und das Abo manuell kündigen.</string>
     <string name="beautiful_powerful_instant">Schön, vielseitig, schnell.</string>
-    <string name="optimized_for_all_your_devices">Pulse ist für <b>alle</b> Ihre Geräte optimiert.
+    <string name="optimized_for_all_your_devices">Heart ist für <b>alle</b> Ihre Geräte optimiert.
 Senden Sie Textnachrichten aus dem Web, von Ihrem PC, Ihrem Tablet, Ihrer Uhr und sogar Ihrem Fernseher.</string>
     <string name="true_imessage_competitor">Die erste <b>echte</b> Alternative zu iMessage unter Android.</string>
     <string name="try_it">Probieren Sie es jetzt aus!</string>

@@ -15,9 +15,9 @@
   ~ limitations under the License.
   -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Pulse</string>
-    <string name="app_name_long">Pulse (SMS/Tabletti viestintä)</string>
-    <string name="app_title">Pulse</string>
+    <string name="app_name">Heart</string>
+    <string name="app_name_long">Heart (SMS/Tabletti viestintä)</string>
+    <string name="app_title">Heart</string>
     <!-- Launcher Shortcuts -->
     <string name="shortcut_compose_short">Uusi viesti</string>
     <string name="shortcut_compose_long">Aloita uusi keskustelu!</string>
@@ -87,7 +87,7 @@
     <string name="conversations">Keskustelut</string>
     <string name="messages">Viestit</string>
     <!-- Invite Friends Screen -->
-    <string name="invite_friends_title">Rakastatko Pulsea?</string>
+    <string name="invite_friends_title">Rakastatko Hearta?</string>
     <!-- Message List Screen -->
     <string name="type_message">Kirjoita viesti</string>
     <string name="type_message_to">Kirjoita viesti vastaanottajalle %1$s</string>

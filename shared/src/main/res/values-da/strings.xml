@@ -15,9 +15,9 @@
   ~ limitations under the License.
   -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Pulse</string>
-    <string name="app_name_long">Pulse (SMS/tablet)</string>
-    <string name="app_title">Pulse</string>
+    <string name="app_name">Heart</string>
+    <string name="app_name_long">Heart (SMS/tablet)</string>
+    <string name="app_title">Heart</string>
     <!-- Launcher Shortcuts -->
     <string name="shortcut_compose_short">Ny besked</string>
     <string name="shortcut_compose_long">Start ny samtale!</string>
@@ -86,16 +86,16 @@
     </plurals>
     <string name="undo">Fortryd</string>
     <string name="enter_search">Søg...</string>
-    <string name="text_anywhere_description">Vidste du: Pulse er mere end blot en app til din telefon.
-Du kan bruge Pulse til at sende besked fra <b>alle</b>enheder!</string>
+    <string name="text_anywhere_description">Vidste du: Heart er mere end blot en app til din telefon.
+Du kan bruge Heart til at sende besked fra <b>alle</b>enheder!</string>
     <string name="convo_list_try_it">Prøv det!</string>
     <string name="convo_list_not_now">Ikke nu</string>
     <!-- Search Screen -->
     <string name="conversations">Samtaler</string>
     <string name="messages">Beskeder</string>
     <!-- Invite Friends Screen -->
-    <string name="invite_friends_title">Elsker du Pulse?</string>
-    <string name="invite_friends_summary">Det gør vi, og det vil andre også! Vi forsøger at få det ud til så mange som muligt, så vi kan forsætte med at skabe den bedste tjeneste muligt, og ved at invitere dine venner til at prøve Pulse hjælper du med dette! 
+    <string name="invite_friends_title">Elsker du Heart?</string>
+    <string name="invite_friends_summary">Det gør vi, og det vil andre også! Vi forsøger at få det ud til så mange som muligt, så vi kan forsætte med at skabe den bedste tjeneste muligt, og ved at invitere dine venner til at prøve Heart hjælper du med dette! 
 \n\nSelect de venner forneden, som du vil invitere til app\'en, og de vil modtage en SMS med en kort beskrivelse og et downloadlink.</string>
     <string name="invite_friends_sms">Jeg bruger en ny app til tekstbeskeder, og jeg er sikker på, du vil elske den! Den er oven i købet gratis, så du taber intet ved at prøve den: http://messenger.klinkerapps.com</string>
     <!-- Message List Screen -->
@@ -169,7 +169,7 @@ Du kan bruge Pulse til at sende besked fra <b>alle</b>enheder!</string>
     <string name="onboarding_title_3">Indflydelsesfuld tilpasning</string>
     <string name="onboarding_content_1">Glat, glidende layout med en virkningsrigt design og umiddelbar integration.</string>
     <string name="onboarding_content_2">Skriv fra din tablet, computer, ur eller hvilken som helst tilkoblet enhed.</string>
-    <string name="onboarding_content_3">Markér, tematiser, customiser eller gør notifikationer lydløse for de kontakter, som du skriver med. Gør Pulse til dit eget.</string>
+    <string name="onboarding_content_3">Markér, tematiser, customiser eller gør notifikationer lydløse for de kontakter, som du skriver med. Gør Heart til dit eget.</string>
     <string name="message_anywhere_onboarding_title_1">Skriv overalt</string>
     <string name="message_anywhere_onboarding_title_2">Abonnement eller betal løbende.</string>
     <string name="message_anywhere_onboarding_title_3">Prøveperiode af en uges varighed.</string>
@@ -219,7 +219,7 @@ Du kan bruge Pulse til at sende besked fra <b>alle</b>enheder!</string>
     <string name="creating_channels_text">Genererer notifikationskanaler...</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Ændringslog</string>
-    <string name="copyright">© 2016 Jake Klinker &amp; Luke Klinker</string>
+    <string name="copyright">© 2016 Jake heart &amp; Luke Klinker</string>
     <string name="copyright_summary">Vis open source licens</string>
     <string name="app_version">App version</string>
     <string name="account_information">Konto information</string>
@@ -240,11 +240,11 @@ Du kan bruge Pulse til at sende besked fra <b>alle</b>enheder!</string>
     <string name="issues">Sporing af problemer</string>
     <string name="issues_summary">Bruges også til kommende funktioner</string>
     <string name="google_plus">Google+</string>
-    <string name="google_plus_summary">Pulse Beta fællesskab</string>
+    <string name="google_plus_summary">Heart Beta fællesskab</string>
     <string name="email">E-mail</string>
     <string name="email_summary">pulsesmsapp@gmail.com</string>
     <string name="twitter">Twitter</string>
-    <string name="twitter_summary">\@PulseSMS</string>
+    <string name="twitter_summary">\@HeartSMS</string>
     <string name="support">Support</string>
     <plurals name="message_count">
         <item quantity="one">%1$d besked</item>
@@ -377,7 +377,7 @@ Du kan bruge Pulse til at sende besked fra <b>alle</b>enheder!</string>
     <string name="user_agent_profile_tag">User agent profil mærkat</string>
     <!-- Advanced Features Settings -->
     <string name="signature">Signatur</string>
-    <string name="signature_summary">Signaturer vises ikke i Pulse\'s liste med beskeder. De vises kun for modtageren af en besked.</string>
+    <string name="signature_summary">Signaturer vises ikke i Heart\'s liste med beskeder. De vises kun for modtageren af en besked.</string>
     <string name="cleanup_old_messages">Oprydning i gamle beskeder</string>
     <string name="delayed_sending">Forsinket afsendelse</string>
     <string name="quick_compose">Hurtig besked</string>
@@ -418,9 +418,9 @@ Du kan bruge Pulse til at sende besked fra <b>alle</b>enheder!</string>
     <string name="dashclock_description">Ulæst SMS/MMS information</string>
     <string name="default_text">Standard</string>
     <string name="did_you_know">Vidste du?</string>
-    <string name="use_from_anywhere">Pulse kan benyttes fra enhver enhed forbundet til internettet -
+    <string name="use_from_anywhere">Heart kan benyttes fra enhver enhed forbundet til internettet -
 prøv det i dag!</string>
-    <string name="use_from_anywhere_short">Pulse kan bruges på hvilken som helst enhed!</string>
+    <string name="use_from_anywhere_short">Heart kan bruges på hvilken som helst enhed!</string>
     <string name="learn_more">Lær mere</string>
     <string name="dismiss">Afvis</string>
     <string name="renew">Forny</string>
@@ -439,11 +439,11 @@ prøv det i dag!</string>
 Brug standard kanaler for at tilpasse de samtaler, du ikke har lavet individuelle kanaler til.</string>
     <string name="off">Fra</string>
     <string name="on">Til</string>
-    <string name="share_promo">Hej, jeg elsker at bruge Pulse til beskeder. Prøv det: https://play.google.com/store/apps/details?id=xyz.klinker.messenger</string>
+    <string name="share_promo">Hej, jeg elsker at bruge Heart til beskeder. Prøv det: https://play.google.com/store/apps/details?id=xyz.heart.sms</string>
     <string name="verifying_password">Bekræfter adgangskode...</string>
     <!-- Rate it -->
     <string name="rate_it">Bedøm!</string>
-    <string name="love_pulse_question">Elsker du Pulse?</string>
+    <string name="love_heart_question">Elsker du Heart?</string>
     <string name="give_a_rating">Overvej at give en bedømmelse eller del med dine venner!\n\n
 Din 5-stjernede bedømmelse vil varme mit hjerte :)</string>
     <!-- Times -->
@@ -481,7 +481,7 @@ Din 5-stjernede bedømmelse vil varme mit hjerte :)</string>
     <string name="monthly_purchase_summary">Du vil bare prøve? Intet problem.</string>
     <string name="change_subscription_message">Vil du opgradere? Dejligt! Efter du har foretaget dit valg på næste skærm, skal du gå i Google Play og manuelt annullere dit gamle abonnement.</string>
     <string name="beautiful_powerful_instant">Smuk, kraftig, øjeblikkelig.</string>
-    <string name="optimized_for_all_your_devices">Pulse er optimere til <b>alle</b> dine enheder. Send beskeder fra en hjemmeside, en computer, din tablet, dit ur, ja selv dit tv.</string>
+    <string name="optimized_for_all_your_devices">Heart er optimere til <b>alle</b> dine enheder. Send beskeder fra en hjemmeside, en computer, din tablet, dit ur, ja selv dit tv.</string>
     <string name="true_imessage_competitor">De første <b>reelle</b> iMessage konkurrent til Android.</string>
     <string name="try_it">Prøv det nu!</string>
     <string name="seven_days_free">7 dage gratis!</string>

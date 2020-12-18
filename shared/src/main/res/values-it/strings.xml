@@ -15,9 +15,9 @@
   ~ limitations under the License.
   -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Pulse</string>
-    <string name="app_name_long">Pulse (SMS/Tablet Messenger)</string>
-    <string name="app_title">Pulse</string>
+    <string name="app_name">Heart</string>
+    <string name="app_name_long">Heart (SMS/Tablet Messenger)</string>
+    <string name="app_title">Heart</string>
     <!-- Launcher Shortcuts -->
     <string name="shortcut_compose_short">Nuovo Messaggio</string>
     <string name="shortcut_compose_long">Inizia una nuova conversazione!</string>
@@ -102,7 +102,7 @@
     <string name="conversations">Conversazioni</string>
     <string name="messages">Messaggi</string>
     <!-- Invite Friends Screen -->
-    <string name="invite_friends_title">Ti piace Pulse?</string>
+    <string name="invite_friends_title">Ti piace Heart?</string>
     <string name="invite_friends_summary">So do we and so will others! We\'re trying to get it in
 as many hands as we can to continue making it the best product that it can be and by
 inviting your friends to try, you\'re helping with this! \n\nseleziona gli amici ai quali ti piacerebbe inviare l\'app ed a loro sarà inviato un sms con una breve descrizione ed il link per il download!</string>
@@ -189,10 +189,10 @@ http://messenger.klinkerapps.com</string>
     <string name="onboarding_title_2">Disponibile ovunque</string>
     <string name="onboarding_title_3">Potente capacità di personalizzazione</string>
     <string name="onboarding_content_1">Interfaccia veloce e fluida con design perfetto e perfetta integrazione.
-Pulse mette al centro di tutto le tue conversazioni.</string>
+Heart mette al centro di tutto le tue conversazioni.</string>
     <string name="onboarding_content_2">Messaggia dal tuo tablet, computer, orologio, o qualsiasi altro dispositivo connesso.</string>
     <string name="onboarding_content_3">Fissa, silenzia, applica temi e personalizza  le notifiche
-per ogni contatto col quale messaggi. Fai tuo Pulse.</string>
+per ogni contatto col quale messaggi. Fai tuo Heart.</string>
     <string name="message_anywhere_onboarding_title_1">Invia messaggi da qualsiasi luogo</string>
     <string name="message_anywhere_onboarding_title_2">Sottoscrizione o Pagamento Unico</string>
     <string name="message_anywhere_onboarding_title_3">Periodo di prova di una settimana</string>
@@ -235,7 +235,7 @@ per ogni contatto col quale messaggi. Fai tuo Pulse.</string>
     <string name="test_notifications_channel">Prova le notifiche</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Changelog</string>
-    <string name="copyright">© 2018 Luke &amp; Jake Klinker</string>
+    <string name="copyright">© 2018 Luke &amp; Jake heart</string>
     <string name="copyright_summary">Guarda info sulla licenza open source</string>
     <string name="app_version">Versione App</string>
     <string name="account_information">Info Account</string>
@@ -249,11 +249,11 @@ per ogni contatto col quale messaggi. Fai tuo Pulse.</string>
     <string name="issues">Issue Tracker</string>
     <string name="issues_summary">Serve anche come futura roadmap</string>
     <string name="google_plus">Google+</string>
-    <string name="google_plus_summary">Pulse Beta Community</string>
+    <string name="google_plus_summary">Heart Beta Community</string>
     <string name="email">Email</string>
     <string name="email_summary">pulsesmsapp@gmail.com</string>
     <string name="twitter">Twitter</string>
-    <string name="twitter_summary">\@PulseSMS</string>
+    <string name="twitter_summary">\@HeartSMS</string>
     <string name="support">Supporto</string>
     <plurals name="message_count">
         <item quantity="one">%1$d messaggio</item>
@@ -358,7 +358,7 @@ con ciò che è sul dispositivo principale.</string>
     <string name="secure_private_conversations_summary">E\' neccessario un PIN per sbloccare le conversazioni private.</string>
     <string name="use_smart_reply_settings">Impostazioni</string>
     <string name="message_backup">Backup messaggi</string>
-    <string name="message_backup_pref_summary">Preoccupato di perdere i tuoi messaggi? Ci pensa Pulse</string>
+    <string name="message_backup_pref_summary">Preoccupato di perdere i tuoi messaggi? Ci pensa Heart</string>
     <string name="folders_title">Cartelle</string>
     <string name="create">Crea</string>
     <string name="create_folder">Crea una nuova cartella</string>
@@ -405,9 +405,9 @@ a %1$s?</string>
     <string name="dashclock_description">Info sugli SMS/MMS non letti</string>
     <string name="default_text">Default</string>
     <string name="did_you_know">Lo sai?</string>
-    <string name="use_from_anywhere">Pulse può essere usato da ogni dispositivo connesso a internet -
+    <string name="use_from_anywhere">Heart può essere usato da ogni dispositivo connesso a internet -
 provalo oggi!</string>
-    <string name="use_from_anywhere_short">Pulse può essere usato su ciascuno dei tuoi dispositivi!</string>
+    <string name="use_from_anywhere_short">Heart può essere usato su ciascuno dei tuoi dispositivi!</string>
     <string name="learn_more">Per saperne di più</string>
     <string name="dismiss">Scarta</string>
     <string name="renew">Rinnova</string>

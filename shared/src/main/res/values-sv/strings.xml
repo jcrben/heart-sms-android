@@ -15,9 +15,9 @@
   ~ limitations under the License.
   -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Pulse</string>
-    <string name="app_name_long">Pulse (SMS/Tablet Messenger)</string>
-    <string name="app_title">Pulse</string>
+    <string name="app_name">Heart</string>
+    <string name="app_name_long">Heart (SMS/Tablet Messenger)</string>
+    <string name="app_title">Heart</string>
     <!-- Launcher Shortcuts -->
     <string name="shortcut_compose_short">Nytt meddelande</string>
     <string name="shortcut_compose_long">Starta en ny konversation!</string>
@@ -95,7 +95,7 @@
     </plurals>
     <string name="undo">Ångra</string>
     <string name="enter_search">Sök efter...</string>
-    <string name="text_anywhere_description">Visste du att: Pulse är betydligt mer än bara en app i telefonen. Du kan använda Pulse för att skicka sms från <b>alla</b> enheter!</string>
+    <string name="text_anywhere_description">Visste du att: Heart är betydligt mer än bara en app i telefonen. Du kan använda Heart för att skicka sms från <b>alla</b> enheter!</string>
     <string name="convo_list_try_it">Prova nu!</string>
     <string name="convo_list_not_now">Inte nu</string>
     <string name="no_private_messages_description">Ställ in privata konversationer i deras inställningar!</string>
@@ -105,7 +105,7 @@
     <string name="conversations">Konversationer</string>
     <string name="messages">Meddelanden</string>
     <!-- Invite Friends Screen -->
-    <string name="invite_friends_title">Älskar du Pulse?</string>
+    <string name="invite_friends_title">Älskar du Heart?</string>
     <string name="invite_friends_summary">Det gör vi och det kommer andra också göra! Vi försöker få så många användare som möjligt för att kunna fortsätta utveckla den bästa produkten och genom
 att bjuda in dina vänner att prova appen hjälper du till! \n\nVälj vänner nedan som
 du vill ska prova appen och de får då ett SMS med en kort beskrivning om appen och
@@ -199,7 +199,7 @@ att du kommer gilla den! Dessutom är den gratis, testa: http://messenger.klinke
     <string name="onboarding_title_3">Kraftfulla anpassningsmöjligheter</string>
     <string name="onboarding_content_1">Ett mjukt, flytande upplägg med en kraftfull design och sömlös integration</string>
     <string name="onboarding_content_2">Meddelande från din platta, dator, klocka eller annan ansluten enhet.</string>
-    <string name="onboarding_content_3">Fäst, tysta, tema och anpassa notiser för valfria kontakter du skriver med. Gör Pulse din egen.</string>
+    <string name="onboarding_content_3">Fäst, tysta, tema och anpassa notiser för valfria kontakter du skriver med. Gör Heart din egen.</string>
     <string name="message_anywhere_onboarding_title_1">Meddelande Överallt</string>
     <string name="message_anywhere_onboarding_title_2">Prenumeration eller Engångsavgift</string>
     <string name="message_anywhere_onboarding_title_3">En veckas testperiod</string>
@@ -259,7 +259,7 @@ att du kommer gilla den! Dessutom är den gratis, testa: http://messenger.klinke
     <string name="receiving_a_message">Tar emot ett meddelande...</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Nyheter i appen</string>
-    <string name="copyright">© 2018 Luke &amp; Jake Klinker</string>
+    <string name="copyright">© 2018 Luke &amp; Jake heart</string>
     <string name="copyright_summary">Se information om licens för öppen källkod</string>
     <string name="app_version">Appversion</string>
     <string name="account_information">Kontoinformation</string>
@@ -269,7 +269,7 @@ att du kommer gilla den! Dessutom är den gratis, testa: http://messenger.klinke
     <string name="device_id">Enhets-ID</string>
     <string name="device_info">Enhetsinformation</string>
     <string name="website">Hemsida</string>
-    <string name="view_platforms">Tillgängliga plattformar för Pulse</string>
+    <string name="view_platforms">Tillgängliga plattformar för Heart</string>
     <string name="access_messages_from_any_device">Kom åt och skicka meddelanden på alla enheter!</string>
     <string name="beta_disclaimer">Det här projektet är fortfarande i betafas, rapportera gärna eventuella problem/buggar som du hittar!</string>
     <string name="app_info">Appinformation</string>
@@ -284,11 +284,11 @@ att du kommer gilla den! Dessutom är den gratis, testa: http://messenger.klinke
     <string name="issues">Problemsökning</string>
     <string name="issues_summary">Fungerar även som en framtida färdplan</string>
     <string name="google_plus">Google+</string>
-    <string name="google_plus_summary">Pulse beta-forum</string>
+    <string name="google_plus_summary">Heart beta-forum</string>
     <string name="email">Email</string>
     <string name="email_summary">pulsesmsapp@gmail.com</string>
     <string name="twitter">Twitter</string>
-    <string name="twitter_summary">\@PulseSMS</string>
+    <string name="twitter_summary">\@HeartSMS</string>
     <string name="support">Hjälp</string>
     <plurals name="message_count">
         <item quantity="one">%1$d meddelande</item>
@@ -393,8 +393,8 @@ det medför? Du kan alltid registrera dig igen senare!</string>
     <string name="trial_subscription_title">Du har %s dagar kvar av provversionen</string>
     <string name="trial_subscription_summary">Tryck här för att uppgradera eller avbryta provversionen</string>
     <string name="upgrade_or_cancel_title">Klar med provversionen?</string>
-    <string name="trial_expired">Tack för att du provade Pulse!</string>
-    <string name="upgrade_or_cancel">Du kan uppgradera ditt konto till en prenumeration eller livstidsmedlemskap för att fortsätta använda Pulse på alla dina enheter! \n\nVill du avbryta?
+    <string name="trial_expired">Tack för att du provade Heart!</string>
+    <string name="upgrade_or_cancel">Du kan uppgradera ditt konto till en prenumeration eller livstidsmedlemskap för att fortsätta använda Heart på alla dina enheter! \n\nVill du avbryta?
 Ditt konto kommer att tas bort och du kommer inte att debiteras. Du kan fortsätta använda appen på din telefon gratis! Kom tillbaka när som helst.</string>
     <string name="upgrade">Uppgradera!</string>
     <string name="cancel_trial">Avbryt provversionen</string>
@@ -444,7 +444,7 @@ Ditt konto kommer att tas bort och du kommer inte att debiteras. Du kan fortsät
     <string name="emoji_style_android_o">Google Android Oreo</string>
     <string name="settings_phone_number">Telefonnummer</string>
     <string name="disable_battery_optimization">Inaktivera batterioptimering</string>
-    <string name="disable_battery_optimization_summary">Om meddelanden inte syncar från din telefon till webben, prova att stänga av batterioptimering för Pulse.</string>
+    <string name="disable_battery_optimization_summary">Om meddelanden inte syncar från din telefon till webben, prova att stänga av batterioptimering för Heart.</string>
     <!-- MMS Configuration Settings -->
     <string name="max_mms_size">Max bildstorlek</string>
     <string name="max_mms_size_summary">Använd inte ett högre värde än vad din operatör tillåter</string>
@@ -463,7 +463,7 @@ Ditt konto kommer att tas bort och du kommer inte att debiteras. Du kan fortsät
     <string name="user_agent_profile_tag">User Agent Profile Tag Name</string>
     <!-- Advanced Features Settings -->
     <string name="signature">Signatur</string>
-    <string name="signature_summary">Signaturer kommer inte att visas i Pulse meddelandelista, de kommer endast visas för mottagaren av meddelandet</string>
+    <string name="signature_summary">Signaturer kommer inte att visas i Heart meddelandelista, de kommer endast visas för mottagaren av meddelandet</string>
     <string name="cleanup_old_messages">Rensa gamla meddelanden</string>
     <string name="cleanup_old_messages_summary">Det här valet kör en gång per dag för att ta bort meddelanden äldre än din valda tidsperiod</string>
     <string name="cleanup_old_messages_now_summary">Det här valet kör omedelbart för att ta bort meddelanden i den här konversationen som är äldre än din valda tidsperiod</string>
@@ -482,10 +482,10 @@ Ditt konto kommer att tas bort och du kommer inte att debiteras. Du kan fortsät
     <string name="use_internal_browser">Använd intern webbläsare</string>
     <string name="internal_browser_summary">Om du inaktiverar detta kommer också förhandsvisning av länkar att sluta fungera i meddelanden</string>
     <string name="message_backup">Säkerhetskopia av meddelande</string>
-    <string name="message_backup_pref_summary">Orolig för att förlora dina meddelanden? Pulse tar hand om dig</string>
-    <string name="message_backup_summary">Visste du att: Pulse onlinetjänst är uppbyggd kring att säkerhetskopiera dina meddelanden. När du registrerar dig för ett Pulse-konto så kan du logga in på kontot från vilket enhet som helst för att återställa dina meddelanden, automatiskt! Inget krångel och inget besvär med manuella säkerhetskopior. Med Pulse är allt smidigt, enkelt och helt automatiskt.</string>
-    <string name="message_backup_summary_have_account">Det verkar som att du redan har ett Pulse-konto, fantastiskt!
-Med ditt konto kommer Pulse automatiskt säkerhetskopiera alla meddelanden som du skickar och tar emot. När du tittar på appen på en av dina andra enheter tittar du faktiskt på säkerhetskopian. För att återställa meddelanden på en ny enhet behöver du bara logga in på ditt konto.</string>
+    <string name="message_backup_pref_summary">Orolig för att förlora dina meddelanden? Heart tar hand om dig</string>
+    <string name="message_backup_summary">Visste du att: Heart onlinetjänst är uppbyggd kring att säkerhetskopiera dina meddelanden. När du registrerar dig för ett Heart-konto så kan du logga in på kontot från vilket enhet som helst för att återställa dina meddelanden, automatiskt! Inget krångel och inget besvär med manuella säkerhetskopior. Med Heart är allt smidigt, enkelt och helt automatiskt.</string>
+    <string name="message_backup_summary_have_account">Det verkar som att du redan har ett Heart-konto, fantastiskt!
+Med ditt konto kommer Heart automatiskt säkerhetskopiera alla meddelanden som du skickar och tar emot. När du tittar på appen på en av dina andra enheter tittar du faktiskt på säkerhetskopian. För att återställa meddelanden på en ny enhet behöver du bara logga in på ditt konto.</string>
     <string name="auto_reply_configuration">Autosvar-inställning</string>
     <string name="auto_reply_configuration_summary">Ställ in automatiska svar baserade på din situation</string>
     <string name="auto_replies">Autosvar</string>
@@ -544,7 +544,7 @@ Med ditt konto kommer Pulse automatiskt säkerhetskopiera alla meddelanden som d
     <string name="set_passcode">Spara lösenord</string>
     <string name="confirm_fingerprint">Bekräfta fingeravtryck för att fortsätta. Placera fingret på fingertryckssensorn nu.</string>
     <string name="confirm_passcode">Bekräfta lösenordet för att fortsätta.</string>
-    <string name="confirm_pulse_password">Bekräfta Pulse kontoinformation för att fortsätta.</string>
+    <string name="confirm_heart_password">Bekräfta Heart kontoinformation för att fortsätta.</string>
     <string name="type_passcode">Skapa ett lösenord.</string>
     <string name="incorrect_passcode">Ogiltigt lösenord.</string>
     <string name="verify">Bekräfta</string>
@@ -554,8 +554,8 @@ Med ditt konto kommer Pulse automatiskt säkerhetskopiera alla meddelanden som d
     <string name="dashclock_description">Oläst SMS/MMS information</string>
     <string name="default_text">Standard</string>
     <string name="did_you_know">Visste du att?</string>
-    <string name="use_from_anywhere">Pulse kan användas från alla enheter som är ansluta till internet - prova det idag!</string>
-    <string name="use_from_anywhere_short">Pulse kan användas på alla dina enheter!</string>
+    <string name="use_from_anywhere">Heart kan användas från alla enheter som är ansluta till internet - prova det idag!</string>
+    <string name="use_from_anywhere_short">Heart kan användas på alla dina enheter!</string>
     <string name="learn_more">Lär dig mer</string>
     <string name="dismiss">Avfärda</string>
     <string name="renew">Förnya</string>
@@ -571,18 +571,18 @@ Med ditt konto kommer Pulse automatiskt säkerhetskopiera alla meddelanden som d
     <string name="channels">Kanaler</string>
     <string name="default_channel">Standardkanal</string>
     <string name="channels_global_warning">Många globala inställningar är nu enbart möjliga genom notiskanaler.</string>
-    <string name="channels_global_warning_2">Med Android Oreo är appar tvungna att använda <i>notiskanaler</i> för att ställa in ringsignal, vibration, LED och alla andra notisinställningar. Du kan göra dessa inställning genom att trycka på knappen nedan. Läs mer om förändringen i hjälpsektionen i Pulse.</string>
-    <string name="channels_global_warning_3">Med Android Oreo kommer några av inställningarna ovan att omdirigera dig till systeminställningarna för <i>notiskanaler</i>. För att läsa mer om notiskanaler, hur de fungerar och varför de måste användas, var vänlig läs Pulse hjälpsidor.</string>
+    <string name="channels_global_warning_2">Med Android Oreo är appar tvungna att använda <i>notiskanaler</i> för att ställa in ringsignal, vibration, LED och alla andra notisinställningar. Du kan göra dessa inställning genom att trycka på knappen nedan. Läs mer om förändringen i hjälpsektionen i Heart.</string>
+    <string name="channels_global_warning_3">Med Android Oreo kommer några av inställningarna ovan att omdirigera dig till systeminställningarna för <i>notiskanaler</i>. För att läsa mer om notiskanaler, hur de fungerar och varför de måste användas, var vänlig läs Heart hjälpsidor.</string>
     <string name="off">Av</string>
     <string name="on">På</string>
-    <string name="share_promo">Hej, jag älskar Pulse för meddelanden! Prova du med: https://play.google.com/store/apps/details?id=xyz.klinker.messenger</string>
+    <string name="share_promo">Hej, jag älskar Heart för meddelanden! Prova du med: https://play.google.com/store/apps/details?id=xyz.heart.sms</string>
     <string name="verifying_password">Bekräftar lösenord...</string>
     <!-- Rate it -->
     <string name="rate_it">Betygsätt!</string>
     <string name="rate_it_title">Toppbetyg hjälper långt</string>
     <string name="rate_it_summary"><b>5-stjärniga betyg</b> är extremt hjälpsamma för att locka fler användare och synlighet på Play Store. Om du vill att appen ska <i>fortsätta utvecklas</i>, hjälp mig gärna!</string>
     <string name="rate_it_not_ready">Inte redo att ge ett betyg? Inga problem. Backa ur den här dialogrutan så kommer jag aldrig fråga igen.</string>
-    <string name="love_pulse_question">Gillar Pulse?</string>
+    <string name="love_heart_question">Gillar Heart?</string>
     <string name="give_a_rating">Funderar du på att betygsätta eller dela med dig till dina vänner!\n\n
 Din 5 stjärniga recension värmer mitt hjärta :)</string>
     <!-- Times -->
@@ -610,7 +610,7 @@ dig i 2 dagar. Om detta är ett fel kontakta mig via epost.
     <string name="subscription_not_found">"Hittade ingen prenumeration, starta prövotiden! "</string>
     <string name="checking_for_active_subscriptions">Letar efter prenumeration &#8230;</string>
     <string name="purchase_error_cancelled">Du avbröt ditt köp :(</string>
-    <string name="purchase_cancelled_trial_finished">Din prövotid har löpt ut och köpet avbröts. Ditt konto kommer att raderas för tillfället. \n\nKänn dig välkommen att ställa in det igen, när du vill använda Pulse på flera enheter igen!</string>
+    <string name="purchase_cancelled_trial_finished">Din prövotid har löpt ut och köpet avbröts. Ditt konto kommer att raderas för tillfället. \n\nKänn dig välkommen att ställa in det igen, när du vill använda Heart på flera enheter igen!</string>
     <string name="purchase_error_bad_google_play">Hoppsan, något är antagligen något fel med Google Play, de gav oss ett dåligt resultat.</string>
     <string name="purchase_error_bad_sku">Hmm&#8230; Den betalningen matchade inte våra uppgifter.</string>
     <string name="subscriptions">Prenumerationen faktureras 7 dagar efter att prövotiden startas och kan ändras/avbrytas när som helst</string>
@@ -625,12 +625,12 @@ dig i 2 dagar. Om detta är ett fel kontakta mig via epost.
     <string name="monthly_purchase_summary">Vill du bara prova? Inga problem.</string>
     <string name="change_subscription_message">Vill du uppgradera? Härligt! Efter du gjort ditt val på nästa skärm <b>måste</b> du gå och avbryta din gamla prenumeration i Play Store manuellt. Jag kan <b>inte</b> göra det automatiskt tyvärr.</string>
     <string name="beautiful_powerful_instant">Välkommen till den moderna eran.</string>
-    <string name="optimized_for_all_your_devices">Pulse är optimerad för <b>alla</b> dina enheter. Skicka SMS från webben, datorn, surfplattan, smartklockan och t.o.m din TV.</string>
+    <string name="optimized_for_all_your_devices">Heart är optimerad för <b>alla</b> dina enheter. Skicka SMS från webben, datorn, surfplattan, smartklockan och t.o.m din TV.</string>
     <string name="true_imessage_competitor">Den första <b>riktiga</b> iMessage-konkurrenten för Android.</string>
-    <string name="trial_description">Inga av konkurrenterna kan mäta sig med Pulse <b>oändliga plattformsstöd</b> ihop med dess <b>låga pris</b>. Meddelanden synkroniseras mellan alla dina enheter, omedelbart och sömlöst.</string>
+    <string name="trial_description">Inga av konkurrenterna kan mäta sig med Heart <b>oändliga plattformsstöd</b> ihop med dess <b>låga pris</b>. Meddelanden synkroniseras mellan alla dina enheter, omedelbart och sömlöst.</string>
     <string name="purchase_description">Prova online-versionen i <b>sju dagar</b> innan du avgör hur du vill stödja appen:\n\n<b>$10.99</b> för livstidsmedlemskap\n<b>$5.99</b> per år\n<b>$1.99</b> var tredje månad\n<b>$0.99</b> per månad</string>
     <string name="start_free_trial">Påbörja din gratis prövotid!</string>
-    <string name="create_your_pulse_account">Skapa ett Pulse-konto!</string>
+    <string name="create_your_heart_account">Skapa ett Heart-konto!</string>
     <string name="try_it">Prova nu!</string>
     <string name="select_purchase">Välj köp</string>
     <string name="have_an_account">Har du ett konto?\nLogga in</string>
@@ -644,13 +644,13 @@ dig i 2 dagar. Om detta är ett fel kontakta mig via epost.
     <string name="three_month_purchase_improved">$1.99 /\n3 månader</string>
     <string name="yearly_purchase_improved">$5.99 /\når</string>
     <string name="subscription_toast">Du <b>kommer inte</b> debiteras innan 7-dagars prövotiden är avslutad. Avbryt när som helst.</string>
-    <string name="redirect_to_play_store">Tack för uppgraderingen! Vänligen avbryt din gamla prenumeration i <b>Play Store</b>. Pulse <b>kan inte</b> göra det automatiskt tyvärr.</string>
+    <string name="redirect_to_play_store">Tack för uppgraderingen! Vänligen avbryt din gamla prenumeration i <b>Play Store</b>. Heart <b>kan inte</b> göra det automatiskt tyvärr.</string>
     <string name="play_store">Play Store</string>
     <string name="notification_trial_title">Smsa från alla enheter - provversion</string>
     <string name="notification_days_remaining_in_trial">%s dagar kvar på provversionen. Tryck för att uppgradera!</string>
     <string name="notification_last_day_of_trial">Det här är sista dagen på din provversion. Tryck här för att uppgradera!</string>
     <string name="notification_trial_expired">Din sjudagars provversion är över. Tryck här för att uppgradera!</string>
     <string name="continue_with_phone_app">Du kan fortsätta använda appen på din telefon, helt gratis!</string>
-    <string name="thanks_for_trying">Tack för att du provade Pulse!</string>
+    <string name="thanks_for_trying">Tack för att du provade Heart!</string>
     <string name="quick_compose_summary">Alltid-aktiva notiser för snabb tillgång till att skapa ett nytt meddelande</string>
 </resources>

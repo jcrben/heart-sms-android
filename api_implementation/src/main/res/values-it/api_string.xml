@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
     <!--
-  ~ Copyright (C) 2016 Jacob Klinker
+  ~ Copyright (C) 2016 Jacob heart
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -44,7 +44,6 @@ iscriverti con un dispositivo principale dotato di numero telefonico!</string>
     <string name="api_activate_1">1</string>
     <string name="api_activate_2">2</string>
     <string name="api_activate_1_1">Vai a</string>
-    <string name="api_activate_wear">wear.klinkerapps.com</string>
     <string name="api_activate_tv">tv.klinkerapps.com</string>
     <string name="api_activate_1_3">su un dispositivo mobile o computer</string>
     <string name="api_activate_2_1">Sul sito web</string>

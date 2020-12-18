@@ -10,7 +10,7 @@
 GIPHY=dc6zaTOxFJmzC
 
 # This is the public article API key.
-# Get your own https://github.com/klinker41/article-android
+# Get your own https://github.com/heart41/article-android
 ARTICLE=73621d28e6f1eec5b8de2aee774cbdb0
 
 # The same key is used for Maps and Youtube, as long as you give the correct access in the console.

@@ -246,7 +246,7 @@ http://messenger.klinkerapps.com</string>
     <string name="creating_channels_text">جاري إنشاء إشعار للقنوات...</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">تغير</string>
-    <string name="copyright">الحقوق محفوظه © 2016 Jake Klinker &amp; Luke Klinker</string>
+    <string name="copyright">الحقوق محفوظه © 2016 Jake heart &amp; Luke Klinker</string>
     <string name="copyright_summary">شاهد معلومات الرخصة مفتوحة المصدر</string>
     <string name="app_version">صفحة التطبيق</string>
     <string name="account_information">معلومات الحساب</string>
@@ -488,11 +488,11 @@ http://messenger.klinkerapps.com</string>
     <string name="on">تشغيل</string>
     <string name="share_promo">مرحبا، لقد أعجبني تطبيق نبض للرسائل النصية! أنصحك بتجريبه الأن:
 قم بتثبيته من المتجر العالمي قوقل بلاي Google Play
-https://play.google.com/store/apps/details?id=xyz.klinker.messenger</string>
+https://play.google.com/store/apps/details?id=xyz.heart.sms</string>
     <string name="verifying_password">جار التحقق من كلمة المرور ...</string>
     <!-- Rate it -->
     <string name="rate_it">تقييم الأن!</string>
-    <string name="love_pulse_question">يعجبني هذا التطبيق نبض الرسائل؟</string>
+    <string name="love_heart_question">يعجبني هذا التطبيق نبض الرسائل؟</string>
     <string name="give_a_rating">شارك بتعليق وقم بوضع ملاحظتك  أو مشاركتها مع أصدقائك!\n\n
 قم بتقيمنا بـ 5 نجوم لكي تجعلنا نستمر في التطوير :)</string>
     <!-- Times -->

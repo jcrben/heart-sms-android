@@ -27,7 +27,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@color/pulseColorPrimary"
+            android:src="@color/heartColorPrimary"
             android:id="@+id/toolbar"
             android:scaleType="fitXY"
             android:contentDescription="@null"/>
@@ -76,7 +76,7 @@
             android:orientation="vertical"
             android:gravity="center"
             android:layout_gravity="center"
-            android:background="@color/pulseColorPrimaryLight"
+            android:background="@color/heartColorPrimaryLight"
             android:id="@+id/widget_empty">
 
             <ImageView

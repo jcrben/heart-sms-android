@@ -15,9 +15,9 @@
   ~ limitations under the License.
   -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Pulse</string>
-    <string name="app_name_long">Pulse (SMS/Mensajería en tablet)</string>
-    <string name="app_title">Pulse</string>
+    <string name="app_name">Heart</string>
+    <string name="app_name_long">Heart (SMS/Mensajería en tablet)</string>
+    <string name="app_title">Heart</string>
     <!-- Launcher Shortcuts -->
     <string name="shortcut_compose_short">Nuevo Mensaje</string>
     <string name="shortcut_compose_long">Comenzar una nueva consersación</string>
@@ -87,14 +87,14 @@
     <string name="conversations">Conversaciones</string>
     <string name="messages">Mensajes</string>
     <!-- Invite Friends Screen -->
-    <string name="invite_friends_title">¿Te encanta Pulse?</string>
+    <string name="invite_friends_title">¿Te encanta Heart?</string>
     <string name="invite_friends_summary">¡A Nosotros también! Estamos intentando conseguirlo pasarlo a 
 Tantas manos como podamos para seguir haciendo el mejor producto que podamos e
 Invitando a tus amigos a probarlo , nos estás ayudando! \ N \ nSelecciona abajo a los amigos 
 a los que te gustaría enviar la aplicación y les enviaremos un SMS con una breve descripción y
 Un enlace para descargar!</string>
     <string name="invite_friends_sms">¡He empezado a usar una nueva app de mensajería, y he pensado 
-que te gustaría!. Pulse es gratuita, y puedes descargarla de aquí: http://messenger.klinkerapps.com</string>
+que te gustaría!. Heart es gratuita, y puedes descargarla de aquí: http://messenger.klinkerapps.com</string>
     <!-- Message List Screen -->
     <string name="type_message">Escribir mensaje</string>
     <string name="type_message_to">Escribir mensaje a %1$s</string>
@@ -160,9 +160,9 @@ No nos llevará mucho</string>
     <string name="onboarding_title_2">Disponible en cualquier lugar</string>
     <string name="onboarding_title_3">Potente capacidad de personalización</string>
     <string name="onboarding_content_1">Diseños fluidos y suaves con un diseño potente y una integración perfecta.
-Pulse pone tus conversaciones en el centro de todo.</string>
+Heart pone tus conversaciones en el centro de todo.</string>
     <string name="onboarding_content_2">Manda mensajes desde tu tablet, ordenador, reloj o cualquier otro dispositivo conectado.</string>
-    <string name="onboarding_content_3">Fija, silencia, aplica temas y personaliza las notificaciones para cualquier contacto con el que estés chateando. Haz Pulse tuyo</string>
+    <string name="onboarding_content_3">Fija, silencia, aplica temas y personaliza las notificaciones para cualquier contacto con el que estés chateando. Haz Heart tuyo</string>
     <string name="message_anywhere_onboarding_title_1">Manda mensajes desde cualquier lugar</string>
     <string name="message_anywhere_onboarding_title_2">Suscripción o pago único</string>
     <string name="message_anywhere_onboarding_title_3">Período de prueba de una semana</string>
@@ -198,7 +198,7 @@ Pulse pone tus conversaciones en el centro de todo.</string>
     <string name="received_new_message">¡Has recibido un nuevo mensaje de texto!</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">Registro de cambios</string>
-    <string name="copyright">© 2016 Jake Klinker &amp; Luke Klinker</string>
+    <string name="copyright">© 2016 Jake heart &amp; Luke Klinker</string>
     <string name="copyright_summary">Ver información de licencias de código abierto</string>
     <string name="app_version">Versión de la Aplicación</string>
     <string name="device_id">ID de dispositivo</string>
@@ -212,11 +212,11 @@ pudieses encontrar!</string>
     <string name="issues">Sistema de seguimiento de incidentes</string>
     <string name="issues_summary">También sirve como hoja de ruta de características</string>
     <string name="google_plus">Google+</string>
-    <string name="google_plus_summary">Comunidad Pulse beta</string>
+    <string name="google_plus_summary">Comunidad Heart beta</string>
     <string name="email">Correo electronico</string>
-    <string name="email_summary">pulsesmsapp@gmail.com</string>
+    <string name="email_summary">Heartsmsapp@gmail.com</string>
     <string name="twitter">Twitter</string>
-    <string name="twitter_summary">\@PulseSMS</string>
+    <string name="twitter_summary">\@HeartSMS</string>
     <string name="support">Soporte</string>
     <plurals name="message_count">
         <item quantity="one">%1$d mensaje</item>
@@ -307,7 +307,7 @@ que se base el contacto:</string>
     <!-- MMS Configuration Settings -->
     <!-- Advanced Features Settings -->
     <string name="signature">Firma</string>
-    <string name="signature_summary">NOTA: las firmas enviadas NO se mostrarán en la lista de mensajes de Pulse. Las firmas sólo se mostrarán al receptor del mensaje.</string>
+    <string name="signature_summary">NOTA: las firmas enviadas NO se mostrarán en la lista de mensajes de Heart. Las firmas sólo se mostrarán al receptor del mensaje.</string>
     <string name="cleanup_old_messages">Limpieza de mensajes antiguos</string>
     <string name="delayed_sending">Envio retrasado</string>
     <string name="quick_compose">Composición rápida</string>
@@ -347,8 +347,8 @@ abajo!</string>
     <string name="dashclock_description">Marcar la información de SMS/MMS como no leída</string>
     <string name="default_text">Por defecto</string>
     <string name="did_you_know">Lo sabías?</string>
-    <string name="use_from_anywhere">Pulse se puede utilizar desde cualquier dispositivo conectado a internet- ¡ Pruébalo hoy!</string>
-    <string name="use_from_anywhere_short">¡Pulse puede utilizarse en cualquiera de tus dispositivos!</string>
+    <string name="use_from_anywhere">Heart se puede utilizar desde cualquier dispositivo conectado a internet- ¡ Pruébalo hoy!</string>
+    <string name="use_from_anywhere_short">¡Heart puede utilizarse en cualquiera de tus dispositivos!</string>
     <string name="learn_more">Saber Más</string>
     <string name="dismiss">Descartar</string>
     <string name="renew">Renovar</string>

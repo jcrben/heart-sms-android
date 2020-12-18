@@ -15,9 +15,9 @@
   ~ limitations under the License.
   -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Pulse</string>
-    <string name="app_name_long">Pulse（短信、平板 短信应用）</string>
-    <string name="app_title">Pulse</string>
+    <string name="app_name">Heart</string>
+    <string name="app_name_long">Heart（短信、平板 短信应用）</string>
+    <string name="app_title">Heart</string>
     <!-- Launcher Shortcuts -->
     <string name="shortcut_compose_short">新消息</string>
     <string name="shortcut_compose_long">开始一个新对话</string>
@@ -94,8 +94,8 @@
     </plurals>
     <string name="undo">撤销</string>
     <string name="enter_search">搜索</string>
-    <string name="text_anywhere_description">你知道吗：Pulse 远不止是一个手机 app。
-你能在<b>任意</b>设备上使用 Pulse 发送短信！</string>
+    <string name="text_anywhere_description">你知道吗：Heart 远不止是一个手机 app。
+你能在<b>任意</b>设备上使用 Heart 发送短信！</string>
     <string name="convo_list_try_it">现在试用！</string>
     <string name="convo_list_not_now">暂时不</string>
     <string name="no_private_messages_description">在设置菜单设置私人对话！</string>
@@ -105,7 +105,7 @@
     <string name="conversations">会话</string>
     <string name="messages">消息</string>
     <!-- Invite Friends Screen -->
-    <string name="invite_friends_title">喜欢 Pulse 吗？</string>
+    <string name="invite_friends_title">喜欢 Heart 吗？</string>
     <string name="invite_friends_summary">我们自己还有许多用户也都非常喜欢这个应用。也正是有了大家的支持才使得这个应用变得更好。如果你也愿意支持我们，可以将应用分享给你的朋友们。\n\n选择下方你想要分享的朋友，将会发送一条包含简短介绍和应用链接的短信。</string>
     <string name="invite_friends_sms">我在使用一款全新的短信应用，相信你也会喜欢它！另外，这是完全免费的，下载链接在此：http://messenger.klinkerapps.com</string>
     <!-- Message List Screen -->
@@ -209,9 +209,9 @@
     <string name="onboarding_title_1">全新的消息体验</string>
     <string name="onboarding_title_2">随时随地获取</string>
     <string name="onboarding_title_3">强大的定制服务</string>
-    <string name="onboarding_content_1">流畅、强大的UI设计、平台无缝连接。Pulse将你的消息置于首位。</string>
+    <string name="onboarding_content_1">流畅、强大的UI设计、平台无缝连接。Heart将你的消息置于首位。</string>
     <string name="onboarding_content_2">从你的平板电脑、PC、手表、甚至任何连接的设备获取信息</string>
-    <string name="onboarding_content_3">对于任何你正在聊的会话，支持固定联系人、过滤通知、主题、自定义通知。你可以打造自己的Pulse！</string>
+    <string name="onboarding_content_3">对于任何你正在聊的会话，支持固定联系人、过滤通知、主题、自定义通知。你可以打造自己的Heart！</string>
     <string name="message_anywhere_onboarding_title_1">随时随地收信</string>
     <string name="message_anywhere_onboarding_title_2">订阅或购买</string>
     <string name="message_anywhere_onboarding_title_3">长达一周的免费试用</string>
@@ -277,7 +277,7 @@
     <string name="bubble_channel">消息气泡</string>
     <!-- About, Help and Feedback and Settings -->
     <string name="changelog">更新日志</string>
-    <string name="copyright">© 2019 Luke &amp; Jake Klinker</string>
+    <string name="copyright">© 2019 Luke &amp; Jake heart</string>
     <string name="copyright_summary">查看开源许可</string>
     <string name="app_version">应用版本</string>
     <string name="account_information">账户信息</string>
@@ -287,7 +287,7 @@
     <string name="device_id">设备 ID</string>
     <string name="device_info">设备信息</string>
     <string name="website">我们的网站</string>
-    <string name="view_platforms">可用的 Pulse 平台</string>
+    <string name="view_platforms">可用的 Heart 平台</string>
     <string name="access_messages_from_any_device">在任何设备上收发信息！</string>
     <string name="beta_disclaimer">这个项目还处于测试阶段，请报告你发现的问题！</string>
     <string name="app_info">关于应用</string>
@@ -298,15 +298,15 @@
     <string name="get_help">获取帮助</string>
     <string name="get_help_summary">有一个问题？ 对于单人工作组，我每天确实会收到大量的电子邮件，这浪费了我开发新功能的时间。 为了帮助我，如果您可以在此处快速搜索以查看我是否已经解决了您的问题，那将是很好的。</string>
     <string name="get_help_summary_2">帮助部分内容广泛，但是如果您找不到特定的问题，请保持联系，我们将很乐意与您联系！</string>
-    <string name="features">Pulse 的特性介绍</string>
+    <string name="features">Heart 的特性介绍</string>
     <string name="issues">故障跟进</string>
     <string name="issues_summary">也包含相关特性指示</string>
     <string name="google_plus">G+社区</string>
-    <string name="google_plus_summary">Pulse Beta 社区</string>
+    <string name="google_plus_summary">Heart Beta 社区</string>
     <string name="email">电子邮件</string>
     <string name="email_summary">pulsesmsapp@gmail.com</string>
     <string name="twitter">推特</string>
-    <string name="twitter_summary">\@PulseSMS</string>
+    <string name="twitter_summary">\@HeartSMS</string>
     <string name="support">支持</string>
     <plurals name="message_count">
         <item quantity="other">%1$d 信息</item>
@@ -417,7 +417,7 @@
     <string name="trial_subscription_summary">点此来升级账户或取消试用！</string>
     <string name="upgrade_or_cancel_title">结束试用？</string>
     <string name="trial_expired">感谢试用！</string>
-    <string name="upgrade_or_cancel">您可以将账户升级为订阅会员或终身会员，这样就可以在您所有的设备上使用 Pulse！\n\n 需要取消吗？
+    <string name="upgrade_or_cancel">您可以将账户升级为订阅会员或终身会员，这样就可以在您所有的设备上使用 Heart！\n\n 需要取消吗？
 您的账户会被删除，且您不会被收费。您可以在您的手机上继续免费使用此应用。欢迎随时再来。</string>
     <string name="upgrade">升级！</string>
     <string name="cancel_trial">取消试用</string>
@@ -469,7 +469,7 @@
     <string name="emoji_style_android_o">谷歌的 Android Oreo</string>
     <string name="settings_phone_number">手机号码</string>
     <string name="disable_battery_optimization">禁用电池优化</string>
-    <string name="disable_battery_optimization_summary">如果消息未能从您的手机同步至网页，请尝试禁用对 Pulse 的电池优化。</string>
+    <string name="disable_battery_optimization_summary">如果消息未能从您的手机同步至网页，请尝试禁用对 Heart 的电池优化。</string>
     <string name="hex">十六进制颜色</string>
     <!-- MMS Configuration Settings -->
     <string name="max_mms_size">最大图片大小</string>
@@ -508,15 +508,15 @@
     <string name="use_internal_browser">使用内置浏览器</string>
     <string name="internal_browser_summary">关闭此项将禁用消息列表中的链接预览</string>
     <string name="use_smart_replies">建议智能回复</string>
-    <string name="use_smart_replies_summary">Pulse会建议相关的答复（如果有）。这些是直接在设备上生成的，而不是远程生成的</string>
-    <string name="use_smart_replies_dialog">Pulse会建议相关的答复（如果有）。 这些是直接在设备而不是远程服务器上生成的。\n\n如果您不想使用此功能，可以从设置中禁用它。</string>
+    <string name="use_smart_replies_summary">Heart会建议相关的答复（如果有）。这些是直接在设备上生成的，而不是远程生成的</string>
+    <string name="use_smart_replies_dialog">Heart会建议相关的答复（如果有）。 这些是直接在设备而不是远程服务器上生成的。\n\n如果您不想使用此功能，可以从设置中禁用它。</string>
     <string name="use_smart_reply_settings">设置</string>
     <string name="message_backup">消息备份</string>
-    <string name="message_backup_pref_summary">担心失去你的消息？Pulse 已覆盖</string>
-    <string name="message_backup_summary">你知道吗：Pulse的在线服务是建立在备份你的信息的基础上的。当您注册Pulse帐户时，您可以在任何设备或平板电脑上登录该帐户以自动还原所有邮件！\n\n无需麻烦，也无需搞乱手动备份。
-有了Pulse，一切都是顺利的，简单的，完全自动的。</string>
-    <string name="message_backup_summary_have_account">看来您已经有一个Pulse帐户，太好了！
-使用您的帐户，Pulse将自动备份您发送和接收的所有短信。
+    <string name="message_backup_pref_summary">担心失去你的消息？Heart 已覆盖</string>
+    <string name="message_backup_summary">你知道吗：Heart的在线服务是建立在备份你的信息的基础上的。当您注册Heart帐户时，您可以在任何设备或平板电脑上登录该帐户以自动还原所有邮件！\n\n无需麻烦，也无需搞乱手动备份。
+有了Heart，一切都是顺利的，简单的，完全自动的。</string>
+    <string name="message_backup_summary_have_account">看来您已经有一个Heart帐户，太好了！
+使用您的帐户，Heart将自动备份您发送和接收的所有短信。
 当您在其他设备上查看该应用程序时，实际上只是在访问此备份。 
 要将短信还原到新设备，您要做的就是登录您的帐户。</string>
     <string name="auto_reply_configuration">自动回复设置</string>
@@ -587,7 +587,7 @@
     <string name="set_passcode">保存密码</string>
     <string name="confirm_fingerprint">确认指纹以继续。现在请触摸指纹传感器。</string>
     <string name="confirm_passcode">确认密码以继续。</string>
-    <string name="confirm_pulse_password">确认Pulse帐户凭据以继续。</string>
+    <string name="confirm_heart_password">确认Heart帐户凭据以继续。</string>
     <string name="type_passcode">创建一个密码。</string>
     <string name="incorrect_passcode">密码错误。</string>
     <string name="verify">校验</string>
@@ -598,8 +598,8 @@
     <string name="dashclock_description">未读消息</string>
     <string name="default_text">默认</string>
     <string name="did_you_know">你已知晓吗？</string>
-    <string name="use_from_anywhere">Pulse可以用来在任何连接上互联网的设备上使用！</string>
-    <string name="use_from_anywhere_short">Pulse可以在你的任何设备上使用！</string>
+    <string name="use_from_anywhere">Heart可以用来在任何连接上互联网的设备上使用！</string>
+    <string name="use_from_anywhere_short">Heart可以在你的任何设备上使用！</string>
     <string name="learn_more">了解更多</string>
     <string name="dismiss">撤销</string>
     <string name="renew">更新</string>
@@ -616,12 +616,12 @@
     <string name="default_channel">默认渠道</string>
     <string name="channels_global_warning">许多全局自定义设置如今仅在各个渠道内生效。</string>
     <string name="channels_global_warning_2">在  Android Oreo 中，应用必须通过<i>通知渠道</i>来自定义铃声、震动、呼吸灯及其他所有通知选项。
-您可以点击下面的按钮来自定义这些选项，并在 Pulse 的帮助页面中了解更多信息。</string>
-    <string name="channels_global_warning_3">使用Android Oreo，上述某些选项会将您重定向到系统级的<i>通知渠道</i>自定义设置。 要了解有关这些渠道的更多信息，它们如何工作以及为什么必须使用它们，请参阅Pulse的帮助页面。</string>
+您可以点击下面的按钮来自定义这些选项，并在 Heart 的帮助页面中了解更多信息。</string>
+    <string name="channels_global_warning_3">使用Android Oreo，上述某些选项会将您重定向到系统级的<i>通知渠道</i>自定义设置。 要了解有关这些渠道的更多信息，它们如何工作以及为什么必须使用它们，请参阅Heart的帮助页面。</string>
     <string name="off">关闭</string>
     <string name="on">开启</string>
-    <string name="share_promo">嗨，我最近喜欢上了用Pulse发短信，你也来试试吧：
-https://play.google.com/store/apps/details?id=xyz.klinker.messenger</string>
+    <string name="share_promo">嗨，我最近喜欢上了用Heart发短信，你也来试试吧：
+https://play.google.com/store/apps/details?id=xyz.heart.sms</string>
     <string name="verifying_password">正在验证密码...</string>
     <!-- Rate it -->
     <string name="rate_it">给它打分！</string>
@@ -629,7 +629,7 @@ https://play.google.com/store/apps/details?id=xyz.klinker.messenger</string>
     <string name="rate_it_title">最高评分大有帮助</string>
     <string name="rate_it_summary"><b>顶级评级</b>对应用程序的增长非常重要！如果您希望看到应用程序<i>继续飙升</i>，请花一秒钟时间帮助我。</string>
     <string name="rate_it_not_ready"><b>未准备对其进行评级？</b>没问题。按下手机的后退按钮，我将不再询问。</string>
-    <string name="love_pulse_question">喜欢 Pulse 吗？</string>
+    <string name="love_heart_question">喜欢 Heart 吗？</string>
     <string name="give_a_rating">考虑一下打个分、分享给你的朋友们吧！我将万分感谢您的5分，笔芯。</string>
     <!-- Times -->
     <string name="one_second">1秒</string>
@@ -672,13 +672,13 @@ https://play.google.com/store/apps/details?id=xyz.klinker.messenger</string>
     <string name="monthly_purchase_summary">只是想试试？没问题，这个方案可以满足你。</string>
     <string name="change_subscription_message">要升级吗？太棒了！在下一个屏幕上进行选择后，<b>必须</b>通过Play Store应用程序并取消旧的试用版或订阅。我<b>不能</b>自动执行此操作。</string>
     <string name="beautiful_powerful_instant">欢迎来到现代。</string>
-    <string name="optimized_for_all_your_devices">Pulse针对<b>所有</b>设备进行了优化。
+    <string name="optimized_for_all_your_devices">Heart针对<b>所有</b>设备进行了优化。
 从网页，桌面电脑，平板电脑，手表，甚至电视上发送短信。</string>
     <string name="true_imessage_competitor">Android 平台首个 <b>真正</b> 意义上的 iMessage 竞争者。</string>
-    <string name="trial_description">任何竞争对手都无法达到Pulse的<b>全平台支持</b>及其<b>低价</b>。 消息可在您的所有设备之间即时无缝地同步。</string>
+    <string name="trial_description">任何竞争对手都无法达到Heart的<b>全平台支持</b>及其<b>低价</b>。 消息可在您的所有设备之间即时无缝地同步。</string>
     <string name="purchase_description">尝试在线版本，持续7天，然后决定如何支持该应用程序：\n\n终身会员<b>10.99美元</b>\n每年<b>5.99美元</b>\n每三个月<b>1.99美元 </b>\n每月<b>0.99美元</b></string>
     <string name="start_free_trial">开始您的免费试用！</string>
-    <string name="create_your_pulse_account">创建 Pulse 账户！</string>
+    <string name="create_your_heart_account">创建 Heart 账户！</string>
     <string name="try_it">试试吧！</string>
     <string name="select_purchase">选择方案</string>
     <string name="have_an_account">已有账户？\n登陆</string>
@@ -694,7 +694,7 @@ https://play.google.com/store/apps/details?id=xyz.klinker.messenger</string>
     <string name="yearly_purchase_improved">$5.99 / 年</string>
     <string name="subscription_toast">在 7 天试用期结束前，您将 <b>不会</b> 被收取任何费用。
 您可随时取消。</string>
-    <string name="redirect_to_play_store">谢谢你的升级！请取消<b>Play Store</b>的旧订阅。Pulse<b>不能</b>自动执行此操作。</string>
+    <string name="redirect_to_play_store">谢谢你的升级！请取消<b>Play Store</b>的旧订阅。Heart<b>不能</b>自动执行此操作。</string>
     <string name="play_store">Play Store</string>
     <string name="notification_trial_title">从任何设备发短信 - 试用</string>
     <string name="notification_days_remaining_in_trial">您的试用还剩 %s 天。点此升级！</string>

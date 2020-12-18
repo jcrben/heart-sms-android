@@ -20,10 +20,10 @@
     <!--<color name="pulseColorPrimary">#428AFF</color>-->
     <!--<color name="pulseColorPrimaryDark">#3778ED</color>-->
     <!--<color name="pulseColorPrimaryLight">#82B9FF</color>-->
-    <color name="pulseColorPrimary">#1775D2</color>
-    <color name="pulseColorPrimaryDark">#1665C0</color>
-    <color name="pulseColorPrimaryLight">#63A3FF</color>
-    <color name="pulseColorAccent">#FF6E40</color>
+    <color name="heartColorPrimary">#eb5c72</color>
+    <color name="heartColorPrimaryDark">#1665C0</color>
+    <color name="heartColorPrimaryLight">#63A3FF</color>
+    <color name="heartColorAccent">#FF6E40</color>
 
     <!-- Material Design Colors -->
     <color name="materialRed">#F44336</color>

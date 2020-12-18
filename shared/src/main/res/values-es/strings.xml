@@ -15,9 +15,9 @@
   ~ limitations under the License.
   -->
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name">Pulse</string>
-    <string name="app_name_long">Pulse (SMS/Tablet Messenger)</string>
-    <string name="app_title">Pulse</string>
+    <string name="app_name">Heart</string>
+    <string name="app_name_long">Heart (SMS/Tablet Messenger)</string>
+    <string name="app_title">Heart</string>
     <!-- Launcher Shortcuts -->
     <string name="shortcut_compose_short">Nuevo mensaje</string>
     <string name="shortcut_compose_long">Comenzar una nueva conversación.</string>
@@ -89,14 +89,14 @@
     <!-- Notifications -->
     <string name="mark_as_read">Marcar como leído</string>
     <!-- About, Help and Feedback and Settings -->
-    <string name="view_platforms">Plataformas de Pulse disponibles</string>
+    <string name="view_platforms">Plataformas de Heart disponibles</string>
     <string name="apply_primary_theme_toolbar">Aplicar color primario a la barra de aplicaciones</string>
     <string name="apply_primary_theme_toolbar_summary">Si la barra de aplicaciones debe ser coloreada o no</string>
     <string name="trial_subscription_title">Te quedan %s días en el juicio</string>
     <string name="trial_subscription_summary">Toque aquí para actualizar o cancelar la prueba!</string>
     <string name="upgrade_or_cancel_title">Hecho con el juicio?</string>
     <string name="trial_expired">Gracias por el juicio!</string>
-    <string name="upgrade_or_cancel">¡Puede actualizar su cuenta a una suscripción o membresía de por vida para seguir usando Pulse en todos sus dispositivos!\n\n¿Necesita cancelar?
+    <string name="upgrade_or_cancel">¡Puede actualizar su cuenta a una suscripción o membresía de por vida para seguir usando Heart en todos sus dispositivos!\n\n¿Necesita cancelar?
 Su cuenta será eliminada y no se le cobrará. ¡Puedes seguir usando la aplicación en tu teléfono gratis! Siéntase libre de volver en cualquier momento.</string>
     <string name="upgrade">¡Mejorar!</string>
     <string name="cancel_trial">Cancelar prueba</string>
@@ -112,17 +112,17 @@ Su cuenta será eliminada y no se le cobrará. ¡Puedes seguir usando la aplicac
     <!-- Passcode Entry -->
     <!-- Other -->
     <string name="restore_default_channel_settings_popup">Los ajustes predeterminados han sido restaurados.</string>
-    <string name="channels_global_warning_3">Con Android Oreo, algunas de las opciones anteriores lo redirigirán a las preferencias de personalización de <i> Canales de notificación </i> a nivel del sistema. Para obtener más información sobre estos canales, cómo funcionan y por qué se deben usar, consulte la página de ayuda de Pulse.</string>
+    <string name="channels_global_warning_3">Con Android Oreo, algunas de las opciones anteriores lo redirigirán a las preferencias de personalización de <i> Canales de notificación </i> a nivel del sistema. Para obtener más información sobre estos canales, cómo funcionan y por qué se deben usar, consulte la página de ayuda de Heart.</string>
     <!-- Rate it -->
     <!-- Times -->
     <!-- Purchase/Subscriptions -->
     <string name="trial_finished">Parece que ya has pasado por la prueba gratuita.</string>
     <string name="purchase_cancelled_trial_finished">Su versión de prueba ha caducado y la compra se canceló. Su cuenta se eliminará por ahora.\n\nSiéntase libre de configurarlo nuevamente,
 ¡Cuando quieras usar la funcionalidad de múltiples dispositivos de nuevo!</string>
-    <string name="trial_description">Ninguna competencia puede tocar el <b> soporte de plataforma sin fin </b> de Pulse junto con su <b> bajo precio </b>. Los mensajes se sincronizan entre todos tus dispositivos, al instante y sin problemas.</string>
+    <string name="trial_description">Ninguna competencia puede tocar el <b> soporte de plataforma sin fin </b> de Heart junto con su <b> bajo precio </b>. Los mensajes se sincronizan entre todos tus dispositivos, al instante y sin problemas.</string>
     <string name="purchase_description">Prueba la versión en línea, durante <b> siete días </b>, y luego decides cómo quieres que sea compatible con la aplicación:\n\n<b>$ 10.99</b> para una membresía de por vida\n<b>$ 5.99</b> por año\n<b>$ 1.99</b> cada tres meses\n<b>$ 0.99</b> por mes</string>
     <string name="start_free_trial">¡Comienza tu prueba gratuita!</string>
-    <string name="create_your_pulse_account">Crea una cuenta en Pulse!</string>
+    <string name="create_your_heart_account">Crea una cuenta en Heart!</string>
     <string name="select_purchase">Seleccione Compra</string>
     <string name="select_a_purchase">Seleccione una compra</string>
     <string name="select_a_purchase_description">Elija cualquiera de las tres suscripciones, o seleccione la <b>membresía de por vida</b> para realizar una compra única para la aplicación.</string>

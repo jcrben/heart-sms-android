@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
     <!--
-  ~ Copyright (C) 2016 Jacob Klinker
+  ~ Copyright (C) 2016 Jacob heart
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -46,7 +46,6 @@ Geçerli olan birincil cihazı kaldırmak ve bu cihazı yeni birincil cihaz olar
     <string name="api_activate_1">1</string>
     <string name="api_activate_2">2</string>
     <string name="api_activate_1_1">Başkan</string>
-    <string name="api_activate_wear">wear.klinkerapps.com</string>
     <string name="api_activate_tv">tv.klinkerapps.com</string>
     <string name="api_activate_1_3">Bir mobil cihazda veya bilgisayarda</string>
     <string name="api_activate_2_1">İnternet sitesinde</string>

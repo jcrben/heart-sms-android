@@ -67,13 +67,13 @@ Pulse uses Robolectric for Android related tests. It does not contain UI-espress
 Contributions are welcome!
 
 * If you just want to report a bug or file a feature request, I have a 
-[centralized issues repo](https://github.com/klinker-apps/pulse-sms-issues/issues) for tracking 
+[centralized issues repo](https://github.com/klinker-apps/pulse-sms-issues/issues) for tracking
 issues/requests across all of Pulse's platforms. Please file the issue there.
 * Any other contributions can just go through the 
 [Pull Requests](https://github.com/klinker-apps/pulse-sms-android/pulls) on this repo.
 
 If you are looking to make a large change, it is probably best to discuss it with me first. Open up 
-an [issue](https://github.com/klinker-apps/pulse-sms-issues/issues/new?template=contribution_question.md), 
+an [issue](https://github.com/klinker-apps/pulse-sms-issues/issues/new?template=contribution_question.md),
 letting me know that this is something that you would like to make a PR for, and I can tell you what
 I think. 
 

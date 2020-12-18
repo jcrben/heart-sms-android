@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="24dp"
         android:background="@drawable/status_bar"
-        android:backgroundTint="@color/pulseColorPrimaryDark"
+        android:backgroundTint="@color/heartColorPrimaryDark"
         android:backgroundTintMode="multiply"
         android:fitsSystemWindows="true"
         android:orientation="horizontal"
@@ -72,7 +72,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                        <xyz.klinker.messenger.shared.view.WhitableToolbar
+                        <xyz.heart.sms.shared.view.WhitableToolbar
                             android:id="@+id/toolbar"
                             android:layout_width="match_parent"
                             android:layout_height="?attr/actionBarSize"

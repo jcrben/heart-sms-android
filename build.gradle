@@ -25,13 +25,13 @@ apiKeys.load(new FileInputStream(propsFile))
 buildscript {
 
     ext.buildInfo = [
-            'id'                : 'xyz.klinker.messenger',
+            'id'                : 'xyz.heart.sms',
             'name'              : '5.4.6',
             'number'            : System.getenv("BUILD_NUMBER") as Integer ?: 135,
     ]
 
     ext.versions = [
-            'gradlePlugin'      : '4.1.0',
+            'gradlePlugin'      : '4.1.1',
             'targetSdk'         : 30,
             'minSdk'            : 21,
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="PulseTheme.MessengerActivity" parent="@style/PulseTheme.NoActionBar">
+    <style name="HeartTheme.MessengerActivity" parent="@style/HeartTheme.NoActionBar">
         <item name="android:windowBackground">@color/background</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
