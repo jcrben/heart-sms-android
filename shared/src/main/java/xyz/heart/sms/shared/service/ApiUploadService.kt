@@ -33,7 +33,6 @@ import java.util.ArrayList
 import retrofit2.Response
 import xyz.heart.sms.api.entity.*
 import xyz.heart.sms.api.implementation.LoginActivity
-import xyz.heart.sms.api.implementation.firebase.FirebaseUploadCallback
 import xyz.heart.sms.shared.R
 import xyz.heart.sms.api.implementation.ApiUtils
 import xyz.heart.sms.api.implementation.Account
@@ -42,6 +41,7 @@ import xyz.heart.sms.shared.data.DataSource
 import xyz.heart.sms.shared.data.MimeType
 import xyz.heart.sms.encryption.EncryptionUtils
 import xyz.heart.sms.api.implementation.BinaryUtils
+import xyz.heart.sms.api.implementation.media.MediaUploadCallback
 import xyz.heart.sms.shared.data.model.*
 import xyz.heart.sms.shared.util.*
 
@@ -462,7 +462,7 @@ open class ApiUploadService : Service() {
 
                 val bytes = BinaryUtils.getMediaBytes(this, message.data, message.mimeType, true)
 
-                ApiUtils.uploadBytesToFirebase(Account.accountId, bytes, message.id, encryptionUtils, FirebaseUploadCallback {
+                ApiUtils.addMedia(Account.accountId, bytes, message.id, encryptionUtils, MediaUploadCallback {
                     completedMediaUploads++
 
                     builder.setProgress(mediaCount, completedMediaUploads, false)
@@ -474,7 +474,7 @@ open class ApiUploadService : Service() {
                     } else if (!finished) {
                         startForeground(MESSAGE_UPLOAD_ID, builder.build())
                     }
-                }, 0)
+                })
             } while (media.moveToNext())
 
             if (mediaCount == 0) {

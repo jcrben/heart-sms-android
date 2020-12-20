@@ -32,10 +32,10 @@ import xyz.heart.sms.api.entity.*
 import java.io.File
 import java.io.IOException
 
-import xyz.heart.sms.api.implementation.firebase.FirebaseDownloadCallback
 import xyz.heart.sms.shared.R
 import xyz.heart.sms.api.implementation.ApiUtils
 import xyz.heart.sms.api.implementation.Account
+import xyz.heart.sms.api.implementation.media.MediaDownloadCallback
 import xyz.heart.sms.shared.data.ColorSet
 import xyz.heart.sms.shared.data.DataSource
 import xyz.heart.sms.shared.data.MimeType
@@ -531,7 +531,7 @@ class ApiDownloadService : Service() {
 
                     Log.v(TAG, "started downloading " + message.id)
 
-                    ApiUtils.downloadFileFromFirebase(Account.accountId, file, message.id, encryptionUtils, FirebaseDownloadCallback {
+                    ApiUtils.downloadMedia(Account.accountId, file, message.id, encryptionUtils, MediaDownloadCallback {
                         completedMediaDownloads++
 
                         DataSource.updateMessageData(this@ApiDownloadService, message.id, Uri.fromFile(file).toString())
@@ -542,7 +542,7 @@ class ApiDownloadService : Service() {
                         } else if (showNotification) {
                             startForeground(MESSAGE_DOWNLOAD_ID, builder.build())
                         }
-                    }, 0)
+                    })
                 } while (media.moveToNext() && processing < MAX_MEDIA_DOWNLOADS)
 
                 if (mediaCount == 0) {

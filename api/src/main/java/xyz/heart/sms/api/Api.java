@@ -51,6 +51,7 @@ import xyz.heart.sms.api.service.ConversationService;
 import xyz.heart.sms.api.service.DeviceService;
 import xyz.heart.sms.api.service.DraftService;
 import xyz.heart.sms.api.service.FolderService;
+import xyz.heart.sms.api.service.MediaService;
 import xyz.heart.sms.api.service.MessageService;
 import xyz.heart.sms.api.service.PurchaseService;
 import xyz.heart.sms.api.service.ScheduledMessageService;
@@ -284,6 +285,13 @@ public class Api {
      */
     public BetaService beta() {
         return retrofit.create(BetaService.class);
+    }
+
+    /**
+     * Gets a service that can be used for media requests.
+     */
+    public MediaService media() {
+        return retrofit.create(MediaService.class);
     }
 
     /**

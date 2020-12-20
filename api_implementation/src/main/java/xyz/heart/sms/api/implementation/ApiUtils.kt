@@ -30,11 +30,9 @@ import java.io.IOException
 import retrofit2.Response
 import xyz.heart.sms.api.Api
 import xyz.heart.sms.api.entity.*
-import xyz.heart.sms.api.implementation.firebase.FirebaseDownloadCallback
-import xyz.heart.sms.api.implementation.firebase.FirebaseUploadCallback
-import xyz.heart.sms.api.implementation.retrofit.AddConversationRetryableCallback
-import xyz.heart.sms.api.implementation.retrofit.AddMessageRetryableCallback
-import xyz.heart.sms.api.implementation.retrofit.LoggingRetryableCallback
+import xyz.heart.sms.api.implementation.media.MediaDownloadCallback
+import xyz.heart.sms.api.implementation.media.MediaUploadCallback
+import xyz.heart.sms.api.implementation.retrofit.*
 import xyz.heart.sms.encryption.EncryptionUtils
 
 /**
@@ -488,7 +486,7 @@ object ApiUtils {
         } else {
             saveFirebaseFolderRef(accountId)
             val bytes = BinaryUtils.getMediaBytes(context, data, mimeType, true)
-            uploadBytesToFirebase(accountId, bytes, deviceId, encryptionUtils, FirebaseUploadCallback {
+            addMedia(accountId, bytes, deviceId, encryptionUtils, MediaUploadCallback {
                 val body = MessageBody(deviceId, deviceConversationId,
                         messageType, encryptionUtils.encrypt("firebase -1"),
                         timestamp, encryptionUtils.encrypt(mimeType), read, seen,
@@ -499,7 +497,7 @@ object ApiUtils {
                 val call = api.message().add(request)
 
                 call.enqueue(LoggingRetryableCallback(call, RETRY_COUNT, message))
-            }, 0)
+            })
         }
     }
 
@@ -848,118 +846,56 @@ object ApiUtils {
     }
 
     /**
-     * Uploads a byte array of encrypted data to 
-     *
-     * @param bytes the byte array to upload.
-     * @param messageId the message id that the data belongs to.
-     * @param encryptionUtils the utils to encrypt the byte array with.
+     * Adds media associated with a given message
      */
-    fun uploadBytesToFirebase(accountId: String?, bytes: ByteArray, messageId: Long, encryptionUtils: EncryptionUtils?,
-                              callback: FirebaseUploadCallback, retryCount: Int) {
-        if (encryptionUtils == null || retryCount > RETRY_COUNT) {
+    fun addMedia(accountId: String?, fileBytes: ByteArray, messageId: Long, encryptionUtils: EncryptionUtils?,
+                 callback: MediaUploadCallback) {
+        if (accountId == null || encryptionUtils == null) {
             callback.onUploadFinished()
             return
         }
 
-        if (folderRef == null) {
-            saveFirebaseFolderRef(accountId)
-            if (folderRef == null) {
-                //                throw new RuntimeException("need to initialize folder ref first with saveFolderRef()");
-                callback.onUploadFinished()
-                return
-            }
-        }
+        val request = AddMediaRequest(messageId, encryptionUtils.encrypt(fileBytes))
+        val message = "add media"
 
-        try {
-            Log.v(TAG, "starting upload for $messageId")
-            folderRef!!.child(messageId.toString() + "").putBytes(encryptionUtils.encrypt(bytes).toByteArray())
-                    .addOnSuccessListener {
-                        Log.v(TAG, "finished uploading and exiting for $messageId")
-                        callback.onUploadFinished()
-                    }
-                    .addOnFailureListener { e ->
-                        Log.e(TAG, "failed to upload file", e)
-                        uploadBytesToFirebase(accountId, bytes, messageId, encryptionUtils, callback, retryCount + 1)
-                    }
-//            folderRef!!.child(messageId.toString() + "").putBytes(encryptionUtils.encrypt(bytes).toByteArray())
-//                    .addOnSuccessListener {
-//                        Log.v(TAG, "pushed through upload for $messageId")
-//                    }
-//            folderRef!!.child(messageId.toString() + "").putBytes(encryptionUtils.encrypt(bytes).toByteArray())
-//                    .addOnSuccessListener {
-//                        Log.v(TAG, "pushed through upload for $messageId")
-//                    }
-        } catch (e: Throwable) {
-            e.printStackTrace()
-            callback.onUploadFinished()
-        }
-
+        val call = api.media().add(accountId, request)
+        call.enqueue(AddMediaRetryableCallback(call, RETRY_COUNT, messageId, callback))
     }
 
     /**
-     * Downloads and decrypts a file from firebase, using a callback for when the response is done
-     *
-     * @param file the location on your device to save to.
-     * @param messageId the id of the message to grab so we can create a firebase storage ref.
-     * @param encryptionUtils the utils to use to decrypt the message.
+     * Downloads media associated with a given message
      */
-    fun downloadFileFromFirebase(accountId: String?, file: File, messageId: Long,
-                                 encryptionUtils: EncryptionUtils?,
-                                 callback: FirebaseDownloadCallback, retryCount: Int) {
-        if (encryptionUtils == null || retryCount > RETRY_COUNT) {
+    fun downloadMedia(accountId: String?, file: File, messageId: Long,
+                      encryptionUtils: EncryptionUtils?,
+                      callback: MediaDownloadCallback) {
+        if (accountId == null || encryptionUtils == null) {
             callback.onDownloadComplete()
             return
         }
 
-        if (folderRef == null) {
-            saveFirebaseFolderRef(accountId)
-            if (folderRef == null) {
-                //                throw new RuntimeException("need to initialize folder ref first with saveFolderRef()");
-                callback.onDownloadComplete()
-                return
+        val response = try {
+            ApiUtils.api.media()
+                    .download(messageId, accountId)
+                    .execute().body()
+        } catch (e: IOException) {
+            null
+        }
+
+        if (response != null) {
+            val bytes = encryptionUtils.decryptData(response.data);
+
+            try {
+                val bos = BufferedOutputStream(FileOutputStream(file))
+                bos.write(bytes)
+                bos.flush()
+                bos.close()
+            } catch (e: Exception) {
+                e.printStackTrace()
             }
         }
 
-        try {
-            val fileRef = folderRef!!.child(messageId.toString() + "")
-            Log.v(TAG, "starting download for $messageId")
-            fileRef.getBytes(MAX_SIZE)
-                    .addOnSuccessListener { bytes ->
-                        val bytes = encryptionUtils.decryptData(String(bytes))
-
-                        try {
-                            val bos = BufferedOutputStream(FileOutputStream(file))
-                            bos.write(bytes)
-                            bos.flush()
-                            bos.close()
-                        } catch (e: Exception) {
-                            e.printStackTrace()
-                        }
-
-                        Log.v(TAG, "finished downloading $messageId")
-                        callback.onDownloadComplete()
-                    }
-                    .addOnFailureListener { e ->
-                        Log.v(TAG, "failed to download file", e)
-                        val doesNotExist = e.message?.contains("does not exist")
-                        if (doesNotExist != null && doesNotExist) {
-                            downloadFileFromFirebase(accountId, file, messageId, encryptionUtils, callback, retryCount + 1)
-                        } else {
-                            callback.onDownloadComplete()
-                        }
-                    }
-//            folderRef!!.child(messageId.toString() + "").getBytes(MAX_SIZE)
-//                    .addOnSuccessListener { _ ->
-//                        Log.v(TAG, "pushed through downloading $messageId")
-//                    }
-//            folderRef!!.child(messageId.toString() + "").getBytes(MAX_SIZE)
-//                    .addOnSuccessListener { _ ->
-//                        Log.v(TAG, "pushed through downloading $messageId")
-//                    }
-        } catch (e: Exception) {
-            e.printStackTrace()
-            callback.onDownloadComplete()
-        }
+        Log.v(TAG, "finished downloading $messageId")
+        callback.onDownloadComplete()
     }
 
     /**

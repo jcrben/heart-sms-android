@@ -32,9 +32,9 @@ import xyz.heart.sms.api.implementation.Account
 import xyz.heart.sms.api.implementation.ApiUtils
 import xyz.heart.sms.api.implementation.BinaryUtils
 import xyz.heart.sms.api.implementation.LoginActivity
-import xyz.heart.sms.api.implementation.firebase.FirebaseDownloadCallback
-import xyz.heart.sms.api.implementation.firebase.FirebaseUploadCallback
 import xyz.heart.sms.api.implementation.firebase.MessengerFirebaseMessagingService
+import xyz.heart.sms.api.implementation.media.MediaDownloadCallback
+import xyz.heart.sms.api.implementation.media.MediaUploadCallback
 import xyz.heart.sms.encryption.EncryptionUtils
 import xyz.heart.sms.shared.R
 import xyz.heart.sms.shared.data.*
@@ -335,7 +335,7 @@ class FirebaseHandlerService : IntentService("FirebaseHandlerService") {
                 message.type = Message.TYPE_SENT
             }
 
-            val callback = FirebaseDownloadCallback {
+            val callback = MediaDownloadCallback {
                 message.data = Uri.fromFile(file).toString()
                 DataSource.updateMessageData(context, message.id, message.data!!)
                 MessageListUpdatedReceiver.sendBroadcast(context, message.conversationId)
@@ -387,11 +387,11 @@ class FirebaseHandlerService : IntentService("FirebaseHandlerService") {
 
                 if (to != null) {
                     val bytes = BinaryUtils.getMediaBytes(context, message.data, message.mimeType, true)
-                    ApiUtils.uploadBytesToFirebase(Account.accountId, bytes, message.id, encryptionUtils, FirebaseUploadCallback { }, 0)
+                    ApiUtils.addMedia(Account.accountId, bytes, message.id, encryptionUtils, MediaUploadCallback { })
                 }
             }
 
-            apiUtils.downloadFileFromFirebase(Account.accountId, file, message.id, encryptionUtils, callback, 0)
+            apiUtils.downloadMedia(Account.accountId, file, message.id, encryptionUtils, callback)
 
         }
 
