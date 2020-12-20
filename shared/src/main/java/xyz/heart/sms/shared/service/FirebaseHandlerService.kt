@@ -242,7 +242,7 @@ class FirebaseHandlerService : IntentService("FirebaseHandlerService") {
                 if (message.data == "firebase -1" && message.mimeType != MimeType.TEXT_PLAIN) {
                     Log.v(TAG, "downloading binary from firebase")
 
-                    addMessageAfterFirebaseDownload(context, encryptionUtils!!, message)
+                    addMessageAfterMediaDownload(context, encryptionUtils!!, message)
                     return
                 }
 
@@ -316,7 +316,7 @@ class FirebaseHandlerService : IntentService("FirebaseHandlerService") {
             }
         }
 
-        private fun addMessageAfterFirebaseDownload(context: Context, encryptionUtils: EncryptionUtils, message: Message, to: String? = null) {
+        private fun addMessageAfterMediaDownload(context: Context, encryptionUtils: EncryptionUtils, message: Message, to: String? = null) {
             val apiUtils = ApiUtils
             apiUtils.saveFirebaseFolderRef(Account.accountId)
             val file = File(context.filesDir, message.id.toString() + MimeType.getExtension(message.mimeType!!))
@@ -1062,7 +1062,7 @@ class FirebaseHandlerService : IntentService("FirebaseHandlerService") {
             if (message.data == "firebase -1" && message.mimeType != MimeType.TEXT_PLAIN) {
                 Log.v(TAG, "downloading binary from firebase")
 
-                addMessageAfterFirebaseDownload(context, encryptionUtils!!, message, to)
+                addMessageAfterMediaDownload(context, encryptionUtils!!, message, to)
                 return
             } else {
                 val conversationId = DataSource.insertMessage(message, to, context, true)
