@@ -1023,11 +1023,11 @@ class FirebaseHandlerService : IntentService("FirebaseHandlerService") {
             } else null
 
             val mimeType: String? = if (json.has("mime_type")) {
-                json.getString("mime_type")
+                encryptionUtils!!.decrypt(json.getString("mime_type"))
             } else null
 
-            val text = json.getString("message")
-            val toFromWeb = json.getString("to")
+            val text = encryptionUtils!!.decrypt(json.getString("message"))
+            val toFromWeb = encryptionUtils!!.decrypt(json.getString("to"))
             val split = toFromWeb.split(",".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
 
             var to = ""
