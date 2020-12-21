@@ -23,6 +23,7 @@ import androidx.fragment.app.FragmentActivity
 import xyz.heart.sms.activity.main.MainColorController
 import xyz.heart.sms.api.implementation.Account
 import xyz.heart.sms.api.implementation.ApiUtils
+import xyz.heart.sms.encryption.EncryptionUtils
 import java.util.concurrent.Executor
 
 class PasscodeVerificationActivity : FloatingTutorialActivity() {
@@ -190,8 +191,17 @@ class AccountPasswordPage(context: FloatingTutorialActivity) : TutorialPage(cont
         dialog.setMessage(getActivity().getString(xyz.heart.sms.api.implementation.R.string.api_connecting))
         dialog.show()
 
+        val hashedPassword = EncryptionUtils.getHash(password);
+
+        if (hashedPassword == null) {
+            // Error hashing the password
+            Toast.makeText(getActivity(), R.string.api_hashing_error,
+                    Toast.LENGTH_SHORT).show()
+            return
+        }
+
         Thread {
-            val response = ApiUtils.login(email, password)
+            val response = ApiUtils.login(email, hashedPassword)
             getActivity().runOnUiThread {
                 try {
                     dialog.dismiss()

@@ -48,6 +48,7 @@
     <string name="api_no_name">No name entered</string>
     <string name="api_no_phone_number">No phone number entered</string>
     <string name="api_login_error">An error occurred logging in, wrong email or password?</string>
+    <string name="api_hashing_error">An error occurred hashing the password</string>
     <string name="api_activate_summary">Login to get all of your messages on this device!</string>
     <string name="api_activate_1">1</string>
     <string name="api_activate_2">2</string>

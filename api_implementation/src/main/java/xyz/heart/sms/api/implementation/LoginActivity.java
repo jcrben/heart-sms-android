@@ -258,8 +258,23 @@ public class LoginActivity extends AppCompatActivity {
 
         new Thread(() -> {
             ApiUtils utils = ApiUtils.INSTANCE;
+
+            String hashedPassword = EncryptionUtils.getHash(password.getText().toString());
+
+            if (hashedPassword == null) {
+                // Error hashing the password
+                runOnUiThread(() -> {
+                    try {
+                        dialog.dismiss();
+                    } catch (Exception e) { }
+                    setResult(RESULT_CANCELED);
+                    Toast.makeText(getApplicationContext(), R.string.api_hashing_error,
+                            Toast.LENGTH_SHORT).show();
+                });
+            }
+
             final LoginResponse response = utils.login(email.getText().toString(),
-                    password.getText().toString());
+                    hashedPassword);
 
             if (response == null) {
                 runOnUiThread(() -> {
@@ -305,8 +320,23 @@ public class LoginActivity extends AppCompatActivity {
 
         new Thread(() -> {
             ApiUtils utils = ApiUtils.INSTANCE;
+
+            String hashedPassword = EncryptionUtils.getHash(password.getText().toString());
+
+            if (hashedPassword == null) {
+                // Error hashing the password
+                runOnUiThread(() -> {
+                    try {
+                        dialog.dismiss();
+                    } catch (Exception e) { }
+                    setResult(RESULT_CANCELED);
+                    Toast.makeText(getApplicationContext(), R.string.api_hashing_error,
+                            Toast.LENGTH_SHORT).show();
+                });
+            }
+
             final SignupResponse response = utils.signup(email.getText().toString(),
-                    password.getText().toString(), name.getText().toString(),
+                    hashedPassword, name.getText().toString(),
                     phoneNumber.getText().toString());
 
             if (response == null) {

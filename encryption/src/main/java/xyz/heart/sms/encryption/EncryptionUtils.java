@@ -20,6 +20,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.AlgorithmParameters;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
+import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidParameterSpecException;
 
@@ -138,6 +139,16 @@ public class EncryptionUtils {
 //            throw new RuntimeException("could not decryptData data. Key: " +
 //                    Base64.encodeToString(secretKey.getEncoded(), Base64.DEFAULT), e);
             return new byte[0];
+        }
+    }
+
+    public static String getHash (String strToHash) {
+        try {
+            MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
+            messageDigest.update(strToHash.getBytes());
+            return new String(messageDigest.digest());
+        } catch (NoSuchAlgorithmException e) {
+            return null;
         }
     }
 
