@@ -16,6 +16,7 @@
 
 package xyz.heart.sms.encryption;
 
+import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 import java.security.AlgorithmParameters;
 import java.security.InvalidAlgorithmParameterException;
@@ -30,6 +31,9 @@ import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
+
+import org.apache.commons.codec.binary.Hex;
+import org.apache.commons.codec.digest.DigestUtils;
 
 /**
  * Utilities for encrypting and decrypting data given the data and a secret key.
@@ -143,13 +147,7 @@ public class EncryptionUtils {
     }
 
     public static String getHash (String strToHash) {
-        try {
-            MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
-            messageDigest.update(strToHash.getBytes());
-            return new String(messageDigest.digest());
-        } catch (NoSuchAlgorithmException e) {
-            return null;
-        }
+        return new String(Hex.encodeHex(DigestUtils.sha256(strToHash)));
     }
 
 }

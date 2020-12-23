@@ -52,7 +52,7 @@ class AccountPurchaseActivity : AppCompatActivity() {
     }
 
     private fun setUpInitialLayout() {
-        findViewById<View>(R.id.try_it).setOnClickListener { tryIt() }
+        findViewById<View>(R.id.try_it).setOnClickListener { startSignIn() }
 
         val startTime: Long = 500
         quickViewReveal(findViewById(R.id.icon_watch), startTime)
