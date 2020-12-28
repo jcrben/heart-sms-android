@@ -23,6 +23,7 @@ import android.content.ClipboardManager
 import android.content.Context.CLIPBOARD_SERVICE
 import android.content.Intent
 import android.content.res.ColorStateList
+import android.graphics.BitmapFactory
 import android.net.Uri
 import androidx.appcompat.app.AlertDialog
 import android.view.HapticFeedbackConstants
@@ -32,10 +33,10 @@ import android.view.animation.DecelerateInterpolator
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.browser.customtabs.CustomTabsIntent
 import androidx.fragment.app.FragmentActivity
 import com.bignerdranch.android.multiselector.MultiSelector
 import com.bignerdranch.android.multiselector.SwappingHolder
-import xyz.klinker.android.article.ArticleIntent
 import xyz.heart.sms.R
 import xyz.heart.sms.activity.ImageViewerActivity
 import xyz.heart.sms.fragment.message.MessageListFragment
@@ -45,7 +46,6 @@ import xyz.heart.sms.shared.receiver.MessageListUpdatedReceiver
 import xyz.heart.sms.shared.util.*
 import xyz.heart.sms.shared.util.listener.ForcedRippleTouchListener
 import xyz.heart.sms.shared.util.listener.MessageDeletedListener
-import xyz.heart.sms.shared.util.media.parsers.ArticleParser
 
 @Suppress("DEPRECATION")
 /**
@@ -241,20 +241,15 @@ class MessageViewHolder(private val fragment: MessageListFragment?, itemView: Vi
     }
 
     private fun startArticle() {
-        val intent = ArticleIntent.Builder(itemView.context, ArticleParser.ARTICLE_API_KEY)
-                .setToolbarColor(primaryColor)
-                .setAccentColor(accentColor)
-                .setTheme(if (Settings.isCurrentlyDarkTheme(itemView.context))
-                    ArticleIntent.THEME_DARK
-                else
-                    ArticleIntent.THEME_LIGHT)
-                .setTextSize(Settings.mediumFont + 1)
-                .build()
+        val builder = CustomTabsIntent.Builder()
+        builder.setToolbarColor(primaryColor)
+        builder.setShowTitle(true)
+        val customTabsIntent = builder.build()
 
         val preview = ArticlePreview.build(data!!)
         if (preview != null) {
             if (Settings.internalBrowser) {
-                intent.launchUrl(itemView.context, Uri.parse(preview.webUrl))
+                customTabsIntent.launchUrl(activity!!, Uri.parse(preview.webUrl))
             } else {
                 val url = Intent(Intent.ACTION_VIEW)
                 url.data = Uri.parse(preview.webUrl)

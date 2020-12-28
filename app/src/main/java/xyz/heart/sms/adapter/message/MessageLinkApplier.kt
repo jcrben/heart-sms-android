@@ -2,14 +2,16 @@ package xyz.heart.sms.adapter.message
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.graphics.BitmapFactory
 import android.net.Uri
 import android.util.Log
 import android.util.Patterns
+import androidx.browser.customtabs.CustomTabsIntent
 import androidx.fragment.app.FragmentActivity
 import com.klinker.android.link_builder.Link
 import com.klinker.android.link_builder.TouchableMovementMethod
 import com.klinker.android.link_builder.applyLinks
-import xyz.klinker.android.article.ArticleIntent
+import xyz.heart.sms.R
 import xyz.heart.sms.adapter.view_holder.MessageViewHolder
 import xyz.heart.sms.fragment.message.MessageListFragment
 import xyz.heart.sms.fragment.bottom_sheet.LinkLongClickFragment
@@ -17,7 +19,6 @@ import xyz.heart.sms.shared.data.Settings
 import xyz.heart.sms.shared.data.model.Message
 import xyz.heart.sms.shared.util.PhoneNumberUtils
 import xyz.heart.sms.shared.util.Regex
-import xyz.heart.sms.shared.util.media.parsers.ArticleParser
 
 @Suppress("DEPRECATION")
 class MessageLinkApplier(private val fragment: MessageListFragment, private val accentColor: Int, private val receivedColor: Int) {
@@ -95,14 +96,11 @@ class MessageLinkApplier(private val fragment: MessageListFragment, private val 
                     Log.e("force_close", "couldn't start link click: $clickedText", e)
                 }
             } else {
-                val intent = ArticleIntent.Builder(holder.itemView.context, ArticleParser.ARTICLE_API_KEY)
-                        .setTheme(if (Settings.isCurrentlyDarkTheme(holder.itemView.context)) ArticleIntent.THEME_DARK else ArticleIntent.THEME_LIGHT)
-                        .setToolbarColor(receivedColor)
-                        .setAccentColor(accentColor)
-                        .setTextSize(Settings.mediumFont + 1)
-                        .build()
+                val builder = CustomTabsIntent.Builder()
+                builder.setShowTitle(true)
+                val customTabsIntent = builder.build()
 
-                intent.launchUrl(holder.itemView.context, Uri.parse(link))
+                customTabsIntent.launchUrl(holder.itemView.context, Uri.parse(link))
             }
         }
 

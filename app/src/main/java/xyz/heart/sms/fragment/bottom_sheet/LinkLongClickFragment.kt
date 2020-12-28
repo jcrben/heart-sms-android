@@ -3,23 +3,18 @@ package xyz.heart.sms.fragment.bottom_sheet
 import android.app.PendingIntent
 import android.content.ClipData
 import android.content.ClipboardManager
+import android.content.Context.CLIPBOARD_SERVICE
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.net.Uri
-import androidx.browser.customtabs.CustomTabsIntent
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Toast
-
-import java.util.Random
-
-import xyz.klinker.android.article.ArticleIntent
+import androidx.browser.customtabs.CustomTabsIntent
 import xyz.heart.sms.R
 import xyz.heart.sms.shared.data.MimeType
-import xyz.heart.sms.shared.data.Settings
-import xyz.heart.sms.shared.util.media.parsers.ArticleParser
+import java.util.*
 
-import android.content.Context.CLIPBOARD_SERVICE
 
 class LinkLongClickFragment : TabletOptimizedBottomSheetDialogFragment() {
 
@@ -35,6 +30,17 @@ class LinkLongClickFragment : TabletOptimizedBottomSheetDialogFragment() {
         val copyText = contentView.findViewById<View>(R.id.copy_text)
 
         openExternal.setOnClickListener {
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(link))
+
+            try {
+                startActivity(browserIntent)
+            } catch (e: Exception) {
+            }
+
+            dismiss()
+        }
+
+        openInternal.setOnClickListener {
             val builder = CustomTabsIntent.Builder()
             builder.setToolbarColor(mainColor)
             builder.setShowTitle(true)
@@ -44,26 +50,7 @@ class LinkLongClickFragment : TabletOptimizedBottomSheetDialogFragment() {
             val customTabsIntent = builder.build()
 
             try {
-                customTabsIntent.launchUrl(activity!!, Uri.parse(link))
-            } catch (e: Exception) {
-            }
-
-            dismiss()
-        }
-
-        openInternal.setOnClickListener {
-            val intent = ArticleIntent.Builder(contentView.context, ArticleParser.ARTICLE_API_KEY)
-                    .setToolbarColor(mainColor)
-                    .setAccentColor(accentColor)
-                    .setTheme(if (Settings.isCurrentlyDarkTheme(contentView.context))
-                        ArticleIntent.THEME_DARK
-                    else
-                        ArticleIntent.THEME_LIGHT)
-                    .setTextSize(Settings.mediumFont + 1)
-                    .build()
-
-            try {
-                intent.launchUrl(contentView.context, Uri.parse(link))
+                customTabsIntent.launchUrl(requireActivity(), Uri.parse(link))
             } catch (e: Exception) {
             }
 

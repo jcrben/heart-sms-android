@@ -1444,4 +1444,17 @@ object ApiUtils {
 
         call.enqueue(LoggingRetryableCallback(call, RETRY_COUNT, message))
     }
+
+    /**
+     * Parse an article for title, image, description, etc.
+     */
+    fun parseArticle(url: String?): ArticleResponse? {
+        val request = ArticleRequest(url)
+
+        return try {
+            api.article().parse(request).execute().body()
+        } catch (e: IOException) {
+            ArticleResponse()
+        }
+    }
 }

@@ -2,8 +2,7 @@ package xyz.heart.sms.shared.data
 
 import org.json.JSONException
 import org.json.JSONObject
-
-import xyz.klinker.android.article.data.Article
+import xyz.heart.sms.api.entity.ArticleResponse
 
 class ArticlePreview {
 
@@ -39,18 +38,18 @@ class ArticlePreview {
         private const val JSON_DOMAIN = "domain"
         private const val JSON_WEB_URL = "web_url"
 
-        fun build(article: Article?): ArticlePreview? {
+        fun build(article: ArticleResponse?): ArticlePreview? {
             val preview = ArticlePreview()
 
-            if (article == null || !article.isArticle) {
+            if (article == null) {
                 return null
             }
 
             preview.title = article.title
             preview.description = article.description
-            preview.imageUrl = article.image
+            preview.imageUrl = article.imageUrl
             preview.domain = article.domain
-            preview.webUrl = article.url
+            preview.webUrl = article.webUrl
 
             return preview
         }

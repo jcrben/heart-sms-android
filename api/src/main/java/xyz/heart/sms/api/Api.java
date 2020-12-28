@@ -43,6 +43,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import xyz.heart.sms.api.service.AccountService;
 import xyz.heart.sms.api.service.ActivateService;
+import xyz.heart.sms.api.service.ArticleService;
 import xyz.heart.sms.api.service.AutoReplyService;
 import xyz.heart.sms.api.service.BetaService;
 import xyz.heart.sms.api.service.BlacklistService;
@@ -285,6 +286,13 @@ public class Api {
      */
     public BetaService beta() {
         return retrofit.create(BetaService.class);
+    }
+
+    /**
+     * Gets a service that can be used for article requests.
+     */
+    public ArticleService article() {
+        return retrofit.create(ArticleService.class);
     }
 
     /**

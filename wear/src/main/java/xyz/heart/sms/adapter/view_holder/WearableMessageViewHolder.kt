@@ -9,8 +9,8 @@ import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.browser.customtabs.CustomTabsIntent
 import androidx.recyclerview.widget.RecyclerView
-import xyz.klinker.android.article.ArticleIntent
 import xyz.heart.sms.R
 import xyz.heart.sms.shared.data.ArticlePreview
 import xyz.heart.sms.shared.data.MimeType
@@ -20,7 +20,6 @@ import xyz.heart.sms.shared.util.ColorUtils
 import xyz.heart.sms.shared.util.DensityUtil
 import xyz.heart.sms.shared.util.ImageUtils
 import xyz.heart.sms.shared.util.listener.ForcedRippleTouchListener
-import xyz.heart.sms.shared.util.media.parsers.ArticleParser
 
 class WearableMessageViewHolder(itemView: View, color: Int, type: Int, private val timestampHeight: Int)
     : RecyclerView.ViewHolder(itemView) {
@@ -121,19 +120,14 @@ class WearableMessageViewHolder(itemView: View, color: Int, type: Int, private v
     }
 
     private fun startArticle() {
-        val intent = ArticleIntent.Builder(itemView.context, ArticleParser.ARTICLE_API_KEY)
-                .setToolbarColor(primaryColor)
-                .setAccentColor(accentColor)
-                .setTheme(if (Settings.isCurrentlyDarkTheme(itemView.context))
-                    ArticleIntent.THEME_DARK
-                else
-                    ArticleIntent.THEME_LIGHT)
-                .setTextSize(Settings.mediumFont + 1)
-                .build()
+        val builder = CustomTabsIntent.Builder()
+        builder.setToolbarColor(primaryColor)
+        builder.setShowTitle(true)
+        val customTabsIntent = builder.build()
 
         val preview = ArticlePreview.build(data!!)
         if (preview != null) {
-            intent.launchUrl(itemView.context, Uri.parse(preview.webUrl))
+            customTabsIntent.launchUrl(itemView.context, Uri.parse(preview.webUrl))
         }
     }
 }

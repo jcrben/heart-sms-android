@@ -109,7 +109,6 @@ subprojects {
                     targetSdkVersion versions.targetSdk
 
                     buildConfigField("String", "GIPHY_API_KEY", "\"${apiKeys['GIPHY']}\"")
-                    buildConfigField("String", "ARTICLE_API_KEY", "\"${apiKeys['ARTICLE']}\"")
                     buildConfigField("String", "YOUTUBE_API_KEY", "\"${apiKeys['YOUTUBE']}\"")
 
                     vectorDrawables.useSupportLibrary = true
