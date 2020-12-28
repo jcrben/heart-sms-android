@@ -1,7 +1,6 @@
 package xyz.heart.sms.adapter.conversation
 
 import android.app.Activity
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 import xyz.heart.sms.shared.data.SectionType
 import xyz.heart.sms.shared.data.model.Conversation
 import xyz.heart.sms.shared.data.pojo.ReorderType
@@ -18,7 +17,6 @@ class ConversationAdapterDataProvider(private val adapter: ConversationListAdapt
 
         if (adapter.showHeaderAboutTextingOnline()) {
             sectionCounts.add(SectionType(SectionType.CARD_ABOUT_ONLINE, 0))
-            AnalyticsHelper.convoListCardShown(activity)
         }
 
         var currentSection = 0

@@ -19,10 +19,10 @@ package xyz.heart.sms
 import android.app.Application
 import android.content.Intent
 import android.os.Build
+import android.util.Log
 import com.sensortower.events.EventHandler
 import xyz.heart.sms.api.implementation.Account
 import xyz.heart.sms.api.implementation.AccountInvalidator
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 import xyz.heart.sms.api.implementation.firebase.FirebaseApplication
 import xyz.heart.sms.api.implementation.firebase.FirebaseMessageHandler
 import xyz.heart.sms.api.implementation.retrofit.ApiErrorPersister
@@ -148,7 +148,7 @@ class MessengerApplication : FirebaseApplication(), ApiErrorPersister, AccountIn
     override val eventHandler: EventHandler
         get() = object : EventHandler {
             override fun onAnalyticsEvent(type: String, message: String?) {
-                AnalyticsHelper.logEvent(this@MessengerApplication, type)
+                Log.v(type, "skipped firebase analytics")
             }
         }
 }

@@ -43,9 +43,6 @@ dependencies {
     api "androidx.exifinterface:exifinterface:${versions.androidXExif}"
     api 'androidx.sharetarget:sharetarget:1.0.0'
 
-    api 'com.google.firebase:firebase-crashlytics:17.2.2'
-    api "com.google.firebase:firebase-analytics:${versions.firebaseAnalytics}"
-    api "com.google.firebase:firebase-auth:${versions.firebaseAuth}"
     api "com.google.android.gms:play-services-maps:${versions.playServices}"
 
     api "androidx.arch.core:core-runtime:2.1.0"

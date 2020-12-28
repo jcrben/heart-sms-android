@@ -5,8 +5,8 @@ import android.net.Uri
 import android.os.Build
 import android.os.Handler
 import android.os.Parcelable
+import android.util.Log
 import xyz.heart.sms.R
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 import xyz.heart.sms.shared.data.MimeType
 import xyz.heart.sms.shared.service.MessengerChooserTargetService
 import xyz.heart.sms.shared.util.FileUtils
@@ -31,7 +31,7 @@ class ComposeIntentHandler(private val activity: ComposeActivity) {
                 intent.action == Intent.ACTION_SEND_MULTIPLE -> shareMultipleImages(intent)
             }
         } catch (e: Exception) {
-            AnalyticsHelper.caughtForceClose(activity, "caught when sharing to compose activity", e)
+            Log.e("force_close", "App was force closed during compose", e)
         }
     }
 

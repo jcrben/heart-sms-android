@@ -5,7 +5,6 @@ import android.widget.TextView
 import xyz.heart.sms.R
 import xyz.heart.sms.activity.MessengerActivity
 import xyz.heart.sms.adapter.view_holder.ConversationViewHolder
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 import xyz.heart.sms.shared.data.SectionType
 import xyz.heart.sms.shared.data.Settings
 
@@ -63,7 +62,6 @@ class ConversationSectionHeaderBinder(private val adapter: ConversationListAdapt
             tryIt.postDelayed({
                 activity.navController.drawerItemClicked(R.id.drawer_account)
                 activity.clickNavigationItem(R.id.drawer_account)
-                AnalyticsHelper.convoListTryIt(activity)
             }, 500)
         }
 
@@ -74,7 +72,6 @@ class ConversationSectionHeaderBinder(private val adapter: ConversationListAdapt
 
             Settings.setValue(activity, activity.getString(R.string.pref_show_text_online_on_conversation_list), false)
             adapter.notifyItemRemoved(0)
-            AnalyticsHelper.convoListNotNow(activity)
         }
     }
 }

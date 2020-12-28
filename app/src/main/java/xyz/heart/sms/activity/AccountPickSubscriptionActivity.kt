@@ -14,7 +14,6 @@ import android.view.ViewAnimationUtils
 import android.widget.TextView
 
 import xyz.heart.sms.R
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 import xyz.heart.sms.fragment.settings.MyAccountFragment
 import xyz.heart.sms.shared.data.ColorSet
 import xyz.heart.sms.shared.data.Settings
@@ -26,8 +25,6 @@ class AccountPickSubscriptionActivity : AppCompatActivity() {
 
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        AnalyticsHelper.accountTutorialStarted(this)
 
         setResult(Activity.RESULT_CANCELED)
         setContentView(R.layout.activity_account_pick_subscription)
@@ -43,8 +40,6 @@ class AccountPickSubscriptionActivity : AppCompatActivity() {
     }
 
     private fun setUpPurchaseLayout() {
-        AnalyticsHelper.accountTutorialFinished(this)
-
         // set up purchasing views here
         val monthly = findViewById<View>(R.id.monthly)
         val threeMonth = findViewById<View>(R.id.three_month)
@@ -92,12 +87,10 @@ class AccountPickSubscriptionActivity : AppCompatActivity() {
 //            Toast.makeText(this, R.string.subscription_toast, Toast.LENGTH_LONG).show()
         }
 
-        AnalyticsHelper.accountSelectedPurchase(this)
         finish()
     }
 
     private fun finishWithTrialCancellation() {
-        AnalyticsHelper.accountFreeTrialUpgradeDialogCancelClicked(this)
 
         setResult(RESULT_CANCEL_TRIAL)
         finish()
@@ -105,7 +98,6 @@ class AccountPickSubscriptionActivity : AppCompatActivity() {
 
     private fun startSignIn() {
         setResult(MyAccountFragment.RESULT_SIGN_IN)
-        AnalyticsHelper.accountSignInInsteadOfPurchase(this)
 
         finish()
     }

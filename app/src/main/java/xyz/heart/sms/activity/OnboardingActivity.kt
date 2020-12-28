@@ -9,15 +9,12 @@ import com.github.paolorotolo.appintro.AppIntro
 import com.github.paolorotolo.appintro.AppIntroFragment
 
 import xyz.heart.sms.R
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 
 @Suppress("DEPRECATION")
 class OnboardingActivity : AppIntro() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        AnalyticsHelper.tutorialStarted(this)
 
         addSlide(AppIntroFragment.newInstance(
                 getString(R.string.onboarding_title_1), getString(R.string.onboarding_content_1),
@@ -46,15 +43,10 @@ class OnboardingActivity : AppIntro() {
     override fun onDonePressed(currentFragment: Fragment?) {
         super.onDonePressed(currentFragment)
         finish()
-
-        AnalyticsHelper.tutorialFinished(this)
     }
 
     override fun onSkipPressed(currentFragment: Fragment?) {
         super.onSkipPressed(currentFragment)
         finish()
-
-        AnalyticsHelper.tutorialSkipped(this)
-        AnalyticsHelper.tutorialFinished(this)
     }
 }

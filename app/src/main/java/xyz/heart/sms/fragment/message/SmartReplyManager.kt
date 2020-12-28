@@ -15,7 +15,6 @@ import androidx.fragment.app.FragmentActivity
 import com.google.firebase.ml.naturallanguage.smartreply.SmartReplySuggestion
 import xyz.heart.sms.R
 import xyz.heart.sms.activity.SettingsActivity
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 import xyz.heart.sms.fragment.message.send.SendMessageManager
 import xyz.heart.sms.shared.data.Settings
 import xyz.heart.sms.shared.util.DensityUtil
@@ -60,8 +59,6 @@ class SmartReplyManager(private val fragment: MessageListFragment) {
                         tv.text = suggestion.text
 
                         layout.setOnClickListener {
-                            AnalyticsHelper.sendSmartReply(activity)
-
                             messageEntry.setText(suggestion.text)
                             messageEntry.setSelection(suggestion.text.length)
                             messageEntry.requestFocus()

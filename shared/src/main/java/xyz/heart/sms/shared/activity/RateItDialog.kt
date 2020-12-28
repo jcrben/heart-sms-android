@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 import xyz.heart.sms.shared.R
 import xyz.heart.sms.shared.data.Settings
 import xyz.heart.sms.shared.util.DensityUtil
@@ -21,13 +20,11 @@ class RateItDialog : FloatingTutorialActivity(), TutorialFinishedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        AnalyticsHelper.rateItPromptShown(this)
     }
 
     override fun onTutorialFinished() {
         try {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$packageName")))
-            AnalyticsHelper.rateItClicked(this)
         } catch (e: ActivityNotFoundException) {
             Toast.makeText(this, "Couldn't launch the Play Store!", Toast.LENGTH_SHORT).show()
         }

@@ -12,7 +12,6 @@ import android.view.View
 import android.view.ViewAnimationUtils
 
 import xyz.heart.sms.R
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 import xyz.heart.sms.fragment.settings.MyAccountFragment
 import xyz.heart.sms.shared.data.ColorSet
 import xyz.heart.sms.shared.data.Settings
@@ -22,8 +21,6 @@ class AccountTrialActivity : AppCompatActivity() {
 
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        AnalyticsHelper.accountStartTrialTutorial(this)
 
         setResult(Activity.RESULT_CANCELED)
         setContentView(R.layout.activity_account_trial)
@@ -51,7 +48,6 @@ class AccountTrialActivity : AppCompatActivity() {
 
     private fun tryIt() {
         setResult(MyAccountFragment.RESULT_START_TRIAL)
-        AnalyticsHelper.accountAcceptFreeTrial(this)
 
         close()
     }

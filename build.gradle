@@ -46,10 +46,7 @@ buildscript {
             'androidXTester'    : '1.1.0',
             'androidXEspresso'  : '3.1.0',
 
-            'firebaseAnalytics' : '17.4.4',
             'firebaseMessaging' : '20.2.0',
-            'firebaseStorage'   : '19.1.1',
-            'firebaseAuth'      : '19.3.2',
 
             'mockito'           : '3.5.13',
             'robolectric'       : '4.4',
@@ -67,7 +64,6 @@ buildscript {
         classpath "com.android.tools.build:gradle:${versions.gradlePlugin}"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
         classpath 'com.google.gms:google-services:4.3.4'
-        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.3.0'
     }
 
 }

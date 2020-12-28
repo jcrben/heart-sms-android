@@ -26,7 +26,6 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import android.util.Log
 
-import com.google.firebase.auth.FirebaseAuth
 import xyz.heart.sms.api.entity.*
 
 import java.io.File
@@ -486,24 +485,11 @@ class ApiDownloadService : Service() {
             startForeground(MESSAGE_DOWNLOAD_ID, builder.build())
         }
 
-        val auth = FirebaseAuth.getInstance()
-        try {
-            auth.signInAnonymously()
-                    .addOnSuccessListener { processMediaDownload(manager, builder) }
-                    .addOnFailureListener { e ->
-                        Log.e(TAG, "failed to sign in to firebase", e)
-                        finishMediaDownload(manager)
-                    }
-        } catch (e: Exception) {
-            // android wear issue
-            finishMediaDownload(manager)
-        }
+        processMediaDownload(manager, builder)
     }
 
     private fun processMediaDownload(manager: NotificationManagerCompat,
                                      builder: NotificationCompat.Builder) {
-        ApiUtils.saveFirebaseFolderRef(Account.accountId)
-
         Thread {
             try {
                 Thread.sleep((1000 * 60 * 5).toLong())

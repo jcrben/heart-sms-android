@@ -9,7 +9,6 @@ import android.util.Log
 import xyz.heart.sms.shared.R
 import xyz.heart.sms.api.implementation.Account
 import xyz.heart.sms.api.implementation.ApiUtils
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 import xyz.heart.sms.shared.data.DataSource
 import xyz.heart.sms.shared.data.MimeType
 import xyz.heart.sms.shared.data.model.Message
@@ -75,8 +74,6 @@ class SendSmartReplyReceiver : BroadcastReceiver() {
         ConversationListUpdatedReceiver.sendBroadcast(context, conversationId, context.getString(R.string.you) + ": " + reply, true)
         MessageListUpdatedReceiver.sendBroadcast(context, conversationId)
         MessengerAppWidgetProvider.refreshWidget(context)
-
-        AnalyticsHelper.sendSmartReply(context)
     }
 
     companion object {

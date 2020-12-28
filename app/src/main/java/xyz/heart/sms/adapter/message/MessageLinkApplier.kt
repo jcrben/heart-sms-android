@@ -3,6 +3,7 @@ package xyz.heart.sms.adapter.message
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
+import android.util.Log
 import android.util.Patterns
 import androidx.fragment.app.FragmentActivity
 import com.klinker.android.link_builder.Link
@@ -10,7 +11,6 @@ import com.klinker.android.link_builder.TouchableMovementMethod
 import com.klinker.android.link_builder.applyLinks
 import xyz.klinker.android.article.ArticleIntent
 import xyz.heart.sms.adapter.view_holder.MessageViewHolder
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 import xyz.heart.sms.fragment.message.MessageListFragment
 import xyz.heart.sms.fragment.bottom_sheet.LinkLongClickFragment
 import xyz.heart.sms.shared.data.Settings
@@ -92,7 +92,7 @@ class MessageLinkApplier(private val fragment: MessageListFragment, private val 
                 try {
                     holder.itemView.context.startActivity(url)
                 } catch (e: Exception) {
-                    AnalyticsHelper.caughtForceClose(holder.itemView.context, "couldn't start link click: $clickedText", e)
+                    Log.e("force_close", "couldn't start link click: $clickedText", e)
                 }
             } else {
                 val intent = ArticleIntent.Builder(holder.itemView.context, ArticleParser.ARTICLE_API_KEY)

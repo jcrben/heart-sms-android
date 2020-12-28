@@ -40,9 +40,6 @@ dependencies {
     implementation "com.google.android.material:material:1.1.0"
     implementation "androidx.exifinterface:exifinterface:${versions.androidXExif}"
 
-    implementation "com.google.firebase:firebase-analytics:${versions.firebaseAnalytics}"
-    implementation "com.google.firebase:firebase-storage:${versions.firebaseStorage}"
-    implementation "com.google.firebase:firebase-auth:${versions.firebaseAuth}"
     api "com.google.firebase:firebase-messaging:${versions.firebaseMessaging}"
 
     testImplementation 'junit:junit:4.12'

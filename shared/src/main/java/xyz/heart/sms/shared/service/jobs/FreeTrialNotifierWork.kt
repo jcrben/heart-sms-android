@@ -10,7 +10,6 @@ import androidx.work.Worker
 import androidx.work.WorkerParameters
 import xyz.heart.sms.shared.util.TimeUtils
 import xyz.heart.sms.api.implementation.Account
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 import xyz.heart.sms.shared.R
 import xyz.heart.sms.shared.data.Settings
 import xyz.heart.sms.shared.util.NotificationUtils
@@ -22,7 +21,6 @@ class FreeTrialNotifierWork(private val context: Context, params: WorkerParamete
     override fun doWork(): Result {
         if (Account.exists() && Account.subscriptionType == Account.SubscriptionType.FREE_TRIAL) {
             val daysLeft = Account.getDaysLeftInTrial()
-            AnalyticsHelper.accountTrialDay(context, daysLeft)
             when (daysLeft) {
 //                7 -> notifyDaysLeft(7)
 //                6 -> notifyDaysLeft(6)

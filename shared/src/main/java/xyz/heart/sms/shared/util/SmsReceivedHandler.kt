@@ -6,7 +6,6 @@ import android.content.Intent
 import android.os.Build
 import android.provider.Telephony
 import android.telephony.SmsMessage
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 import xyz.heart.sms.shared.data.DataSource
 import xyz.heart.sms.shared.data.MimeType
 import xyz.heart.sms.shared.data.model.Message
@@ -168,7 +167,6 @@ class SmsReceivedHandler(private val context: Context) {
 
             return conversationIdNotNull
         } else {
-            AnalyticsHelper.receivedDuplicateSms(context)
             return -2
         }
     }

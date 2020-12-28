@@ -38,7 +38,6 @@ import xyz.heart.sms.api.implementation.Account
 import xyz.heart.sms.api.implementation.ActivateActivity
 import xyz.heart.sms.api.implementation.ApiUtils
 import xyz.heart.sms.api.implementation.LoginActivity
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 import xyz.heart.sms.shared.data.DataSource
 import xyz.heart.sms.shared.data.Settings
 import xyz.heart.sms.shared.service.ApiDownloadService
@@ -241,7 +240,6 @@ open class InitialLoadActivity : AppCompatActivity(), ProgressUpdateListener {
             source.insertContacts(this, contacts, null)
 
             val importTime = TimeUtils.now - startTime
-            AnalyticsHelper.importFinished(this, importTime)
             Log.v("initial_load", "load took $importTime ms")
 
             try {

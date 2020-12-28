@@ -25,8 +25,6 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import android.util.Log
 
-import com.google.firebase.auth.FirebaseAuth
-
 import java.io.IOException
 import java.util.ArrayList
 
@@ -429,19 +427,11 @@ open class ApiUploadService : Service() {
         val manager = NotificationManagerCompat.from(this)
         startForeground(MESSAGE_UPLOAD_ID, builder.build())
 
-        val auth = FirebaseAuth.getInstance()
-        auth.signInAnonymously()
-                .addOnSuccessListener { processMediaUpload(manager, builder) }
-                .addOnFailureListener { e ->
-                    Log.e(TAG, "failed to sign in to firebase", e)
-                    finishMediaUpload(manager)
-                }
+        processMediaUpload(manager, builder)
     }
 
     private fun processMediaUpload(manager: NotificationManagerCompat,
                                    builder: NotificationCompat.Builder) {
-        ApiUtils.saveFirebaseFolderRef(Account.accountId)
-
         Thread {
             try {
                 Thread.sleep((1000 * 60 * 2).toLong())

@@ -63,12 +63,10 @@ import java.util.List;
 import xyz.heart.sms.api.entity.DeviceBody;
 import xyz.heart.sms.api.entity.LoginResponse;
 import xyz.heart.sms.api.entity.SignupResponse;
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper;
 import xyz.heart.sms.encryption.EncryptionUtils;
 import xyz.heart.sms.api.entity.DeviceBody;
 import xyz.heart.sms.api.entity.LoginResponse;
 import xyz.heart.sms.api.entity.SignupResponse;
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper;
 import xyz.heart.sms.encryption.EncryptionUtils;
 
 /**
@@ -302,7 +300,6 @@ public class LoginActivity extends AppCompatActivity {
                         Account.SubscriptionType.LIFETIME.getTypeCode() : Account.SubscriptionType.SUBSCRIBER.getTypeCode()).commit();
 
                 addDevice(utils, response.accountId, hasTelephony(LoginActivity.this), false);
-                AnalyticsHelper.accountLoggedIn(LoginActivity.this);
             }
         }).start();
     }
@@ -357,7 +354,6 @@ public class LoginActivity extends AppCompatActivity {
                         response);
 
                 addDevice(utils, response.accountId, true, true);
-                AnalyticsHelper.accountSignedUp(LoginActivity.this);
 
                 applyAccountSettings(encryptionCreator);
             }

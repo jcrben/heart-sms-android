@@ -19,9 +19,6 @@ package xyz.heart.sms.api.implementation
 import android.content.Context
 import android.util.Log
 
-import com.google.firebase.storage.FirebaseStorage
-import com.google.firebase.storage.StorageReference
-
 import java.io.BufferedOutputStream
 import java.io.File
 import java.io.FileOutputStream
@@ -43,7 +40,6 @@ object ApiUtils {
 
     private const val TAG = "ApiUtils"
     private const val MAX_SIZE = (1024 * 1024 * 5).toLong()
-    private const val FIREBASE_STORAGE_URL = "gs://messenger-42616.appspot.com"
 
     fun isCallSuccessful(response: Response<*>): Boolean {
         val code = response.code()
@@ -55,14 +51,13 @@ object ApiUtils {
      */
     var environment = "release"
     val api: Api by lazy { ApiAccessor.create(environment) }
-    private var folderRef: StorageReference? = null
 
     /**
      * Logs into the server.
      */
-    fun login(email: String?, password: String?): LoginResponse? {
+    fun login(email: String?, hashedPassword: String?): LoginResponse? {
         return try {
-            val request = LoginRequest(email, password)
+            val request = LoginRequest(email, hashedPassword)
             api.account().login(request).execute().body()
         } catch (e: IOException) {
             null
@@ -484,7 +479,6 @@ object ApiUtils {
                 call.enqueue(LoggingRetryableCallback(call, RETRY_COUNT, message))
             }
         } else {
-            saveFirebaseFolderRef(accountId)
             val bytes = BinaryUtils.getMediaBytes(context, data, mimeType, true)
             addMedia(accountId, bytes, deviceId, encryptionUtils, MediaUploadCallback {
                 val body = MessageBody(deviceId, deviceConversationId,
@@ -896,30 +890,6 @@ object ApiUtils {
 
         Log.v(TAG, "finished downloading $messageId")
         callback.onDownloadComplete()
-    }
-
-    /**
-     * Creates a ref to a folder where all media will be stored for this user.
-     */
-    fun saveFirebaseFolderRef(accountId: String?) {
-        if (accountId == null) {
-            return
-        }
-
-        val storage = FirebaseStorage.getInstance()
-        val storageRef = storage.getReferenceFromUrl(FIREBASE_STORAGE_URL)
-        folderRef = try {
-            storageRef.child(accountId)
-        } catch (e: Exception) {
-            e.printStackTrace()
-            try {
-                storageRef.child(accountId)
-            } catch (ex: Exception) {
-                null
-            }
-
-        }
-
     }
 
     /**

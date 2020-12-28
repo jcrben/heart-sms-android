@@ -318,7 +318,6 @@ class FirebaseHandlerService : IntentService("FirebaseHandlerService") {
 
         private fun addMessageAfterMediaDownload(context: Context, encryptionUtils: EncryptionUtils, message: Message, to: String? = null) {
             val apiUtils = ApiUtils
-            apiUtils.saveFirebaseFolderRef(Account.accountId)
             val file = File(context.filesDir, message.id.toString() + MimeType.getExtension(message.mimeType!!))
 
             if (to == null) {

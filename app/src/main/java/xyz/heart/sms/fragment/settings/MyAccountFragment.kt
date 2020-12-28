@@ -49,7 +49,6 @@ import xyz.heart.sms.shared.service.ApiUploadService
 import xyz.heart.sms.shared.service.SimpleLifetimeSubscriptionCheckService
 import xyz.heart.sms.shared.service.SimpleSubscriptionCheckService
 import xyz.heart.sms.shared.service.jobs.SubscriptionExpirationCheckJob
-import xyz.heart.sms.api.implementation.firebase.AnalyticsHelper
 import xyz.heart.sms.shared.data.FeatureFlags
 import xyz.heart.sms.shared.service.ContactResyncService
 import xyz.heart.sms.shared.util.StringUtils
@@ -101,9 +100,6 @@ class MyAccountFragment : MaterialPreferenceFragmentCompat() {
 
         if (openTrialUpgradePreference) {
             upgradeTrial()
-
-            AnalyticsHelper.accountExpiredFreeTrial(fragmentActivity!!)
-            AnalyticsHelper.accountFreeTrialUpgradeDialogShown(fragmentActivity!!)
             
             openTrialUpgradePreference = false
         }
@@ -190,7 +186,6 @@ class MyAccountFragment : MaterialPreferenceFragmentCompat() {
             if (!runUi) {
                 if (hasSubs && Account.exists() && Account.subscriptionType == Account.SubscriptionType.FREE_TRIAL) {
                     Account.updateSubscription(fragmentActivity!!, Account.SubscriptionType.SUBSCRIBER, 1L, true)
-                    AnalyticsHelper.accountRestoreSubToTrial(fragmentActivity!!)
                 }
 
                 return@Thread
@@ -264,7 +259,6 @@ class MyAccountFragment : MaterialPreferenceFragmentCompat() {
 
             preference.setOnPreferenceClickListener {
                 upgradeTrial()
-                AnalyticsHelper.accountFreeTrialUpgradeDialogShown(fragmentActivity!!)
                 false
             }
         }
@@ -538,29 +532,15 @@ class MyAccountFragment : MaterialPreferenceFragmentCompat() {
                 if (fragmentActivity != null) {
                     // record the purchase to the API
                     Thread { ApiUtils.recordNewPurchase(product.productId) }.start()
-
-                    AnalyticsHelper.accountCompetedPurchase(fragmentActivity!!)
-                    AnalyticsHelper.userSubscribed(fragmentActivity!!, productId)
-                    Account.setHasPurchased(fragmentActivity!!, true)
                 }
 
                 if (Account.accountId == null) {
-                    AnalyticsHelper.userSubscribed(fragmentActivity!!, productId)
-
-                    if (product.productId.contains("lifetime")) {
-                        Account.updateSubscription(fragmentActivity!!, Account.SubscriptionType.LIFETIME, Date(1))
-                    } else {
-                        val newExperation = ProductPurchased.getExpiration(product.productId)
-                        Account.updateSubscription(fragmentActivity!!, Account.SubscriptionType.SUBSCRIBER, Date(newExperation))
-                    }
-
                     startLoginActivity()
                 } else {
                     // they switched their subscription, lets write the new timeout to their account.
                     val newExperation = ProductPurchased.getExpiration(product.productId)
                     val oldSubscription = Account.subscriptionType
 
-                    AnalyticsHelper.userUpgraded(fragmentActivity!!, productId)
                     if (product.productId.contains("lifetime")) {
                         Account.updateSubscription(fragmentActivity!!, Account.SubscriptionType.LIFETIME, Date(newExperation))
                     } else {
@@ -582,7 +562,6 @@ class MyAccountFragment : MaterialPreferenceFragmentCompat() {
     }
 
     private fun purchaseCancelled(message: String? = null) {
-        AnalyticsHelper.purchaseError(fragmentActivity!!)
         if (message != null) {
             fragmentActivity?.runOnUiThread { Toast.makeText(activity, message, Toast.LENGTH_SHORT).show() }
         }
