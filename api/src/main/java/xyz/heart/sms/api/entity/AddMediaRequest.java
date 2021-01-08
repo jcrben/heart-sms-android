@@ -19,11 +19,11 @@ package xyz.heart.sms.api.entity;
 public class AddMediaRequest {
 
     public long messageId;
-    public String file;
+    public String data;
 
-    public AddMediaRequest(long messageId, String file) {
+    public AddMediaRequest(long messageId, String data) {
         this.messageId = messageId;
-        this.file = file;
+        this.data = data;
     }
 
 }
