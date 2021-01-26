@@ -77,9 +77,9 @@ import xyz.heart.sms.api.service.TemplateService;
  */
 public class Api {
 
-    private static final String API_DEBUG_URL = "http://10.10.10.242:5000/api/v1/";
-    private static final String API_STAGING_URL = "http://10.10.10.242:5000/api/v1/";
-    private static final String API_RELEASE_URL = "http://10.10.10.242:5000/api/v1/";
+    private static final String API_DEBUG_URL   = "http://10.0.2.2:5000/api/v1/";
+    private static final String API_STAGING_URL = "http://10.0.2.2:5000/api/v1/";
+    private static final String API_RELEASE_URL = "http://10.0.2.2:5000/api/v1/";
 
     private static OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
 

@@ -204,6 +204,7 @@ class MyAccountFragment : MaterialPreferenceFragmentCompat() {
                         if (FeatureFlags.QUICK_SIGN_UP_SYSTEM) {
                             startTrial()
                         } else {
+                            // This is what opens the "Sign up / Log in" button screen
                             startInitialPurchase()
                         }
                     }
