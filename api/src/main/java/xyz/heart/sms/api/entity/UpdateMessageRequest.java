@@ -18,13 +18,13 @@ package xyz.heart.sms.api.entity;
 
 public class UpdateMessageRequest {
 
-    public Integer type;
+    public Integer message_type;
     public Boolean read;
     public Boolean seen;
     public Long timestamp;
 
-    public UpdateMessageRequest(Integer type, Boolean read, Boolean seen, Long timestamp) {
-        this.type = type;
+    public UpdateMessageRequest(Integer message_type, Boolean read, Boolean seen, Long timestamp) {
+        this.message_type = message_type;
         this.read = read;
         this.seen = seen;
         this.timestamp = timestamp;

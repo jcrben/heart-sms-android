@@ -1436,7 +1436,7 @@ object ApiUtils {
     }
 
     /**
-     * Dismiss a notification across all devices.
+     * Update an account setting
      */
     private fun updateSetting(accountId: String?, pref: String?, type: String?, value: Any?) {
         val message = "update $pref setting"

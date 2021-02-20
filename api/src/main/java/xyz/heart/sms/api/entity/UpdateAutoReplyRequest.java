@@ -18,12 +18,12 @@ package xyz.heart.sms.api.entity;
 
 public class UpdateAutoReplyRequest {
 
-    public String type;
+    public String replyType;
     public String pattern;
     public String response;
 
-    public UpdateAutoReplyRequest(String type, String pattern, String response) {
-        this.type = type;
+    public UpdateAutoReplyRequest(String replyType, String pattern, String response) {
+        this.replyType = replyType;
         this.pattern = pattern;
         this.response = response;
     }
