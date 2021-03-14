@@ -16,6 +16,8 @@
 
 <resources>
 
+    <string name="api_backend_url">Backend URL</string>
+    <string name="api_backend_url_hint">https://api.heart.lan</string>
     <string name="api_login">Login</string>
     <string name="api_signup">Sign Up</string>
     <string name="api_signup_failed">Cannot sign up on this device, you must register with a primary
@@ -48,6 +50,7 @@
     <string name="api_no_name">No name entered</string>
     <string name="api_no_phone_number">No phone number entered</string>
     <string name="api_login_error">An error occurred logging in, wrong email or password?</string>
+    <string name="api_url_error">Backend URL is not valid</string>
     <string name="api_hashing_error">An error occurred hashing the password</string>
     <string name="api_activate_summary">Login to get all of your messages on this device!</string>
     <string name="api_activate_1">1</string>

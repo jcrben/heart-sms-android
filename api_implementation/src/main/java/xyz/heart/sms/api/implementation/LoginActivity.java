@@ -32,6 +32,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.provider.ContactsContract;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -60,10 +61,7 @@ import com.google.firebase.iid.FirebaseInstanceId;
 
 import java.util.List;
 
-import xyz.heart.sms.api.entity.DeviceBody;
-import xyz.heart.sms.api.entity.LoginResponse;
-import xyz.heart.sms.api.entity.SignupResponse;
-import xyz.heart.sms.encryption.EncryptionUtils;
+import xyz.heart.sms.api.Api;
 import xyz.heart.sms.api.entity.DeviceBody;
 import xyz.heart.sms.api.entity.LoginResponse;
 import xyz.heart.sms.api.entity.SignupResponse;
@@ -73,6 +71,8 @@ import xyz.heart.sms.encryption.EncryptionUtils;
  * Activity for logging a user in using the API
  */
 public class LoginActivity extends AppCompatActivity {
+
+    public static final String PREF_BACKEND_URL = "backend_url";
 
     public static final String ARG_SKIP_LOGIN = "arg_skip_login";
     public static final String ARG_FORCE_NO_CREATE_ACCOUNT = "arg_no_create_account";
@@ -87,6 +87,7 @@ public class LoginActivity extends AppCompatActivity {
     private boolean skipLogin = false;
 
     private FloatingActionButton fab;
+    private EditText backendUrl;
     private EditText email;
     private EditText password;
     private EditText passwordConfirmation;
@@ -150,6 +151,15 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    private SharedPreferences getSharedPrefs() {
+        return PreferenceManager
+                .getDefaultSharedPreferences(getApplicationContext());
+    }
+
+    private void saveToPrefs(String key, String value) {
+        getSharedPrefs().edit().putString(key, value).apply();
+    }
+
     private void setUpInitialLayout() {
         Button login = (Button) findViewById(R.id.login);
         Button signup = (Button) findViewById(R.id.signup);
@@ -183,9 +193,12 @@ public class LoginActivity extends AppCompatActivity {
         isSignUp = false;
 
         fab = (FloatingActionButton) findViewById(R.id.login_fab);
+        backendUrl = (EditText) findViewById(R.id.login_backend_url);
         email = (EditText) findViewById(R.id.login_email);
         password = (EditText) findViewById(R.id.login_password);
         View forgotPassword = findViewById(R.id.forgot_password);
+
+        backendUrl.setText(getSharedPrefs().getString(PREF_BACKEND_URL, null));
 
         fab.setOnClickListener(view -> performLogin());
 
@@ -204,6 +217,7 @@ public class LoginActivity extends AppCompatActivity {
 
         forgotPassword.setOnClickListener(view -> {
             Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                    // TODO: Remove these links
                     Uri.parse("https://messenger.klinkerapps.com/forgot_password.html"));
 
             try {
@@ -215,6 +229,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         fab.hide();
+        attachLoginTextWatcher(backendUrl);
         attachLoginTextWatcher(email);
         attachLoginTextWatcher(password);
     }
@@ -224,6 +239,7 @@ public class LoginActivity extends AppCompatActivity {
         isSignUp = true;
 
         fab = (FloatingActionButton) findViewById(R.id.signup_fab);
+        backendUrl = (EditText) findViewById(R.id.signup_backend_url);
         email = (EditText) findViewById(R.id.signup_email);
         password = (EditText) findViewById(R.id.signup_password);
         passwordConfirmation = (EditText) findViewById(R.id.signup_password_confirmation);
@@ -231,9 +247,12 @@ public class LoginActivity extends AppCompatActivity {
         phoneNumber = (EditText) findViewById(R.id.signup_phone_number);
         errorHint = (TextView) findViewById(R.id.signup_error_hint);
 
+        backendUrl.setText(getSharedPrefs().getString(PREF_BACKEND_URL, null));
+
         fab.setOnClickListener(view -> performSignup());
 
         fab.hide();
+        attachSignupTextWatcher(backendUrl);
         attachSignupTextWatcher(email);
         attachSignupTextWatcher(password);
         attachSignupTextWatcher(passwordConfirmation);
@@ -250,6 +269,15 @@ public class LoginActivity extends AppCompatActivity {
 
     @SuppressLint("ApplySharedPref")
     private void performLogin() {
+        String validatedUrl = Api.validateApiUrl(backendUrl.getText().toString());
+        if (validatedUrl == null || validatedUrl.isEmpty()) {
+            Toast.makeText(getApplicationContext(), R.string.api_url_error,
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
+        // Save the backend url to preferences
+        saveToPrefs(PREF_BACKEND_URL, validatedUrl);
+
         dialog = new ProgressDialog(this);
         dialog.setMessage(getString(R.string.api_connecting));
         dialog.show();
@@ -305,6 +333,15 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void performSignup() {
+        String validatedUrl = Api.validateApiUrl(backendUrl.getText().toString());
+        if (validatedUrl == null || validatedUrl.isEmpty()) {
+            Toast.makeText(getApplicationContext(), R.string.api_url_error,
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
+        // Save the backend url to preferences
+        saveToPrefs(PREF_BACKEND_URL, validatedUrl);
+
         if (password.getText().length() > 55) {
             Toast.makeText(getApplicationContext(), R.string.api_password_to_long,
                     Toast.LENGTH_SHORT).show();

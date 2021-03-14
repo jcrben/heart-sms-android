@@ -89,6 +89,7 @@
     <string name="pref_apply_primary_color_toolbar" translatable="false">apply_primary_color_toolbar</string>
 
     <!-- Global Settings -->
+    <string name="pref_backend_url" translatable="false">backend_url</string>
     <string name="pref_customization_category" translatable="false">customization_category</string>
     <string name="pref_notification_category" translatable="false">notification_category</string>
     <string name="pref_advanced_category" translatable="false">advanced_settings_category</string>

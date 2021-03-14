@@ -17,6 +17,11 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <xyz.heart.sms.shared.view.AutoSummaryEditTextPreference
+        android:key="@string/pref_backend_url"
+        android:title="@string/api_backend_url"
+        android:hint="@string/api_backend_url_hint" />
+
+    <xyz.heart.sms.shared.view.AutoSummaryEditTextPreference
         android:key="@string/pref_phone_number"
         android:title="@string/settings_phone_number" />
 

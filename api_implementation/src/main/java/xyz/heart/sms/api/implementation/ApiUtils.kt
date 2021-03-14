@@ -17,13 +17,9 @@
 package xyz.heart.sms.api.implementation
 
 import android.content.Context
+import android.content.SharedPreferences
+import android.preference.PreferenceManager
 import android.util.Log
-
-import java.io.BufferedOutputStream
-import java.io.File
-import java.io.FileOutputStream
-import java.io.IOException
-
 import retrofit2.Response
 import xyz.heart.sms.api.Api
 import xyz.heart.sms.api.entity.*
@@ -31,6 +27,10 @@ import xyz.heart.sms.api.implementation.media.MediaDownloadCallback
 import xyz.heart.sms.api.implementation.media.MediaUploadCallback
 import xyz.heart.sms.api.implementation.retrofit.*
 import xyz.heart.sms.encryption.EncryptionUtils
+import java.io.BufferedOutputStream
+import java.io.File
+import java.io.FileOutputStream
+import java.io.IOException
 
 /**
  * Utility for easing access to APIs.
@@ -38,19 +38,31 @@ import xyz.heart.sms.encryption.EncryptionUtils
 object ApiUtils {
     const val RETRY_COUNT = 4
 
+    private lateinit var sharedPrefs: SharedPreferences;
+
+    private const val PREF_BACKEND_URL = "backend_url"
     private const val TAG = "ApiUtils"
     private const val MAX_SIZE = (1024 * 1024 * 5).toLong()
+
+    fun init(context: Context) {
+        sharedPrefs = PreferenceManager
+                .getDefaultSharedPreferences(context)
+    }
 
     fun isCallSuccessful(response: Response<*>): Boolean {
         val code = response.code()
         return code in 200..399
     }
 
+    fun getBaseUrl(): String? {
+        return sharedPrefs.getString(PREF_BACKEND_URL, null)
+    }
+
     /**
      * Gets direct access to the apis for more advanced options.
      */
-    var environment = "release"
-    val api: Api by lazy { ApiAccessor.create(environment) }
+    var environment = "debug"
+    val api: Api by lazy { ApiAccessor.create(getBaseUrl()) }
 
     /**
      * Logs into the server.
@@ -765,7 +777,7 @@ object ApiUtils {
      * Update the text for a given template.
      */
     fun updateAutoReply(accountId: String?, deviceId: Long, type: String, pattern: String, response: String,
-                       encryptionUtils: EncryptionUtils?) {
+                        encryptionUtils: EncryptionUtils?) {
         if (accountId == null || encryptionUtils == null) {
             return
         }

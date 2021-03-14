@@ -23,19 +23,21 @@ import android.os.Bundle
 import android.os.Handler
 import android.preference.PreferenceCategory
 import android.preference.PreferenceGroup
-import androidx.appcompat.app.AlertDialog
 import android.telephony.TelephonyManager
 import android.view.LayoutInflater
+import android.widget.ArrayAdapter
 import android.widget.Spinner
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import xyz.heart.sms.R
 import xyz.heart.sms.activity.SettingsActivity
+import xyz.heart.sms.api.Api
 import xyz.heart.sms.api.implementation.Account
 import xyz.heart.sms.api.implementation.ApiUtils
 import xyz.heart.sms.shared.data.Settings
 import xyz.heart.sms.shared.util.EmojiInitializer
 import xyz.heart.sms.shared.util.SetUtils
 import xyz.heart.sms.view.preference.NotificationAlertsPreference
-import android.widget.ArrayAdapter
 
 
 /**
@@ -54,6 +56,7 @@ class GlobalSettingsFragment : MaterialPreferenceFragment() {
         initAdvancedFeaturesRedirect()
         initExperimentsRedirect()
 
+        initBackendUrl()
         initPhoneNumber()
         initKeyboardLayout()
         initSwipeDelete()
@@ -103,6 +106,24 @@ class GlobalSettingsFragment : MaterialPreferenceFragment() {
                     SettingsActivity.startExperimentSettings(activity)
                     false
                 }
+    }
+
+    private fun initBackendUrl() {
+        findPreference(getString(R.string.pref_backend_url)).setOnPreferenceChangeListener(fun(_, o): Boolean {
+            val backendUrl = o as String
+            val validatedUrl = Api.validateApiUrl(backendUrl)
+
+            if (validatedUrl == null || validatedUrl.isEmpty()) {
+                val builder = AlertDialog.Builder(activity)
+                builder.setTitle("Invalid URL")
+                builder.setMessage(R.string.api_url_error)
+                builder.setPositiveButton(android.R.string.ok, null)
+                builder.show()
+
+                return false
+            }
+            return true
+        });
     }
 
     private fun initPhoneNumber() {

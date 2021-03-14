@@ -25,6 +25,7 @@ import java.io.IOException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Type;
+import java.net.URL;
 import java.util.Locale;
 
 import okhttp3.Interceptor;
@@ -77,9 +78,8 @@ import xyz.heart.sms.api.service.TemplateService;
  */
 public class Api {
 
-    private static final String API_DEBUG_URL   = "http://10.0.2.2:5000/api/v1/";
-    private static final String API_STAGING_URL = "http://10.0.2.2:5000/api/v1/";
-    private static final String API_RELEASE_URL = "http://10.0.2.2:5000/api/v1/";
+    private static final String API_DEBUG_URL = "http://10.0.2.2:5000";
+    public static final String API_PATH = "/api/v1/";
 
     private static OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
 
@@ -153,7 +153,50 @@ public class Api {
     private String baseUrl;
 
     public enum Environment {
-        DEBUG, STAGING, RELEASE
+        DEBUG
+    }
+
+    public static String validateApiUrl(String url_input) {
+        URL url;
+        String protocol;
+        String host;
+        Integer port;
+
+        try {
+            try {
+                // Protocol may be empty resulting in a parse failure
+                url = new URL(url_input);
+                protocol = url.getProtocol();
+            } catch (Exception e) {
+                // Try setting to https
+                protocol = "https";
+                // If it still doesn't parse, they didn't just forget the protocol
+                // Throw the outer exception
+                url = new URL(protocol + "://" + url_input);
+            }
+
+            host = url.getHost();
+            port = (url.getPort() > 0) ? url.getPort() : null;
+
+            if (host.isEmpty()) {
+                // In some instances, the hostname could be empty.
+                throw new Exception("Error parsing URL. Try again");
+            }
+
+            // Now we have everything we need.
+            String final_url = protocol + "://" + host;
+            if (port != null) {
+                final_url += ":" + port;
+            }
+            return final_url;
+
+        } catch(Exception e) {
+            // Actually handle the error
+            // Tell user the correct format and have them try again
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
     /**
@@ -162,15 +205,15 @@ public class Api {
      * @param environment the Environment to use to connect to the APIs.
      */
     public Api(Environment environment) {
-        this(environment == Environment.DEBUG ? API_DEBUG_URL :
-                (environment == Environment.STAGING ? API_STAGING_URL : API_RELEASE_URL));
+        // Previously there was STAGING and RELEASE urls. Now we use the stored preference and send baseUrl directly
+        this(API_DEBUG_URL + "/api/v1/");
     }
 
     /**
      * Creates a new API access object that will automatically attach your API key to all
      * requests.
      */
-    private Api(String baseUrl) {
+    public Api(String baseUrl) {
 //        httpClient.addInterceptor(new Interceptor() {
 //            @Override
 //            public okhttp3.Response intercept(Chain chain) throws IOException {

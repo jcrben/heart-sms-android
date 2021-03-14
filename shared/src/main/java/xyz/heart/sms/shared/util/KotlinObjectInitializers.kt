@@ -11,6 +11,8 @@ import xyz.heart.sms.shared.data.Settings
 object KotlinObjectInitializers {
 
     fun initializeObjects(context: Context) {
+        ApiUtils.init(context)
+
         try {
             ApiUtils.environment = context.getString(R.string.environment)
         } catch (e: Exception) {

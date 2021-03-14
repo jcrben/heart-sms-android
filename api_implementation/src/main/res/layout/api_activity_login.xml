@@ -114,6 +114,13 @@
             <xyz.heart.sms.api.implementation.FixAutofillEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/login_backend_url"
+                android:inputType="textUri"
+                android:hint="@string/api_backend_url" />
+
+            <xyz.heart.sms.api.implementation.FixAutofillEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:id="@+id/login_email"
                 android:inputType="textEmailAddress"
                 android:hint="@string/api_email" />
@@ -172,6 +179,13 @@
             android:padding="16dp"
             android:layout_margin="8dp"
             android:id="@+id/signup_dialog">
+
+            <xyz.heart.sms.api.implementation.FixAutofillEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_backend_url"
+                android:inputType="textUri"
+                android:hint="@string/api_backend_url" />
 
             <xyz.heart.sms.api.implementation.FixAutofillEditText
                 android:layout_width="match_parent"

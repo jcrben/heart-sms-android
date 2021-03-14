@@ -17,19 +17,17 @@
 package xyz.heart.sms.api.implementation;
 
 import xyz.heart.sms.api.Api;
-import xyz.heart.sms.api.Api;
 
 /**
  * A helper for getting the correct API object.
  */
 class ApiAccessor {
 
-    public static Api create(String environment) {
+    public static Api create(String baseUrl) {
         //noinspection SwitchStatementWithTooFewBranches
-        switch (environment) {
-//            case "debug": return new Api(Api.Environment.DEBUG);
-            case "staging": return new Api(Api.Environment.STAGING);
-            default: return new Api(Api.Environment.RELEASE);
+        switch (baseUrl) {
+            case "debug": return new Api(Api.Environment.DEBUG);
+            default: return new Api(baseUrl + Api.API_PATH);
         }
     }
 
